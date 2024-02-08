@@ -10,9 +10,9 @@ import { FormComplete } from "./FormComplete";
 
 export const Estudio = () => {
   const [currentStep, setCurrentStep] = useState(1);
-  const [userData, setUserData] = useState('');
+  const [userData, setUserData] = useState("");
   const [finalData, setFinalData] = useState([]);
-  const steps = ["Datos Personales", "Energia Actual", "Completado"];
+  const steps = ["Datos Personales", "Energía Actual", "Completado"];
   const displayStep = (step) => {
     switch (step) {
       case 1:
@@ -27,45 +27,61 @@ export const Estudio = () => {
 
   const handleClick = (direction) => {
     let newStep = currentStep;
-    direction === "Siguiente" ? newStep++ : newStep--;
-    
-    newStep > 0 && newStep <= steps.length && setCurrentStep(newStep);
-  }
+    if (direction === "Continuar") {
+      newStep++;
+    } else if (direction === "Retroceder") {
+      newStep--;
+    } else if (direction === "Terminar") {
+      newStep = 3; // Establecer el paso en 3 (Completado)
+    }
+  
+    // Asegúrate de que el nuevo paso esté dentro de los límites
+    if (newStep > 0 && newStep <= steps.length) {
+      setCurrentStep(newStep);
+    }
+  };
+
 
   return (
     <main>
       <NavBar />
-      <div className="w-full h-[100px]  bg-transparent mx-auto mb-8 "></div>
-      <div className="lg:w-1/2 lg:mx-auto m-5 shadow-xl rounded-2xl  bg-white ">
-        <div className="container horizontal mt-5">
-          {/* Stepper */}
-          <Stepper
-          steps= {steps}
-          currentStep={currentStep}
-          />
-    {/* Display Components */}
-    <div className="my-10 p-10">
-   <StepperContext.Provider value={{
-    userData, 
-    setUserData,
-    finalData,
-    setFinalData
-   }} >
-    {displayStep(currentStep)}
-   </StepperContext.Provider>
-    </div>
+      <div className="w-full h-[100px] bg-transparent mx-auto  "></div>
+      <div className="w-full py-10 bg-blueOntu/5 ">
+        <h2 className="lg:text-[42px] font-monts text-center font-semibold md:text-4x1 text-[28px] leading-none py-2 mb-5">
+        Solicita tu Estudio Solar
+        </h2>
+        <p className="text-[16px] mb-10 font-monts text-center  text-black lg:mx-60 lg:font-medium lg:text-[20px]">
+        Completa la siguiente información para comenzar con tu estudio personalizado.
+      </p>
+        <div className="lg:w-1/2 lg:mx-auto m-5 shadow-xl rounded-2xl  bg-white ">
+          <div className="container horizontal mt-5">
+            {/* Stepper */}
+            <Stepper steps={steps} currentStep={currentStep} />
+            {/* Display Components */}
+            <div className="my-10 p-10">
+              <StepperContext.Provider
+                value={{
+                  userData,
+                  setUserData,
+                  finalData,
+                  setFinalData,
+                }}
+              >
+                {displayStep(currentStep)}
+              </StepperContext.Provider>
+            </div>
+          </div>
 
+          {/* Navegacion y control del Stepper */}
+          {currentStep != steps.length && (
+            <StepperControl
+              handleClick={handleClick}
+              currentStep={currentStep}
+              steps={steps}
+            />
+          )}
         </div>
-
-        {/* Navegacion y control del Stepper */}
-        {currentStep != steps.length &&
-        <StepperControl
-        handleClick ={handleClick}
-        currentStep={currentStep}
-        steps={steps}
-         />}
       </div>
-
       <FooterCR />
     </main>
   );
