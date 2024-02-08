@@ -5,11 +5,12 @@ import { PiPlant } from "react-icons/pi";
 
 export const CardBeneficosConteniner = () => {
   return (
-    <div className="w-full h-[710px] py-1 px-4 bg-gray-100 md:h-[520px] lg:h-[540px] xl:h-[420px]">
-      <h4 className="font-monts  text-ontu uppercase text-center font-bold my-6 text-[26px] lg:text-[36px]">
+    <div className="w-full h-[710px] py-1 px-4 bg-blueOntu/5 md:h-[520px] lg:h-[500px] xl:h-[420px]">
+      <h4 className="font-monts  text-ontu uppercase text-center lg:text-[42px] my-6 text-[26px]">
         Beneficios
       </h4>
-      <section className="mt-6 md:flex md:flex-wrap md:gap-10 font-monts lg:h-[360px] ">
+      <div className="lg:max-w-[1240px] lg:mx-auto ">
+      <section className=" justify-center mt-6 md:flex md:flex-wrap md:gap-10 font-monts lg:h-[280px] ">
         <CardBeneficios
         icono={<TbPigMoney size={100}/>}
           num="01"
@@ -29,6 +30,7 @@ export const CardBeneficosConteniner = () => {
           textA="Accede a distintos beneficios, al tener un sistema fotovoltaico te abre la posibilidad de tener distintos incentivos fiscales."
         />
       </section>
+      </div>
     </div>
   );
 };
