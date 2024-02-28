@@ -1,16 +1,17 @@
-import React from 'react'
-import { Header } from './Header'
-import { FooterCR } from './FooterCR'
+import { CardPrecing } from "./CardPrecing/CardPrecing";
+import { Precing } from "./CardPrecing/Precing";
+import { FooterCR } from "./FooterCR";
+import { NavBar } from "./NavBar/NavBar";
 
 export const Index = () => {
   return (
     <main>
-        <Header />
+      <NavBar />
+      <div className="w-full h-[70px]  bg-transparent "></div>
+      <CardPrecing />
+      <Precing />
 
-
-
-
-       <FooterCR /> 
+      <FooterCR />
     </main>
-  )
-}
+  );
+};

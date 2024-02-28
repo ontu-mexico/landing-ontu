@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-export const NavLinks = () => {
+
+export const NavLinks2 = () => {
   const [heading, setHeading] = useState("");
   // Efecto del icono Down y Up
   const handleNav = () => {
@@ -9,25 +10,23 @@ export const NavLinks = () => {
 
   const links = [
     {
-      name: "Cuidado del Hogar",
+      name: "Aprende",
       menu: true,
       sublinks: [
-        { name: "Eléctricidad", link: "", icon: "" },
-        { name: "Plomería", link: "" },
-        { name: "Smart Home", link: "" },
+        { name: "Academia Solar", link: "" },
+        { name: "Academia del Agua", link: "" },
+        { name: "Academia para el Hogar", link: "" },
       ],
-      img: "/src/assets/image/smartHome.jpg",
+      img: "/src/assets/image/aprende.jpg",
     },
     {
-      name: "Sustentabilidad",
+      name: "Ontu para empresas",
       menu: true,
       sublinks: [
-        { name: "Paneles Solares", link: "/PanelesSolares" },
-        { name: "Almacenamiento de Energía", link: "" },
-        { name: "Calentamiento de Agua", link: "" },
-        { name: "Ahorro de Agua", link: "" },
+        { name: "Energía Limpia", link: "" },
+        { name: "Calentamiento del Agua", link: "" },
       ],
-      img: "/src/assets/image/panelSolarTecho.jpg",
+      img: "/src/assets/image/empresa.jpg",
     },
   ];
 
@@ -37,7 +36,7 @@ export const NavLinks = () => {
         <div>
           {/* Desktop menu */}
 
-          <div className="px-3 text-left cursor-pointer group text-black hover:bg-slate-50 ">
+          <div className="px-3 text-left cursor-pointer group text-black hover:bg-slate-50">
             <h1
               className="py-4 lg:text-[12px] xl:text-[12px] text-[14px] flex justify-between items-center lg:pr-0 pr-5 font-monts font-semibold group text-center"
               onClick={() =>
@@ -45,7 +44,7 @@ export const NavLinks = () => {
               }
             >
               {link.name}
-              {/* Mobile Arrow */}
+              {/* Desktop Arrow */}
               <span className="inline lg:px-2 lg:ml:2 lg:hidden text-ontu ">
                 <ion-icon
                   name={`${
@@ -62,21 +61,17 @@ export const NavLinks = () => {
             </h1>
             {/*Submenu Desktop*/}
             {link.menu && (
-              <div className="absolute top-30  bg-white hidden group-hover:lg:block hover:lg:block hover:transition-all duration-500 drop-shadow-xl">
+              <div className="absolute top-22 bg-white hidden group-hover:lg:block hover:lg:block hover:transition-all duration-500 drop-shadow-xl  ">
                 <div className="grid grid-cols-2 gap-8 p-2 items-center ">
-                  <div className="w-[220px]  ">
+                  <div className=" w-[220px]">
                     {link.sublinks.map((slink) => (
-                      <li className="text-sm text-gray-900 my-4 mx-2 hover:text-ontu  flex justify-between items-center cursor-pointer group">
-                        <Link to={slink.link}>{slink.name}</Link>
-                        {/* {slink.name && (   
-                            <span className="text-[11px] hover:transition-all group text-ontu transition-all duration-700 ease-in-out">
-                              <ion-icon name="arrow-forward-outline"></ion-icon>
-                            </span>
-                        )} */}
+                      <li className="text-sm text-gray-900 my-4 px-2  ">
+                        <Link className="hover:text-ontu" to={slink.link}>
+                          {slink.name}
+                        </Link>
                       </li>
                     ))}
                   </div>
-
                   <div className="w-[170px] justify-items-center">
                     <img className="" src={link.img} alt="algo" />
                   </div>

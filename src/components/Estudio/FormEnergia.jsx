@@ -81,7 +81,7 @@ export const FormEnergia = () => {
             name="nombre"
             type="text"
             className="w-full border-b-2 bg-transparent border-ontu p-2"
-            placeholder="Ingresa tu nombre"
+            placeholder="Ingresa tarifa"
           />
         </div>
         <div className="mt-4 ">

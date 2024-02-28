@@ -1,28 +1,49 @@
-import panel from '/src/assets/image/Panel.png'
-import { useNavigate } from 'react-router-dom'
-
+import mobile from "/src/assets/image/panelSolarHome2.png";
+import desktop from "/src/assets/image/panelSolarHome4.png";
+import { useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
+//AOS
+import AOS from "aos";
+import "aos/dist/aos.css";
 export const PagSustentabilidad = () => {
   const navigate = useNavigate();
+  //Animation on scroll
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   return (
-    <div className="w-full bg-white py-9 px-2 ">
-      <div className='w-full h-[80px]  bg-transparent '></div>
-    <div className="max-w-[1240px] max-h-[320px] md:max-h-[300px] lg:max-h-[480px] lg:max-w-[1150px] mx-auto grid lg:grid-cols-2">
-      <div className=" flex flex-col justify-center px-5  lg:justify-start">
-          <h1 className="font-monts  text-ontu uppercase  text-[26px] lg:text-[36px] lg:mt-20">Paneles Solares</h1>
-        <h2 className="lg:text-[42px] font-monts font-semibold md:text-4x1 text-[28px] leading-none py-2 mb-5">
-        Solicita tu Estudio Solar
-        </h2>
-        <p className="text-[18px] mb-10 font-monts lg:mr-5">
-          Conoce los beneficios de el uso de paneles solares en tu hogar o
-          negocio, además entérate de cuánto podrías estar ahorrando con el
-          uso de energía limpia.
-        </p>
-        
-      </div>
-      <div className="p-4 lg:w-auto invisible lg:visible  ">
-      <img className="lg:w-[290px] lg:h-[400px] lg:object-none lg:mx-auto " src={panel} alt="Panel Solar" />
+    //bg-[url('/src/assets/image/SFV_2.png')]
+    <div className="w-full py-32 px-2 bg-white">
+      <div className="max-w-[1240px]  lg:max-w-[1150px] mx-auto ">
+        <div
+          className=" flex flex-col justify-center items-center px-5 text-center bg-white"
+          data-aos="fade-up"
+        >
+          <h2 className="lg:text-[24px] font-monts font-semibold text-ontu text-[20px] leading-none py-0 mb-3 lg:mt-15 md:text-center mt-10">
+            Solicita tu Estudio Solar
+          </h2>
+          <h1 className="font-monts text-center md:text-[42px] lg:text-[46px] text-[38px] leading-none mb-5 lg:mb-0 font-semibold  ">
+            Paneles solares
+          </h1>
+          <div
+            className="h-[1.5px] w-[400px] lg:mt-2 bg-[#F2C00C]"
+            data-aos="fade-right"
+          ></div>
+
+          <p className="text-[18px]  mt-5 font-monts text-center lg:mt-5 lg:w-[700px]">
+            Conoce los beneficios de el uso de paneles solares en tu hogar o
+            negocio, además entérate de cuánto podrías estar ahorrando con el
+            uso de energía limpia.
+          </p>
+        </div>
+        <div className="" data-aos="fade-up">
+          <picture>
+            <source media="(max-width: 640px )" srcset={mobile} sizes="" />
+            <source media="(min-width: 641px )" srcset={desktop} sizes="" />
+            <img src={mobile} alt="Panel solar" />
+          </picture>
+        </div>
       </div>
     </div>
-  </div>
-  )
-}
+  );
+};
