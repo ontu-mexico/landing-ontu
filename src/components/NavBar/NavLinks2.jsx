@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import aprende from "/src/assets/image/aprende.jpg";
+import empresas from "/src/assets/image/empresa.jpg";
 
 export const NavLinks2 = () => {
   const [heading, setHeading] = useState("");
@@ -17,7 +19,7 @@ export const NavLinks2 = () => {
         { name: "Academia del Agua", link: "" },
         { name: "Academia para el Hogar", link: "" },
       ],
-      img: "/src/assets/image/aprende.jpg",
+      img: aprende,
     },
     {
       name: "Ontu para empresas",
@@ -26,7 +28,7 @@ export const NavLinks2 = () => {
         { name: "Energía Limpia", link: "" },
         { name: "Calentamiento del Agua", link: "" },
       ],
-      img: "/src/assets/image/empresa.jpg",
+      img: empresas,
     },
   ];
 
@@ -64,6 +66,7 @@ export const NavLinks2 = () => {
               <div className="absolute top-22 bg-white hidden group-hover:lg:block hover:lg:block hover:transition-all duration-500 drop-shadow-xl  ">
                 <div className="grid grid-cols-2 gap-8 p-2 items-center ">
                   <div className=" w-[220px]">
+                  <span className="h-[2px] lg:block hidden lg:px-1 lg:bg-yellowOntu2  lg:animate-fade-right animate-duration-[3000ms] animate-delay-500" />
                     {link.sublinks.map((slink) => (
                       <li className="text-sm text-gray-900 my-4 px-2  ">
                         <Link className="hover:text-ontu" to={slink.link}>

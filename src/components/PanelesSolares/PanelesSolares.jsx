@@ -70,7 +70,7 @@ export const PanelesSolares = () => {
 
           <div
             className="w-full flex flex-col p-4 shadow-md  lg:p-10 border border-ontu bg-white"
-            data-aos="fade-up"
+            data-aos="fade-right"
           >
             <div className="text-[15px] font-monts  mt-4 ">
               <h1 className="text-center text-blueOntu font-medium ">
@@ -120,7 +120,7 @@ export const PanelesSolares = () => {
                 </div>
               </div>
             </div>
-            <div className="items-center justify-center mt-14">
+            <div className="items-center font-monts justify-center mt-14">
               <h1 className="text-center text-blueOntu font-medium ">
                 Nuevo recibo CFE
               </h1>

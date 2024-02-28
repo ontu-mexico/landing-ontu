@@ -10,7 +10,7 @@ export default {
         ontu4: "hsl(140, 6%, 90%)",
         blueOntu: "hsl(221, 62%, 61%)",
         yellowOntu: "hsl(41, 68%, 68%)",
-        yellowOntu2: "hsl(47, 100%, 50%)",
+        yellowOntu2: "hsl(47, 90%, 50%)",
         grayOntu: "hsl(221, 0%, 72%)",
         veryGreen: "hsl(182, 68%, 20%)",
         grayisBlue: "hsl(233, 8%, 79%)",

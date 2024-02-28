@@ -20,7 +20,7 @@ export const NavBar = () => {
     <nav className="fixed w-full h-[75px] text-black z-40 bg-white lg:bg-opacity-80 lg:bg-clip-padding lg:backdrop-blur-sm">
       <div className="flex items-center font-monts justify-around py-2  ">
         <div className="z-50 p-2 lg:w-auto w-full flex justify-between ">
-          <Link to="">
+          <Link to="/">
             <img
               className="w-[90px] md:w-[100px] cursor-pointer  "
               src={logo}
@@ -48,7 +48,7 @@ export const NavBar = () => {
           <NavLinks2 />
           <li>
             <Link
-              to="/"
+              to="/InicioSesion"
               className="py-4 px-3 inline-block font-monts font-bold lg:text-[12px] xl:text-[12px] text-[14px] hover:bg-slate-50 text-ontu text-center"
             >
               Acceso a Clientes
@@ -76,7 +76,7 @@ export const NavBar = () => {
 
           <li className="hover:bg-slate-50 ">
             <Link
-              to="/"
+              to="/InicioSesion"
               className="py-3 px-3 inline-block font-monts font-bold text-[14px] text-ontu   "
             >
               Acceso a Clientes

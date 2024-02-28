@@ -1,64 +1,68 @@
-import logo from "/src/assets/logo/logo_transparent_background.png";
+import { useNavigate } from "react-router-dom";
 export const FormSesion = () => {
+  const navigate = useNavigate();
   return (
     <div className="w-full font-monts ">
-      <div className="justify-center object-center flex my-10 md:mb-30 lg:mb-10">
-        <img
-          className="h-[90px] w-[215px] lg:h-[105px] lg:w-[240px] "
-          src={logo}
-          alt="Ontu"
-        />
-      </div>
-
-      <h2 className="lg:text-[38px] mt-2 md:mt-1 font-monts uppercase text-center font-semibold md:text-4xl text-3xl leading-none text-ontu">
-        Bienvenido
-      </h2>
-      <p className="lg:text-lg text-gray-500 mt-4 px-4 text-base text-center ">
-        <span className="text-ontu">¡Bienvenido de nuevo!</span>Por favor
-        ingresa tus datos.
+      <p className=" lg:text-[22px] text-ontu mt-5 px-4 text-[18px] text-center font-medium ">
+        ¡Bienvenido de nuevo!
       </p>
+      
+      <p className=" lg:text-[14px] text-gray-500 mt-1 px-4 mb-2 text-[14px] text-center ">
+        Por favor ingresa tus datos.
+      </p>
+      <p className="ml-20  h-[1px] w-[300px]  bg-[#F2C00C] text-center"></p>
 
-      <div className="p-10">
+      <div className="p-8">
         <div className="mt-4">
-          <label htmlFor="#" className="font-medium text-lg">
-            Email
+          <label htmlFor="#" className="font-medium text-[14px]">
+            Tu dirección de correo electrónico
           </label>
           <input
             type="email"
-            className="w-full border-b-2 bg-transparent border-ontu p-2 "
-            placeholder="your@example.com"
+            className="w-full text-[14px] border-b-2 bg-transparent border-grayOntu p-1 "
+            placeholder="your@email.com"
           />
         </div>
         <div className="mt-4">
-          <label htmlFor="#" className="font-medium text-lg">
-            Password
+          <label htmlFor="#" className="font-medium text-[14px]">
+            Tu contraseña
           </label>
           <input
             type="password"
-            className="w-full border-b-2 bg-transparent border-ontu p-2"
+            className="w-full text-[14px] border-b-2 bg-transparent border-grayOntu p-1"
             placeholder="Máximo 10 caracteres"
             maxLength="10"
           />
         </div>
 
-        <div className="flex justify-between mt-8 items-center">
+        <div className="flex justify-between mt-4 items-center">
           <div>
             <input type="checkbox" />
-            <label className="ml-2 text-base text-gray-700" htmlFor="">
-              Recordar sesión
+            <label
+              className="ml-2 text-[13px] text-gray-700 hover:font-semibold "
+              htmlFor=""
+            >
+              Recuérdame
             </label>
           </div>
-          <button className="font-medium text-base text-veryGreen hover:text-veryDarkBlue">
+          <button className="font-medium text-[13px] text-blueOntu hover:text-blueOntu hover:font-semibold">
             Olvide mi contraseña
           </button>
         </div>
-        <div className="mt-8 flex flex-col gap-y-4 ">
-          <button className="bg-veryGreen w-[220px] h-[48px] font-monts uppercase mx-auto text-white hover:bg-veryDarkBlue rounded-full  active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all ">
-            INICIAR SESIÓN
+        <div className="flex justify-center mt-8  ">
+          <button
+            onClick={() => navigate("/")}
+            className="bg-ontu w-[230px] h-[48px] font-monts font-bold uppercase mx-auto  md:mx-0 text-white hover:bg-white hover:text-ontu hover:border-2 hover:border-ontu hover:font-bold active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all rounded-sm "
+          >
+            Iniciar Sesión
           </button>
-          
         </div>
-       
+        <p
+          onClick={() => navigate("/")}
+          className=" lg:text-[18px] text-blueOntu font-semibold hover:font-bold mt-5 px-4 text-[18px] text-center cursor-pointer "
+        >
+          Regresar
+        </p>
       </div>
     </div>
   );
