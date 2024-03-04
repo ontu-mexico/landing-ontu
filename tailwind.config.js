@@ -19,6 +19,12 @@ export default {
       fontFamily: {
         monts: ['"Montserrat"', "sans-serif"],
       },
+      backgroundImage: {
+        parallax: 'url("../src/assets/plomeria/herramientas3.jpg")',
+        parallaxElec:
+          'url("../src/assets/electricidad/bannerElectricista3.jpg")',
+        parallaxElec2: 'url("../src/assets/electricidad/lamparas.jpg")',
+      },
     },
   },
   plugins: [require("tailwindcss-animated")],

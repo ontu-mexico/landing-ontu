@@ -27,29 +27,29 @@ export const CardInfo = () => {
           data-aos="fade-right"
         >
           <h2 className="text-[28px] font-monts text-blueOntu uppercase font-bold text-center py-2">
-            Meses sin intereses
+            Arrendamiento
           </h2>
           <p className="text-[16px] font-monts text-center mb-3  mt-5">
-            Adquiere tus paneles solares por arrendandamiento mensual.
+            Adquiere tus paneles solares por arrendamiento mensual.
           </p>
           <div className="text-[16px] mb-10 items-center font-monts ">
             <ul className="mt-4 space-y-2 px-4">
               <li className="font-semibold">Beneficios:</li>
               <li className="flex items-center gap-3">
-                <div className="text-blueOntu mt-2 text-[25px]  ">
+                <div className="text-[#F2C00C] mt-2 text-[25px]  ">
                   <ion-icon name="arrow-forward-circle-outline"></ion-icon>
                 </div>
                 Pagos mensuales fijos
               </li>
               <li className="flex items-center gap-3">
-                <div className="text-blueOntu text-[25px]  ">
+                <div className="text-[#F2C00C] text-[25px]  ">
                   <ion-icon name="arrow-forward-circle-outline"></ion-icon>
                 </div>
                 Ontu se encarga del mantenimiento durante el periodo de
                 arrendamiento
               </li>
               <li className="flex items-center gap-3">
-                <div className="text-blueOntu text-[25px]  ">
+                <div className="text-[#F2C00C] text-[25px]  ">
                   <ion-icon name="arrow-forward-circle-outline"></ion-icon>
                 </div>
                 Puedes comprar el sistema sin penalización en cualquier momento
@@ -72,19 +72,19 @@ export const CardInfo = () => {
             <ul className="mt-4 space-y-2 px-4">
               <li className="font-semibold">Beneficios:</li>
               <li className="flex items-center gap-3">
-                <div className="text-blueOntu mt-2 text-[25px]  ">
+                <div className="text-[#F2C00C] mt-2 text-[25px]  ">
                   <ion-icon name="arrow-forward-circle-outline"></ion-icon>
                 </div>
                 Podrás aplicar para diversos incentivos fiscales
               </li>
               <li className="flex items-center gap-3">
-                <div className="text-blueOntu text-[25px]  ">
+                <div className="text-[#F2C00C] text-[25px]  ">
                   <ion-icon name="arrow-forward-circle-outline"></ion-icon>
                 </div>
                 Ahorrar hasta el 95% en tu factura avtual de CFE
               </li>
               <li className="flex items-center gap-3">
-                <div className="text-blueOntu text-[25px]  ">
+                <div className="text-[#F2C00C] text-[25px]  ">
                   <ion-icon name="arrow-forward-circle-outline"></ion-icon>
                 </div>
                 Ontu obtener una póliza de mantenimiento con precio preferencial

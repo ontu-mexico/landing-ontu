@@ -40,13 +40,20 @@ export const PanelesSolares = () => {
       <NavBar />
 
       <PagSustentabilidad />
-      <div className=" w-full  py-10 " x-data="{intersect:false}">
-        <h2
-          className="font-monts text-center text-ontu md:text-[42px] lg:text-[46px] text-[38px] lg:mb-5 leading-none py-2  font-semibold  "
-          data-aos="fade-up"
-        >
-          Calcula tu ahorro
-        </h2>
+      <div className=" w-full py-0 " x-data="{intersect:false}">
+        <div className="flex flex-col justify-center items-center px-5 text-center">
+          <h2
+            className="font-monts text-center text-black md:text-[40px] lg:text-[42px] text-[38px] lg:mb-0 leading-none py-2  font-semibold  "
+            data-aos="fade-up"
+          >
+            Calcula tu ahorro
+          </h2>
+          <div
+            className="h-[1.5px] w-[300px] lg:w-[400px] lg:mt-2 bg-[#F2C00C]"
+            data-aos="fade-right"
+          ></div>
+        </div>
+
         {/* Info */}
         <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 gap-8 p-4">
           <div className="w-full first-line:flex flex-col p-4 my-4  ">
@@ -69,7 +76,7 @@ export const PanelesSolares = () => {
           </div>
 
           <div
-            className="w-full flex flex-col p-4 shadow-md  lg:p-10 border border-ontu bg-white"
+            className="w-full flex flex-col p-4 shadow-md  lg:p-10 border-2 border-ontu bg-white"
             data-aos="fade-right"
           >
             <div className="text-[15px] font-monts  mt-4 ">
@@ -137,7 +144,7 @@ export const PanelesSolares = () => {
                   $
                 </div>
                 <div className="text-blueOntu font-monts text-[42px] px-2 text-center">
-                  <Number n={(values * 5) / 100} />
+                  <Number n={(values * 2) / 100} />
                 </div>
               </div>
             </div>

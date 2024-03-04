@@ -9,7 +9,7 @@ export const CardBeneficios = ({ icono, num, titleA, textA }) => {
     AOS.init({ duration: 1500 });
   });
   return (
-    <article className="flex h-[185px] py-4 px-4 md:w-[343px] md:flex-grow font-monts bg-grayOntu/10">
+    <article className="flex h-[185px] py-4 px-4 md:w-[343px] md:flex-grow font-monts bg-grayOntu/20">
       {/* <div className="w-[50px] flex-none  text-grayOntu lg-white px-2 py-1 justify-items-end ">
         {icono}
       </div> */}

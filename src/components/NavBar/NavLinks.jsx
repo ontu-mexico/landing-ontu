@@ -1,36 +1,29 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import homeCare from "/src/assets/image/smartHome.jpg";
-import sustentabilidad from "/src/assets/image/panelSolarTecho.jpg";
 
 export const NavLinks = ({ progressPercentage }) => {
   const [heading, setHeading] = useState("");
+  const [subHeading, setSubHeading] = useState("");
+
   // Efecto del icono Down y Up
-  const handleNav = () => {
-    setHeading(!heading);
-  };
 
   const links = [
     {
       name: "Cuidado del Hogar",
-      menu: true,
+      submenu: true,
       sublinks: [
-        { name: "Eléctricidad", link: "", icon: "" },
-        { name: "Plomería", link: "" },
-        { name: "Smart Home", link: "" },
+        {
+          Head: "Servicios",
+          link: "/",
+          sublink: [
+            { name: "Electricidad", link: "/Electricidad" },
+            { name: "Plomeria", link: "/Plomeria" },
+            { name: "Hogar Inteligente", link: "/" },
+          ],
+        },
       ],
       img: homeCare,
-    },
-    {
-      name: "Sustentabilidad",
-      menu: true,
-      sublinks: [
-        { name: "Paneles Solares", link: "/PanelesSolares" },
-        { name: "Almacenamiento de Energía", link: "" },
-        { name: "Calentamiento de Agua", link: "" },
-        { name: "Ahorro de Agua", link: "" },
-      ],
-      img: sustentabilidad,
     },
   ];
 
@@ -38,17 +31,17 @@ export const NavLinks = ({ progressPercentage }) => {
     <>
       {links.map((link) => (
         <div>
-          {/* Desktop menu */}
-
+          {/** Nav Desktop */}
           <div className="px-3 text-left cursor-pointer group text-black hover:bg-slate-50 ">
             <h1
-              className="py-4 lg:text-[12px] xl:text-[12px] text-[14px] flex justify-between items-center lg:pr-0 pr-5 font-monts font-semibold group text-center"
-              onClick={() =>
-                heading !== link.name ? setHeading(link.name) : setHeading("")
-              }
+              className="py-3 lg:text-[12px] xl:text-[13px] text-[14px] flex justify-between items-center lg:pr-0 pr-5 font-monts font-semibold group text-center leading-relaxed  "
+              onClick={() => {
+                heading !== link.name ? setHeading(link.name) : setHeading("");
+                setSubHeading();
+              }}
             >
               {link.name}
-              {/* Mobile Arrow */}
+              {/* Mobile Arrow  */}
               <span className="inline lg:px-2 lg:ml:2 lg:hidden text-ontu ">
                 <ion-icon
                   name={`${
@@ -63,46 +56,74 @@ export const NavLinks = ({ progressPercentage }) => {
                 <ion-icon name="chevron-down-outline"></ion-icon>
               </span>
             </h1>
-            {/*Submenu Desktop*/}
-            {link.menu && (
-              <div className="absolute top-30  bg-white hidden group-hover:lg:block hover:lg:block hover:transition-all duration-500 drop-shadow-xl">
-                <div className="grid grid-cols-2 gap-8 p-2 items-center ">
-                  <div className="w-[220px]  ">
-                    <span className="h-[2px] lg:block hidden lg:px-1 lg:bg-yellowOntu2  lg:animate-fade-right animate-duration-[3000ms] animate-delay-500" />
-                    {link.sublinks.map((slink) => (
-                      <li className="group text-sm text-gray-900 my-4 mx-2 hover:text-ontu flex items-content-center items-center cursor-pointer group">
-                        {/* <span className="text-[10px] lg:block hidden lg:px-1 lg:mt-1 text-grayOntu  lg:animate-fade-right animate-duration-[3000ms] animate-delay-500">
-                          <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span> */}
-                        <Link to={slink.link}>{slink.name} </Link>
-                      </li>
+            {link.submenu && (
+              <div>
+                <div className=" absolute top-30 hidden bg-white group-hover:lg:block hover:lg:block hover:transition-all duration-500 drop-shadow-xl ">
+                  <span className="h-[2px] lg:block hidden lg:px-1 lg:bg-yellowOntu2  lg:animate-fade-right animate-duration-[3000ms] animate-delay-500" />
+                  <div className="py-3 bg-white grid grid-cols-2 gap-6 w-[400px] ">
+                    {link.sublinks.map((mysublinks) => (
+                      <div>
+                        <h1
+                          className="font-semibold flex mx-3 lg:text-[14px] xl:text-[14px]  text-ontu
+                        "
+                        >
+                          <Link to={mysublinks.link}>{mysublinks.Head} </Link>
+                        </h1>
+                        {/** Sublinks */}
+                        {mysublinks.sublink.map((slink) => (
+                          <li className="text-[12px] text-gray-900 my-3 mx-5 hover:text-ontu flex items-content-center items-center cursor-pointer">
+                            <Link to={slink.link}>{slink.name}</Link>
+                          </li>
+                        ))}
+                      </div>
                     ))}
-                  </div>
-
-                  <div className="w-[170px] justify-items-center">
-                    <img className="" src={link.img} alt="" />
+                    <div className="w-[170px] justify-items-center">
+                      <img className="" src={link.img} alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
             )}
           </div>
-
-          {/*Submenu Mobile*/}
-
-          <div
-            className={`
-          ${heading === link.name ? "lg:hidden" : "hidden"}
-          `}
-          >
-            <div>
-              {link.sublinks.map((slink) => (
-                <li className="py-3 lg:px-4 pl-6 text-[14px]">
-                  <Link className="hover:text-ontu" to={slink.link}>
-                    {slink.name}
-                  </Link>
-                </li>
-              ))}
-            </div>
+          {/** Mobile menus */}
+          <div className={`${heading === link.name ? "lg:hidden" : "hidden"}`}>
+            {link.sublinks.map((slinks) => (
+              <div>
+                <div className="cursor-pointer ">
+                  {/** Sublinks */}
+                  <h1
+                    onClick={() =>
+                      subHeading !== slinks.Head
+                        ? setSubHeading(slinks.Head)
+                        : setSubHeading("")
+                    }
+                    className="py-4 pl-7 font-semibold text-[14px]  flex justify-between items-center lg:pr-0 pr-5 font-monts"
+                  >
+                    {slinks.Head}
+                    <span className="inline lg:px-2 lg:ml:2 lg:hidden text-yellowOntu ">
+                      <ion-icon
+                        name={`${
+                          subHeading === slinks.Head
+                            ? "chevron-up-outline"
+                            : "chevron-down-outline"
+                        }`}
+                      ></ion-icon>
+                    </span>
+                  </h1>
+                  <div
+                    className={`${
+                      subHeading === slinks.Head ? "lg:hidden" : "hidden"
+                    }`}
+                  >
+                    {slinks.sublink.map((slink) => (
+                      <li className="py-2 pl-14 hover:text-ontu text-[13px]">
+                        <Link to={slink.link}>{slink.name}</Link>
+                      </li>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       ))}

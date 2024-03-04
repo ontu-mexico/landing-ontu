@@ -10,6 +10,8 @@ import { InicioSesion } from "./components/InicioSesion/InicioSesion";
 import { Index } from "./components";
 import { PanelesSolares } from "./components/PanelesSolares/PanelesSolares";
 import { Estudio } from "./components/Estudio/Estudio";
+import { Plomeria } from "./components/HomeCare/Plomeria";
+import { Electricidad } from "./components/HomeCare/Electricidad/Electricidad";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
   {
     path: "/Estudio",
     element: <Estudio />,
+  },
+  {
+    path: "/Plomeria",
+    element: <Plomeria />,
+  },
+  {
+    path: "/Electricidad",
+    element: <Electricidad />,
   },
 ]);
 
