@@ -53,6 +53,7 @@ export const NavLinks2 = () => {
             { name: "FAQs", link: "/" },
             { name: "Estrategias de Impacto", link: "/" },
             { name: "Porque lo hacemos", link: "/" },
+            { name: "Registro de Personal", link: "/Personal" },
           ],
         },
       ],

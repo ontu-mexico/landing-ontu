@@ -16,6 +16,9 @@ export const NavBar = () => {
   const handleSubMenu = () => {
     setSubMenuOpen(!subMenuOpen);
   };
+  const handleClick = () => {
+    window.open("https://ontu-panel.comsoft-mexico.com/login", "_blank");
+  };
 
   return (
     <nav className="fixed w-full h-[75px] text-black z-40 bg-white lg:bg-opacity-80 lg:bg-clip-padding lg:backdrop-blur-sm">
@@ -51,21 +54,19 @@ export const NavBar = () => {
         </ul>
         <div className="lg:flex hidden items-center  ">
           <div className="text-ontu ">
-            <div className="h-8 w-8 ml-8">
-              <Link
-                to="/InicioSesion"
-                className="text-center hover:text-gray-600"
-              >
-                <IoPersonCircle size={35} />
-              </Link>
+            <div
+              onClick={handleClick}
+              className="h-8 w-8 ml-8 cursor-pointer text-center hover:text-gray-600"
+            >
+              <IoPersonCircle size={35} />
             </div>
             <div className="text-[12px]">
-              <Link
-                to="/InicioSesion"
-                className="text-center font-semibold hover:text-gray-600"
+              <p
+                onClick={handleClick}
+                className="text-center cursor-pointer font-semibold hover:text-gray-600"
               >
                 Acceso a Portal
-              </Link>
+              </p>
             </div>
           </div>
         </div>
@@ -88,12 +89,12 @@ export const NavBar = () => {
           </li>
 
           <li className="hover:bg-slate-50 ">
-            <Link
-              to="/InicioSesion"
-              className="py-3 px-3 inline-block font-monts font-bold text-[14px] text-ontu  leading-relaxed   "
+            <p
+              onClick={handleClick}
+              className="py-3 px-3 inline-block font-monts font-bold text-[14px] text-ontu  leading-relaxed cursor-pointer  "
             >
               Acceso a Portal
-            </Link>
+            </p>
           </li>
         </ul>
       </div>
