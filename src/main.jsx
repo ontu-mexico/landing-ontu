@@ -13,7 +13,7 @@ import { Estudio } from "./components/Estudio/Estudio";
 import { Plomeria } from "./components/HomeCare/Plomeria";
 import { Electricidad } from "./components/HomeCare/Electricidad/Electricidad";
 import { Personal } from "./components/Formularios/personal";
-
+import { SmartHome } from "./components/HomeCare/SmartHome/SmartHome";
 
 const router = createBrowserRouter([
   {
@@ -53,7 +53,10 @@ const router = createBrowserRouter([
     path: "/Personal",
     element: <Personal />,
   },
-
+  {
+    path: "/SmartCare",
+    element: <SmartHome />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

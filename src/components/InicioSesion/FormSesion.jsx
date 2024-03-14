@@ -6,7 +6,7 @@ export const FormSesion = () => {
       <p className=" lg:text-[22px] text-ontu mt-5 px-4 text-[18px] text-center font-medium ">
         ¡Bienvenido de nuevo!
       </p>
-      
+
       <p className=" lg:text-[14px] text-gray-500 mt-1 px-4 mb-2 text-[14px] text-center ">
         Por favor ingresa tus datos.
       </p>

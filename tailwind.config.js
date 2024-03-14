@@ -24,6 +24,9 @@ export default {
         parallaxElec:
           'url("../src/assets/electricidad/bannerElectricista3.jpg")',
         parallaxElec2: 'url("../src/assets/electricidad/lamparas.jpg")',
+        parallaxSH: 'url("../src/assets/SmartHome/controlLuces.jpg")',
+        parallaxSH2: 'url("../src/assets/SmartHome/SmartHome.jpg")',
+        parallaxSH3: 'url("../src/assets/SmartHome/home2.jpg")',
       },
     },
   },

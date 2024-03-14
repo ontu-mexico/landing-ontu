@@ -154,7 +154,6 @@ export const FormPersonal = () => {
     >
       {({ isSubmitting }) => (
         <Form onSubmit={handleSubmit}>
-        
           <div className="mt-4 ">
             <div className="flex w-full justify-between ">
               <div className="w-1/2">

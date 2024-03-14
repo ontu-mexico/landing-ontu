@@ -6,7 +6,6 @@ import { CardPlomeria } from "./CardPlomeria";
 import { Analytics } from "./Analytics";
 import { CallPlomeria } from "./CallPlomeria";
 import { SectionCalculo } from "../sustentabilidad/SectionCalculo";
-import { Testimonial } from "./Testimonial";
 export const Plomeria = () => {
   return (
     <main>
