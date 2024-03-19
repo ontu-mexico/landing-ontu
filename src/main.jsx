@@ -14,11 +14,12 @@ import { Plomeria } from "./components/HomeCare/Plomeria";
 import { Electricidad } from "./components/HomeCare/Electricidad/Electricidad";
 import { Personal } from "./components/Formularios/personal";
 import { SmartHome } from "./components/HomeCare/SmartHome/SmartHome";
+import { UnderConstruction } from "./components/UnderConstruction";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <PanelesSolares />,
+    element: <UnderConstruction />,
     errorElement: <Error />,
   },
   {
