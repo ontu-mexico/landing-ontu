@@ -1,156 +1,80 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { FooterCR } from "../FooterCR";
 import { NavBar } from "../NavBar/NavBar";
 import { PagSustentabilidad } from "../sustentabilidad/PagSustentabilidad";
 import { CardInfo } from "../sustentabilidad/CardInfo";
-import { CardBeneficosConteniner } from "../sustentabilidad/CardBeneficosConteniner";
-import { FaCheck } from "react-icons/fa6";
-
+import { useNavigate } from "react-router-dom";
+import { Residencial } from "./Residencial";
+import { SectionPanel } from "../sustentabilidad/SectionPanel";
+import { SectionBeneficios } from "../sustentabilidad/SectionBeneficios";
+import { FaArrowRight } from "react-icons/fa6";
 //AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Residencial } from "./Residencial";
-import { Comercial } from "./Comercial";
-
 export const PanelesSolares = () => {
-  const [view, setView] = useState("residencial");
-  // const [view, setView] = useState("residencial");
   //Animation on scroll
   useEffect(() => {
     AOS.init({ duration: 1500 });
   });
+  const navigate = useNavigate();
   return (
     <main>
       <NavBar />
 
       <PagSustentabilidad />
-      <div className="w-full py-0">
-        <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 gap-8">
-          <div className="w-full flex flex-col p-4 my-4  lg:p-10  ">
-            <div className="grid">
-              <h2
-                className="font-monts text-center text-black md:text-[40px] lg:text-[42px] text-[38px] lg:mb-0 leading-none py-2  font-semibold  "
-                data-aos="fade-up"
-              >
-                Calcula tu ahorro
-              </h2>
-              <div
-                className="h-[1.5px] w-full lg:mt-2 bg-[#F2C00C]"
-                data-aos="fade-right"
-              ></div>
-              <ul className="mt-8 space-y-2 px-4">
-                <li
-                  className="text-[20px] items-center gap-3 mb-5 font-monts"
-                  data-aos="fade-up"
-                >
-                  Con nuestra calculadora estima el ahorro que tendrías
-                  utilizando Paneles Solares Ontu.
-                </li>
-                <li
-                  className="flex first-letter:items-center text-[20px] gap-3 font-monts px-4 text-blueOntu font-medium"
-                  data-aos="fade-up"
-                >
-                  Residencial:
-                </li>
-                <li
-                  className="flex first-letter:items-center text-[18px] gap-3 font-monts px-4"
-                  data-aos="fade-up"
-                >
-                  <span className="text-[#F2C00C] mt-2" data-aos="fade-right">
-                    <FaCheck size={15} />
-                  </span>
-                  Obten un ahorro hasta del 98 % en su recibo de CFE.
-                </li>
-                <li
-                  className="flex first-letter:items-center text-[18px] gap-3 font-monts px-4"
-                  data-aos="fade-up"
-                >
-                  <span className="text-[#F2C00C] mt-2" data-aos="fade-right">
-                    <FaCheck size={15} />
-                  </span>
-                  Fuente de energía ilimitada.
-                </li>
-                <li
-                  className="flex first-letter:items-center text-[18px] gap-3 font-monts px-4"
-                  data-aos="fade-up"
-                >
-                  <span className="text-[#F2C00C] mt-2" data-aos="fade-right">
-                    <FaCheck size={15} />
-                  </span>
-                  Si tu consumo es menor a los $2,500 pesos pagarías solo $59
-                  pesos en tu recibo de CFE.
-                </li>
-                <li
-                  className="flex first-letter:items-center text-[20px] gap-3 font-monts px-4 text-blueOntu font-medium"
-                  data-aos="fade-up"
-                >
-                  Comercial:
-                </li>
-                <li
-                  className="flex first-letter:items-center text-[18px] gap-3 font-monts px-4"
-                  data-aos="fade-up"
-                >
-                  <span className="text-[#F2C00C] mt-2" data-aos="fade-right">
-                    <FaCheck size={15} />
-                  </span>
-                  Obten un ahorro hasta del ¿? % en su recibo de CFE.
-                </li>
-                <li
-                  className="flex first-letter:items-center text-[18px] gap-3 font-monts px-4"
-                  data-aos="fade-up"
-                >
-                  <span className="text-[#F2C00C] mt-2" data-aos="fade-right">
-                    <FaCheck size={15} />
-                  </span>
-                  Contribuye al desarrollo sostenible.
-                </li>
-                <li
-                  className="flex first-letter:items-center text-[18px] gap-3 font-monts px-4"
-                  data-aos="fade-up"
-                >
-                  <span className="text-[#F2C00C] mt-2" data-aos="fade-right">
-                    <FaCheck size={15} />
-                  </span>
-                  Si tu consumo es menor a los ¿? pesos pagarías solo ¿? pesos
-                  en tu recibo de CFE.
-                </li>
-              </ul>
-            </div>
+      <SectionPanel />
+
+      <div className="w-full mb-10 px-5 mt-14 ">
+        <div className="max-w-[1240px] mx-auto md:flex md:flex-wrap md:gap-5 bg-grayOntu/40 rounded-3xl">
+          <div className="p-10 my-4 md:p-8 lg:p-12 lg:px-16  md:w-[343px] md:flex-grow lg:w-[443px] lg:flex-grow ">
+            <h3 className="uppercase text-[12px] md:text-[13px] lg:text-[15px] mt-5 font-medium tracking-widest">
+              Simulador de ahorro
+            </h3>
+            <h2
+              className="font-monts text-left mt-2  lg:text-left text-black text-[28px] md:text-[32px]  lg:text-[36px] md:text-left leading-none font-semibold tracking-wide "
+              data-aos="fade-up"
+            >
+              Esto es lo que podrías estar ahorrando
+            </h2>
+
+            <p
+              className=" text-[14px] md:text-[16px]  lg:text-[18px]   mt-5 text-left leading-tight tracking-normal items-center  font-monts"
+              data-aos="fade-up"
+            >
+              Simula el ahorro que podrías obtener en tu recibo de{" "}
+              <m className="font-semibold text-ontu">CFE</m> si utilizaras
+              Paneles Solares.
+            </p>
           </div>
           {/* SLIDER */}
-          <div className="w-full flex flex-col p-4 my-4">
-            <div className="flex py-4 bg-grayOntu/50 text-center mt-5 rounded-full mb-5 m-auto ">
-              <label htmlFor="" className="text-center px-10">
-                <span
-                  onClick={() => setView("residencial")}
-                  className={`w-36 text-center rounded-full transition duration-200 ease-in-out cursor-pointer text-2xl px-5 m-3  p-1 ${
-                    view === "residencial"
-                      ? "bg-blueOntu text-white "
-                      : "bg-gray-100 font-light"
-                  }`}
-                >
-                  Residencial
-                </span>
-                <span
-                  onClick={() => setView("comercial")}
-                  className={`w-6 h-6 rounded-full transition duration-200 ease-in-out cursor-pointer text-2xl px-5 m-3 p-1 ${
-                    view === "comercial"
-                      ? "bg-blueOntu text-white "
-                      : "bg-gray-100 font-light"
-                  }`}
-                >
-                  Comercial
-                </span>
-              </label>{" "}
-            </div>
-            {view === "residencial" ? <Residencial /> : <Comercial />}
+          <div className=" px-6 py-6 md:py-12 lg:px-10 flex md:w-[343px] md:flex-grow lg:w-[443px] lg:flex-grow justify-center  ">
+            <Residencial />
           </div>
         </div>
       </div>
-
+      {/* Boton */}
+      <div className="flex w-full px-5 mb-5 justify-center items-center ">
+        <div className="md:flex max-w-[1240px] mx-auto  md:justify-around w-full p-5 px-5 font-monts bg-grayOntu/40 rounded-3xl  ">
+          <h2 className=" text-[28px] md:text-[32px]  lg:text-[36px] text-center md:text-left font-semibold tracking-wide">
+            ¿Quieres saber como lograrlo?
+          </h2>
+          <div className="flex justify-between items-center mt-5 md:mt-0  ">
+            <button
+              onClick={() => navigate("/Estudio")}
+              className="bg-blueOntu w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-white hover:border-2 hover:bg-gray-600 hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
+            >
+              Conocer más{" "}
+              <m className="px-2">
+                <FaArrowRight />
+              </m>
+            </button>
+          </div>
+        </div>
+      </div>
       {/* CardInfo */}
       <CardInfo />
-      <CardBeneficosConteniner />
+
+      <SectionBeneficios />
       <FooterCR />
     </main>
   );

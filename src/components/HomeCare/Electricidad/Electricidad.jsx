@@ -17,7 +17,6 @@ export const Electricidad = () => {
       <AnalyticsElec />
       <CardElec />
       <CallElec />
-      <SectionCalculo />
       <FooterCR />
     </main>
   );

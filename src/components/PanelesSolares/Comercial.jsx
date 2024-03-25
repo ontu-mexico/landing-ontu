@@ -37,20 +37,16 @@ export const Comercial = () => {
         data-aos="fade-right"
         x-data="{intersect:false}"
       >
-        <h1 className="text-center text-ontu  text-[22px] font-semibold ">
-          Consumo Comercial
-        </h1>
-
-        <div className="text-[15px] font-monts  mt-4 ">
-          <h1 className="text-center text-blueOntu font-medium ">
+        <div className=" font-monts  mt-4 ">
+          <h2 className="  text-[18px] md:text-[20px]  lg:text-[20px] text-center text-blueOntu font-medium ">
             Tu recibo CFE actual
-          </h1>
-          <h2 className="text-[26px] text-center text-black">
-            ¿Cuánto pagas actualmente?
           </h2>
+          <p className=" text-[18px] md:text-[20px] lg:text-[20px] text-center text-black">
+            ¿Cuánto pagas actualmente?
+          </p>
           <div
             className={
-              "text-[26px] font-monts mb-5 py-2 text-black text-center flex col-span-2 justify-center "
+              " text-[28px] md:text-[32px]  lg:text-[36px] font-monts mb-5 py-2 text-black text-center flex col-span-2 justify-center "
             }
           >
             <div>$</div> <div className=" px-2 "> {values}</div>

@@ -13,35 +13,17 @@ export const PagSustentabilidad = () => {
   });
   return (
     //bg-[url('/src/assets/image/SFV_2.png')]
-    <div className="w-full py-32 px-2 bg-grayOntu/10">
-      <div className="max-w-[1240px] lg:max-w-[1150px] mx-auto ">
-        <div
-          className=" flex flex-col justify-center items-center px-5 text-center "
-          data-aos="fade-up"
-        >
-          <h2 className="lg:text-[24px] font-monts font-semibold text-ontu text-[20px] leading-none py-0 mb-3 lg:mt-15 md:text-center mt-10">
-            
-          </h2>
-          <h1 className="font-monts text-center md:text-[42px] lg:text-[46px] text-[38px] leading-none mb-5 lg:mb-0 font-semibold  ">
-            Paneles solares
+    <div className="w-full pt-32 px-2 pb-10 ">
+      <div className="max-w-[1240px]  mx-auto ">
+        <div className=" flex flex-col justify-center items-center px-5 lg:px-32 text-center ">
+          <h1 className="font-monts text-center text-[38px] md:text-[42px]  lg:text-[46px]  leading-none mb-5 lg:mb-0 font-semibold text-ontu ">
+            Energía limpia <m className="text-black"> para tu hogar</m>
           </h1>
-          <div
-            className="h-[1.5px]  w-[300px] lg:w-[400px] lg:mt-2 bg-[#F2C00C]"
-            data-aos="fade-right"
-          ></div>
 
-          <p className="text-[18px]  mt-5 font-monts text-center lg:mt-5 lg:w-[700px] lg:mb-2">
-            Conoce los beneficios de el uso de paneles solares en tu hogar o
-            negocio, además entérate de cuánto podrías estar ahorrando con el
-            uso de energía limpia.
+          <p className="text-[14px] md:text-[16px]  lg:text-[18px] leading-tight mt-5 font-monts text-center lg:mt-5 lg:px-10  ">
+            Conoce los beneficios de el uso de paneles solares en tu hogar,
+            conoce cuánto podrías estar ahorrando y súmate al cambio.
           </p>
-        </div>
-        <div className="" data-aos="fade-up">
-          <picture>
-            <source media="(max-width: 640px )" srcset={mobile} sizes="" />
-            <source media="(min-width: 641px )" srcset={desktop} sizes="" />
-            <img src={mobile} alt="Panel solar" />
-          </picture>
         </div>
       </div>
     </div>

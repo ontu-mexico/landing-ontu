@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-
-import logo from "/src/assets/logo/white_logo_transparent_background.png";
-
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 

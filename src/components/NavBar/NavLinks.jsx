@@ -15,7 +15,7 @@ export const NavLinks = ({ progressPercentage }) => {
       sublinks: [
         {
           Head: "Servicios",
-          link: "/",
+          link: "/HomeCare",
           sublink: [
             { name: "Electricidad", link: "/Electricidad" },
             { name: "Plomeria", link: "/Plomeria" },

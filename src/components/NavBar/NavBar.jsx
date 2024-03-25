@@ -21,8 +21,8 @@ export const NavBar = () => {
   };
 
   return (
-    <nav className="fixed w-full h-[75px] text-black z-40 bg-white lg:bg-opacity-80 lg:bg-clip-padding lg:backdrop-blur-sm">
-      <div className="flex items-center font-monts justify-around py-2  ">
+    <nav className="fixed w-full h-[75px] text-black z-40 bg-white lg:bg-opacity-80 lg:bg-clip-padding lg:backdrop-blur-sm animate-fade-down animate-duration-[1500ms]  animate-ease-in-out">
+      <div className="flex items-center font-monts justify-around py-2 shadow-md  ">
         <div className="z-50 p-2 lg:w-auto w-full flex justify-between ">
           <Link to="/">
             <img
@@ -56,9 +56,9 @@ export const NavBar = () => {
           <div className="text-ontu ">
             <div
               onClick={handleClick}
-              className="h-8 w-8 ml-8 cursor-pointer text-center hover:text-gray-600"
+              className="h-8 w-8 ml-8 cursor-pointer flex justify-center items-center hover:text-gray-600 active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full"
             >
-              <IoPersonCircle size={35} />
+              <IoPersonCircle size={40} />
             </div>
             <div className="text-[12px]">
               <p

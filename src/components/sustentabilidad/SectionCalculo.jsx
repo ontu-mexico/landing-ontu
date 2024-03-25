@@ -1,33 +1,67 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { Testimonial } from "../HomeCare/Testimonial";
 import { SiTrustpilot } from "react-icons/si";
+import { CardBlog } from "../Slider/CardBlog";
+import { blogs } from "../Slider/data";
 
 export const SectionCalculo = () => {
+  // Carrusel
+  const carouselBlogs = [...blogs, ...blogs];
   const navigate = useNavigate();
+
+  // Estado para controlar la animación
+  const [animationPaused, setAnimationPaused] = useState(false);
+
+  // Función para detener la animación
+  const handleAnimationPause = () => {
+    setAnimationPaused(!animationPaused);
+  };
+  const handleMouseEnter = () => {
+    setAnimationPaused(true); // Detiene la animación cuando el cursor entra al carrusel
+  };
+
+  const handleMouseLeave = () => {
+    setAnimationPaused(false); // Reanuda la animación cuando el cursor sale del carrusel
+  };
+
   return (
-    <section className="py-10 px-10 w-full h-full ">
-      <div className="flex flex-col max-w-[1240px] mx-auto justify-center items-center py-5  ">
-        <h2 className="text-[30px] font-monts font-semibold lg:text-[38px]  text-black text-center mb-20 ">
+    <section className="py-10 px-16 w-full h-full bg-grayOntu/40 ">
+      <div className="flex flex-col max-w-[1240px] mx-auto justify-start   ">
+        <h2 className=" font-monts leading-none text-[28px] md:text-[32px]  lg:text-[36px]  text-left font-semibold tracking-wide mb-5 ">
           Conoce nuestras reseñas
         </h2>
-        <Testimonial />
-        <div className="flex justify-between mt-10 items-center ">
+        <p className="  text-[12px] md:text-[14px]  lg:text-[16px]  leading-tight tracking-normal text-left mb-10">
+          Historias que cuentan la realidad de contratar Ontu
+        </p>
+        <div
+          className="container "
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          <div className="overflow-hidden w-full">
+            <div className="flex whitespace-nowrap">
+              {carouselBlogs.map((blog, index) => (
+                <CardBlog
+                  blog={blog}
+                  key={index}
+                  animationPaused={animationPaused}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-between mt-5 items-center ">
           <div className="lg:flex gap-10 items-center ">
-            <p className="text-[18px] lg:text-[20px] flex mb-5 my-2 items-center">
+            <p className="text-[12px] md:text-[14px]  lg:text-[16px]  leading-tight tracking-normal text-left flex  items-center">
               <span>
-                Visitanos en <spam className="font-bold">Trustpilot</spam>
+                Visítanos en <span className="font-bold">Trustpilot</span>
               </span>
-              <spam className="font-bold text-[#007f4e] ml-2">
+              <span className="font-bold text-[#007f4e] ml-2">
                 <SiTrustpilot size={25} />
-              </spam>
+              </span>
             </p>
-            <Link
-              to="https://es.trustpilot.com/review/ontu.mx?utm_medium=trustbox&utm_source=MicroReviewCount"
-              className="bg-ontu/90 w-[230px] h-[48px] font-monts font-bold uppercase mx-auto  text-white hover:bg-white hover:text-ontu hover:border-2 hover:border-ontu hover:font-bold active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all text-center p-3 ml-7 "
-            >
-              Conocer más
-            </Link>
           </div>
         </div>
       </div>
