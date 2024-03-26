@@ -12,22 +12,19 @@ export const SectionPanel = () => {
     AOS.init({ duration: 1500 });
   });
   return (
-    <div className="w-full px-5 lg:pt-10 bg-white mb-10">
+    <div className="w-full px-5 lg:pt-5 bg-white mb-16">
       <div
-        className="max-w-[1240px]  mx-auto flex flex-col lg:flex-row items-center  bg-blueOntu/30 rounded-3xl  "
+        className="max-w-[1240px]  mx-auto flex flex-col lg:flex-row items-center  bg-white rounded-3xl  "
         data-aos="fade-up"
       >
         <div className="lg:w-1/2">
           <picture>
             <source media="(max-width: 640px )" srcSet={mobile} />
             <source media="(min-width: 641px rounded-3xl )" srcSet={desktop} />
-            <img className="lg:rounded-l-3xl" src={mobile} alt="Panel solar" />
+            <img className="lg:rounded-3xl" src={mobile} alt="Panel solar" />
           </picture>
         </div>
         <div className=" flex flex-col  px-10  lg:w-1/2 ">
-          <h3 className="uppercase  text-[12px] md:text-[13px] lg:text-[15px] mt-10 font-medium tracking-widest ">
-            Conoce los beneficios de los Paneles Solares
-          </h3>
           <h2 className="font-monts text-left lg:text-left  text-[28px] md:text-[32px]  lg:text-[36px] tracking-wide leading-none mb-10 lg:mb-5 font-semibold  mt-2">
             Si aún no te cambias a lo solar, estas perdiendo todo esto:
           </h2>

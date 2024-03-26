@@ -1,17 +1,16 @@
 import React from "react";
 
-export const CardBlog = ({ blog,  animationPaused }) => {
+export const CardBlog = ({ blog, animationPaused }) => {
   return (
     <div
       className={`h-hull w-[280px] m-2 flex-shrink-0 cursor-pointer rounded-3xl bg-white hover:scale-[1.05] ${
         animationPaused ? "" : "animate-scroll"
       }`}
-   
     >
       <div className="h-[20px] w-[110px] bg-cover m-5 mb-1">
         <img
-          src={`/src/assets/blog/cali${blog.id}.png`}
-          alt={`Calificacion de ${blog.name}`}
+          src={blog.start}
+          alt={`Calificación de ${blog.name}`}
           className="object-cover"
         />
       </div>

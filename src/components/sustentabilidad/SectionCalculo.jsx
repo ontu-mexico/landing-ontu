@@ -26,7 +26,7 @@ export const SectionCalculo = () => {
   };
 
   return (
-    <section className="py-10 px-16 w-full h-full bg-grayOntu/40 ">
+    <section className="py-10 px-16 w-full h-full bg-grayOntu/30 ">
       <div className="flex flex-col max-w-[1240px] mx-auto justify-start   ">
         <h2 className=" font-monts leading-none text-[28px] md:text-[32px]  lg:text-[36px]  text-left font-semibold tracking-wide mb-5 ">
           Conoce nuestras reseñas
@@ -52,16 +52,28 @@ export const SectionCalculo = () => {
           </div>
         </div>
 
-        <div className="flex justify-between mt-5 items-center ">
-          <div className="lg:flex gap-10 items-center ">
-            <p className="text-[12px] md:text-[14px]  lg:text-[16px]  leading-tight tracking-normal text-left flex  items-center">
-              <span>
-                Visítanos en <span className="font-bold">Trustpilot</span>
-              </span>
-              <span className="font-bold text-[#007f4e] ml-2">
-                <SiTrustpilot size={25} />
-              </span>
-            </p>
+        <div className="flex justify-between mt-5  ">
+          <div className="lg:flex gap-10  ">
+            <div
+              class="trustpilot-widget"
+              data-locale="es-ES"
+              data-template-id="5419b6a8b0d04a076446a9ad"
+              data-businessunit-id="62d6436987dbe349f1089642"
+              data-style-height="24px"
+              data-style-width="100%"
+              data-theme="light"
+              data-min-review-count="50"
+              data-style-alignment="center"
+            >
+              <a
+                href="https://es.trustpilot.com/review/ontu.mx"
+                target="_blank"
+                rel="noopener"
+              >
+                <b>Trustpilot</b>
+              </a>
+            </div>
+            {/* End TrustBox widget  */}
           </div>
         </div>
       </div>

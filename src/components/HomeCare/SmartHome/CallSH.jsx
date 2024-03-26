@@ -5,7 +5,7 @@ export const CallSH = () => {
   //Navegacion hacia el Stepper Estudio
   const navigate = useNavigate();
   return (
-    <div className="w-full mt-10 mb-10">
+    <div className="w-full mt-10 mb-16">
       <div className="px-14 ">
         <div className="flex items-center justify-start rounded-3xl w-full h-[480px] bg-fixed bg-parallaxSH2 bg-top bg-cover ">
           <div className="flex flex-col bg-opacity-40 bg-clip-padding backdrop-blur-sm bg-blueOntu rounded-3xl w-full h-full">

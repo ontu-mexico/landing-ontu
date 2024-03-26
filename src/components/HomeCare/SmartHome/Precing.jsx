@@ -18,7 +18,7 @@ export const Precing = () => {
     <section className="flex items-center justify-center bg-white">
       <div className="container px-5 py-5 mx-auto">
         <div className="text-center mb-12 font-monts flex flex-col justify-center items-center">
-          <h2 className="lg:text-[22px] mb-3 font-monts font-medium text-[18px] text-blueOntu leading-none py-0 lg:mt-15 text-center mt-5"></h2>
+          <h2 className="lg:text-[22px] mb-3 font-monts font-medium text-[18px] text-blueOntu leading-none py-0 lg:mt-15 text-center "></h2>
           <h1 className="font-monts text-center md:text-[42px] lg:text-[46px] text-[38px] leading-none mb-5  font-semibold  ">
             Paquetes Populares
           </h1>

@@ -1,4 +1,7 @@
-import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { FaFileSignature } from "react-icons/fa";
+import { FaRegCreditCard } from "react-icons/fa6";
+import { FaCreativeCommonsZero } from "react-icons/fa";
+import { FaMoneyBills } from "react-icons/fa6";
 //AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -29,49 +32,62 @@ export const CardInfo = () => {
             Soluciones Financieras
           </h2>
           {/* Card 1 */}
-          <div
-            className="w-full flex flex-col  my-4 text-center bg-transparent  mt-12 "
-            data-aos="fade-up"
-          >
-            <h2 className="text-[20px] md:text-[22px] lg:text-[26px] font-monts text-white bg-slate-600 rounded-t-2xl font-bold text-center py-3">
+          <div className="w-full flex flex-col  my-4 text-center bg-transparent  mt-12 hover:scale-[1.05] cursor-pointer ">
+            <h2 className="text-[20px] md:text-[22px] lg:text-[24px] font-monts text-white bg-slate-600 rounded-t-3xl font-bold text-center pt-5">
               Arrendamiento
             </h2>
-            <div className="items-center ">imagen</div>
+            <div className="flex justify-center items-center  h-full w-full bg-slate-600 p-5 rounded-b-3xl ">
+              <div className=" mb-2">
+                <p className="text-white">
+                  <FaFileSignature size={80} />
+                </p>
+              </div>
+            </div>
           </div>
           {/* Card 2 */}
-          <div
-            className="w-full flex flex-col  my-4 text-center bg-transparent  mt-12 "
-            data-aos="fade-up"
-          >
-            <h2 className="text-[20px] md:text-[22px] lg:text-[26px] font-monts text-white bg-slate-600 rounded-t-2xl font-bold text-center py-3">
+          <div className="w-full flex flex-col  my-4 text-center bg-transparent  mt-12 hover:scale-[1.05] cursor-pointer ">
+            <h2 className="text-[20px] md:text-[22px] lg:text-[24px] font-monts text-white bg-slate-600 rounded-t-3xl font-bold text-center pt-5">
               Crédito
             </h2>
-            <div className="items-center bg-white ">imagen</div>
+            <div className="flex justify-center items-center  h-full w-full bg-slate-600 p-5 rounded-b-3xl ">
+              <div className=" mb-2">
+                <p className="text-white">
+                  <FaRegCreditCard size={80} />
+                </p>
+              </div>
+            </div>
           </div>
           {/* Card 3 */}
-          <div
-            className="w-full flex flex-col  my-4 text-center bg-transparent mt-12 "
-            data-aos="fade-up"
-          >
-            <h2 className="text-[20px] md:text-[22px] lg:text-[26px] font-monts text-white bg-slate-600 rounded-t-3xl font-bold text-center py-3">
+          <div className="w-full flex flex-col  my-4 text-center bg-transparent  mt-12 hover:scale-[1.05] cursor-pointer ">
+            <h2 className="text-[20px] md:text-[22px] lg:text-[24px] font-monts text-white bg-slate-600 rounded-t-3xl font-bold text-center pt-5">
               Ontu 0
             </h2>
-            <div className="items-center ">imagen</div>
+            <div className="flex justify-center items-center  h-full w-full bg-slate-600 p-5 rounded-b-3xl ">
+              <div className=" mb-2">
+                <p className="text-white">
+                  <FaCreativeCommonsZero size={80} />
+                </p>
+              </div>
+            </div>
           </div>
           {/* Card 4 */}
-          <div
-            className="w-full flex flex-col  my-4 text-center  mt-12 bg-transparent "
-            data-aos="fade-up"
-          >
-            <h2 className="text-[20px] md:text-[22px] lg:text-[26px] font-monts text-white bg-slate-600 rounded-t-2xl font-bold text-center py-3">
-              Al Contado
+          <div className="w-full flex flex-col  my-4 text-center bg-transparent  mt-12 hover:scale-[1.05] cursor-pointer ">
+            <h2 className="text-[20px] md:text-[22px] lg:text-[24px] font-monts text-white bg-slate-600 rounded-t-3xl font-bold text-center pt-5">
+              Al contado
             </h2>
-            <div className="items-center ">imagen</div>
+            <div className="flex justify-center items-center  h-full w-full bg-slate-600 p-5 rounded-b-3xl ">
+              <div className=" mb-2">
+                <p className="text-white">
+                  <FaMoneyBills size={80} />
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center mt-10 mb-16">
           <p className="mb-8 font-monts  text-[14px] md:text-[16px]  lg:text-[18px]  leading-tight tracking-normal">
-            Conoce más sobre nuestras soluciones financieras que tenemos para ti.
+            Conoce más sobre nuestras soluciones financieras que tenemos para
+            ti.
           </p>
           <button
             onClick={() => navigate("/Estudio")}

@@ -4,9 +4,9 @@ import { FaArrowRight } from "react-icons/fa6";
 
 export const BannerElec = () => {
   return (
-    <div className="flex items-center justify-start h-[480px] bg-fixed bg-parallaxElec2 bg-cover">
-      <div className="max-w-[750px] lg:max-w-[850px] ">
-        <div className="flex flex-col bg-opacity-85 bg-clip-padding backdrop-blur-sm  px-10  bg-white rounded-3xl  m-8 mt-16 md:m-5 lg:mx-16">
+    <div className="flex items-end justify-start h-[485px] bg-fixed bg-parallaxElec2 bg-cover">
+      <div className="max-w-[750px] lg:max-w-[880px]">
+        <div className="flex flex-col bg-opacity-85 bg-clip-padding backdrop-blur-sm  px-10  bg-white rounded-3xl m-10 md:m-14 lg:m-20">
           <h3 className="uppercase text-[12px] md:text-[13px] lg:text-[15px] mt-10 font-medium tracking-widest ">
             Electricidad
           </h3>

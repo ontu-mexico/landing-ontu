@@ -61,7 +61,7 @@ export const FormContacto = () => {
       <div className="w-full m-2 bg-gray-20 rounded-md font-monts text-[14px]">
         {showMessage && (
           <p className="text-blue-700">
-            ¡Tu solicitus ha sido enviado exitosamente! Espera nuestro mensaje
+            ¡Tu solicitud ha sido enviado exitosamente! Espera nuestro mensaje
             para seguir con el proceso.
           </p>
         )}
@@ -107,7 +107,7 @@ export const FormContacto = () => {
             />
             <span className="mr-1">Sí, he leído y acepto la de</span>
             <span className="hover:text-blueOntu font-semibold">
-              <Link to="#">Política de Privacidad</Link>
+              <Link to="#">Aviso de Privacidad</Link>
             </span>
             .
           </div>

@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import Slider from "react-slider";
 import { FooterCR } from "../FooterCR";
 import { NavBar } from "../NavBar/NavBar";
 import { PagSustentabilidad } from "../sustentabilidad/PagSustentabilidad";
@@ -8,53 +9,166 @@ import { Residencial } from "./Residencial";
 import { SectionPanel } from "../sustentabilidad/SectionPanel";
 import { SectionBeneficios } from "../sustentabilidad/SectionBeneficios";
 import { FaArrowRight } from "react-icons/fa6";
+import "./slider.css";
 //AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
-export const PanelesSolares = () => {
-  //Animation on scroll
-  useEffect(() => {
-    AOS.init({ duration: 1500 });
+//Slider
+const MIN = 600;
+const MAX = 35000;
+
+//Animation number
+import { useSpring, animated } from "react-spring";
+function Number({ n }) {
+  const { number } = useSpring({
+    from: { number: 0 },
+    number: n,
+    delay: 400,
+    config: { mass: 1, tension: 20, friction: 10 },
   });
+  return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
+}
+export const PanelesSolares = () => {
+  // Control de valores del Slider
+  const [values, setValues] = useState(MIN);
+  const [actual, setActual] = useState(values);
+  const [resultado, setResultado] = useState(0);
+  //Resultado
+  useEffect(() => {
+    //Obtien el valor actual
+    setActual(values);
+    // Calcular el resultado aquí
+    setResultado(values <= 2500 ? 59 : (values * 5) / 100);
+  }, [values]);
+
+  console.log("values: ", values);
   const navigate = useNavigate();
   return (
     <main>
       <NavBar />
-
       <PagSustentabilidad />
       <SectionPanel />
 
-      <div className="w-full mb-10 px-5 mt-14 ">
-        <div className="max-w-[1240px] mx-auto md:flex md:flex-wrap md:gap-5 bg-grayOntu/40 rounded-3xl">
-          <div className="p-10 my-4 md:p-8 lg:p-12 lg:px-16  md:w-[343px] md:flex-grow lg:w-[443px] lg:flex-grow ">
+      <div className="w-full mb-10 px-5 mt-16 ">
+        <div className="max-w-[1240px] mx-auto md:flex md:flex-wrap md:gap-5 bg-grayOntu/30 rounded-3xl">
+          <div className="p-10 my-4 md:p-8 lg:p-12 lg:px-16  md:w-[343px] md:flex-grow lg:w-[443px] lg:flex-grow">
             <h3 className="uppercase text-[12px] md:text-[13px] lg:text-[15px] mt-5 font-medium tracking-widest">
               Simulador de ahorro
             </h3>
-            <h2
-              className="font-monts text-left mt-2  lg:text-left text-black text-[28px] md:text-[32px]  lg:text-[36px] md:text-left leading-none font-semibold tracking-wide "
-              data-aos="fade-up"
-            >
+            <h2 className="font-monts text-left mt-2  lg:text-left text-black text-[28px] md:text-[32px]  lg:text-[36px] md:text-left leading-none font-semibold tracking-wide ">
               Esto es lo que podrías estar ahorrando
             </h2>
 
-            <p
-              className=" text-[14px] md:text-[16px]  lg:text-[18px]   mt-5 text-left leading-tight tracking-normal items-center  font-monts"
-              data-aos="fade-up"
-            >
-              Simula el ahorro que podrías obtener en tu recibo de{" "}
+            <p className=" text-[14px] md:text-[16px]  lg:text-[18px]   mt-5 text-left leading-tight tracking-normal items-center  font-monts">
+              Simula el ahorro que podrías obtener en tu recibo bimestral de{" "}
               <m className="font-semibold text-ontu">CFE</m> si utilizaras
               Paneles Solares.
             </p>
+
+            <div className="flex  items-end gap-2 mt-5">
+              <div>
+                <p className="text-[14px] md:text-[16px] lg:text-[18px] font-monts text-black ">
+                  Tu ahorro a<m className="font-semibold "> 25 años</m> sería:
+                </p>
+              </div>
+
+              <div
+                className={
+                  "text-[29px] md:text-[27px] lg:text-[29px] font-monts  flex col-span-2  text-ontu font-bold   "
+                }
+              >
+                <div className="ml-0 lg:ml-2 ">$</div>
+                <div id="resultado">
+                  <Number n={(actual - resultado) * 150} />
+                </div>
+              </div>
+            </div>
           </div>
           {/* SLIDER */}
           <div className=" px-6 py-6 md:py-12 lg:px-10 flex md:w-[343px] md:flex-grow lg:w-[443px] lg:flex-grow justify-center  ">
-            <Residencial />
+            <div
+              className="w-full flex justify-center flex-col p-10 md:p-7  rounded-3xl bg-white"
+              data-aos="jump-in"
+              x-data="{intersect:false}"
+            >
+              <div className="font-monts  ">
+                <h3 className="mt-3 text-[12px] md:text-[13px] lg:text-[15px] tracking-widest text-left text-blueOntu font-medium ">
+                  Tu recibo CFE actual
+                </h3>
+                <div className="flex justify-between items-center">
+                  <p className=" text-[14px] md:text-[16px]  lg:text-[18px]   text-left text-black">
+                    ¿Cuánto pagas actualmente?
+                  </p>
+                  <div
+                    className={
+                      "  text-[14px] md:text-[16px]  lg:text-[18px]  font-monts  text-black text-center flex col-span-2 justify-center "
+                    }
+                  >
+                    <div className="">$</div> <div> {actual}</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* SliderRange */}
+              <div className="h-[20px] ">
+                <Slider
+                  className={"slider"}
+                  onChange={setValues}
+                  value={values}
+                  min={MIN}
+                  max={MAX}
+                />
+                <div className="flex font-monts justify-between text-gray-500 mt-4 mb-5 font-light">
+                  <div
+                    className={
+                      "text-[13px] font-monts font-normal tracking-wide text-center flex justify-center "
+                    }
+                  >
+                    <div>$</div>
+                    <div className="">
+                      <Number n={600} />
+                    </div>
+                  </div>
+                  <div
+                    className={
+                      "text-[13px] font-monts font-normal tracking-wide  text-center flex justify-center "
+                    }
+                  >
+                    <div className="">$</div>
+                    <div className="">
+                      <Number n={35000} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="items-center font-monts justify-center mt-20">
+                <h3 className="mt-3 text-[12px] md:text-[13px] lg:text-[15px] tracking-widest text-left text-blueOntu font-medium  ">
+                  Nuevo recibo CFE
+                </h3>
+
+                <div className="flex justify-between items-center gap-1 ">
+                  <p className="text-[14px] md:text-[16px] lg:text-[18px] font-monts text-black  ">
+                    Lo que pagarías si utilizaras Paneles Solares:
+                  </p>
+                  <div
+                    className={
+                      "text-[16px] md:text-[18px] lg:text-[20px]  font-monts  flex col-span-2 justify-between text-blueOntu font-medium mr-2 lg:ml-5  my-2  "
+                    }
+                  >
+                    <div className="ml-5">$</div>
+                    <div id="resultado">
+                      <Number n={resultado} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       {/* Boton */}
       <div className="flex w-full px-5 mb-5 justify-center items-center ">
-        <div className="md:flex max-w-[1240px] mx-auto  md:justify-around w-full p-5 px-5 font-monts bg-grayOntu/40 rounded-3xl  ">
+        <div className="md:flex max-w-[1240px] mx-auto  md:justify-around w-full p-5 px-5 font-monts bg-grayOntu/30 rounded-3xl  ">
           <h2 className=" text-[28px] md:text-[32px]  lg:text-[36px] text-center md:text-left font-semibold tracking-wide">
             ¿Quieres saber como lograrlo?
           </h2>
