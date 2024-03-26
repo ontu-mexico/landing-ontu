@@ -33,13 +33,33 @@ export const PanelesSolares = () => {
   const [values, setValues] = useState(MIN);
   const [actual, setActual] = useState(values);
   const [resultado, setResultado] = useState(0);
+  const [ahorro, setAhorro] = useState(0);
   //Resultado
   useEffect(() => {
     //Obtien el valor actual
     setActual(values);
     // Calcular el resultado aquí
-    setResultado(values <= 2500 ? 59 : (values * 5) / 100);
+    const newResultado = values <= 2500 ? 59 : (values * 5) / 100;
+    setResultado(newResultado);
+
+    // Calcular el ahorro
+    const newAhorro = (values - newResultado) * 150;
+    setAhorro(newAhorro);
   }, [values]);
+
+  const formattedActual = actual.toLocaleString("es-MX", {
+    style: "currency",
+    currency: "MXN",
+  });
+  const formattedResultado = resultado.toLocaleString("es-MX", {
+    style: "currency",
+    currency: "MXN",
+  });
+
+  const formattedAhorro = ahorro.toLocaleString("es-MX", {
+    style: "currency",
+    currency: "MXN",
+  });
 
   console.log("values: ", values);
   const navigate = useNavigate();
@@ -77,10 +97,7 @@ export const PanelesSolares = () => {
                   "text-[29px] md:text-[27px] lg:text-[29px] font-monts  flex col-span-2  text-ontu font-bold   "
                 }
               >
-                <div className="ml-0 lg:ml-2 ">$</div>
-                <div id="resultado">
-                  <Number n={(actual - resultado) * 150} />
-                </div>
+                {formattedAhorro}
               </div>
             </div>
           </div>
@@ -104,7 +121,7 @@ export const PanelesSolares = () => {
                       "  text-[14px] md:text-[16px]  lg:text-[18px]  font-monts  text-black text-center flex col-span-2 justify-center "
                     }
                   >
-                    <div className="">$</div> <div> {actual}</div>
+                    {formattedActual}
                   </div>
                 </div>
               </div>
@@ -155,10 +172,7 @@ export const PanelesSolares = () => {
                       "text-[16px] md:text-[18px] lg:text-[20px]  font-monts  flex col-span-2 justify-between text-blueOntu font-medium mr-2 lg:ml-5  my-2  "
                     }
                   >
-                    <div className="ml-5">$</div>
-                    <div id="resultado">
-                      <Number n={resultado} />
-                    </div>
+                    {formattedResultado}
                   </div>
                 </div>
               </div>
