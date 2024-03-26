@@ -9,7 +9,7 @@ export const CardBlog = ({ blog, animationPaused }) => {
     >
       <div className="h-[20px] w-[110px] bg-cover m-5 mb-1">
         <img
-          src={blog.start}
+          src={`/src/assets/blog/cali${blog.id}.jpg`}
           alt={`Calificación de ${blog.name}`}
           className="object-cover"
         />

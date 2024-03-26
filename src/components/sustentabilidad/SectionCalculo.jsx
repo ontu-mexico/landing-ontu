@@ -1,14 +1,10 @@
 import React, { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
-import { Testimonial } from "../HomeCare/Testimonial";
-import { SiTrustpilot } from "react-icons/si";
 import { CardBlog } from "../Slider/CardBlog";
 import { blogs } from "../Slider/data";
 
 export const SectionCalculo = () => {
   // Carrusel
   const carouselBlogs = [...blogs, ...blogs];
-  const navigate = useNavigate();
 
   // Estado para controlar la animación
   const [animationPaused, setAnimationPaused] = useState(false);
@@ -55,7 +51,7 @@ export const SectionCalculo = () => {
         <div className="flex justify-between mt-5  ">
           <div className="lg:flex gap-10  ">
             <div
-              class="trustpilot-widget"
+              className="trustpilot-widget"
               data-locale="es-ES"
               data-template-id="5419b6a8b0d04a076446a9ad"
               data-businessunit-id="62d6436987dbe349f1089642"

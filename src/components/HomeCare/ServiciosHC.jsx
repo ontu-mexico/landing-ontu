@@ -26,12 +26,12 @@ export const ServiciosHC = () => {
             <picture>
               <source
                 media="(max-width: 640px )"
-                srcset={electricidad}
+                srcSet={electricidad}
                 sizes=""
               />
               <source
                 media="(min-width: 641px )"
-                srcset={electricidad2}
+                srcSet={electricidad2}
                 sizes=""
               />
               <img
@@ -98,8 +98,8 @@ export const ServiciosHC = () => {
           </div>
           <div className="lg:w-1/2 object-cover ">
             <picture>
-              <source media="(max-width: 640px )" srcset={plomero} sizes="" />
-              <source media="(min-width: 641px )" srcset={plomero2} sizes="" />
+              <source media="(max-width: 640px )" srcSet={plomero} sizes="" />
+              <source media="(min-width: 641px )" srcSet={plomero2} sizes="" />
               <img
                 src={plomero2}
                 alt="Panel solar"
@@ -116,8 +116,8 @@ export const ServiciosHC = () => {
         <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center   rounded-3xl ">
           <div className="lg:w-1/2 object-cover ">
             <picture>
-              <source media="(max-width: 640px )" srcset={smart} sizes="" />
-              <source media="(min-width: 641px )" srcset={smart2} sizes="" />
+              <source media="(max-width: 640px )" srcSet={smart} sizes="" />
+              <source media="(min-width: 641px )" srcSet={smart2} sizes="" />
               <img
                 src={smart2}
                 alt="Panel solar"
