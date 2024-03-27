@@ -9,19 +9,7 @@ export const CardBlog = ({ blog, animationPaused }) => {
     >
       <div className="h-[20px] w-[110px] bg-cover m-5 mb-1">
         <img
-          src={
-            blog.id === "1"
-              ? "https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg"
-              : blog.id === 2
-              ? "https://png.pngtree.com/png-clipart/20230823/original/pngtree-four-4-star-rank-sign-vector-illustration-eps10-picture-image_8307895.png"
-              : blog.id === 3
-              ? "https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg"
-              : blog.id === 4
-              ? "https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg"
-              : blog.id === 5
-              ? "https://png.pngtree.com/png-clipart/20230823/original/pngtree-four-4-star-rank-sign-vector-illustration-eps10-picture-image_8307895.png"
-              : "https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg"
-          }
+          src={`/src/assets/cali${blog.id}.jpg`}
           alt={`Calificación de ${blog.name}`}
           className="object-cover"
         />

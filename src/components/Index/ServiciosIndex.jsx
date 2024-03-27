@@ -18,7 +18,6 @@ export const ServiciosIndex = () => {
             <h2 className="text-[28px] md:text-[32px] mb-6 lg:text-[36px] tracking-wide leading-none py-0 font-semibold lg:mt-15 text-center mt-5">
               Proyecto llave en mano acorde a tus necesidades
             </h2>
-          
           </div>
           {/* Calderas */}
           <div className="w-full px-5 bg-white mb-16 mt-16">
@@ -134,7 +133,7 @@ export const ServiciosIndex = () => {
               </div>
               <div className="flex flex-col mx-10 text-left lg:w-1/2 ">
                 <h2 className="font-monts lg:text-left text-left text-[28px] md:text-[32px]  lg:text-[36px] leading-none mb-10 lg:mb-5 font-semibold tracking-wide mt-10 text-black  ">
-                  Sistemas de calderas de condensación para su próxima{" "}
+                  Sistemas de Paneles Solares para su próxima{" "}
                   <span className="text-ontu">Eco Hogar</span>
                 </h2>
                 <div className="mb-10 font-monts lg:mt-5  ">

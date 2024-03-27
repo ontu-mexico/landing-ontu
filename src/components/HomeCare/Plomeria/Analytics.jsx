@@ -15,8 +15,8 @@ export const Analytics = () => {
       <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center bg-white  rounded-3xl ">
         <div className="lg:w-1/2 object-cover ">
           <picture>
-            <source media="(max-width: 640px )" srcset={plomero} sizes="" />
-            <source media="(min-width: 641px )" srcset={plomero2} sizes="" />
+            <source media="(max-width: 640px )" srcSet={plomero} sizes="" />
+            <source media="(min-width: 641px )" srcSet={plomero2} sizes="" />
             <img
               src={plomero2}
               alt="Plomero"

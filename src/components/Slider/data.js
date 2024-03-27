@@ -1,7 +1,6 @@
 export const blogs = [
   {
     id: 1,
-    start: "/assets/cali1.jpg",
     category: "Smart Home",
     name: "Maria Trejo",
     fecha: "21 de enero de 2023",
@@ -10,7 +9,6 @@ export const blogs = [
   },
   {
     id: 2,
-    start: "/assets/cali2.jpg",
     category: "Plomería",
     name: "Fernando Bustamante",
     fecha: "18 de enero de 2023",
@@ -19,7 +17,6 @@ export const blogs = [
   },
   {
     id: 3,
-    start: "/assets/cali3.jpg",
     category: "Electricidad",
     name: "Erick Fraymann",
     fecha: "20 de diciembre de 2022",
@@ -28,7 +25,6 @@ export const blogs = [
   },
   {
     id: 4,
-    start: "/assets/cali4.jpg",
     category: "Plomería",
     name: "Alejandra Gonzales ",
     fecha: "14 de febrero de 2023",
@@ -36,7 +32,6 @@ export const blogs = [
   },
   {
     id: 5,
-    start: "/assets/cali5.jpg",
     category: "Electricidad",
     name: "Samsung Neo",
     fecha: "29 de diciembre de 2022",

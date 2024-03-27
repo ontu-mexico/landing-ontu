@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
@@ -12,10 +12,10 @@ import { Plomeria } from "./components/HomeCare/Plomeria/Plomeria";
 import { Electricidad } from "./components/HomeCare/Electricidad/Electricidad";
 import { Personal } from "./components/Formularios/personal";
 import { SmartHome } from "./components/HomeCare/SmartHome/SmartHome";
-import { UnderConstruction } from "./components/UnderConstruction";
 import { Contacto } from "./components/Formularios/Contacto";
 import { HomeCare } from "./components/HomeCare/HomeCare";
 import { Index } from "./components/Index/Index";
+import ScrollToTop from "./components/ScrollToTop";
 
 const router = createBrowserRouter([
   {
@@ -61,10 +61,14 @@ const router = createBrowserRouter([
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
   <Contacto>
     <React.StrictMode>
-      <RouterProvider router={router} />
+      <RouterProvider router={router}>
+        <Index />
+      </RouterProvider>
     </React.StrictMode>
   </Contacto>
 );
