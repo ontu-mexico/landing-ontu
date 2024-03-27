@@ -31,7 +31,7 @@ export const SmartHome = () => {
               </h3>
               <hr className="border-[1.5px] border-[#F2C00C] mb-2 w-1/3 mt-1" />
               <h1 className="font-monts text-[38px] md:text-[42px] lg:text-[46px]  leading-none mb-5 lg:mb-0 font-semibold tracking-wide mt-2  ">
-                <m className="text-ontu">Gestionar tu hogar </m>nunca había sido
+                <span className="text-ontu">Gestionar tu hogar </span>nunca había sido
                 tan fácil
               </h1>
               <p className="text-[14px] md:text-[16px]  lg:text-[18px] mb-5 lg:mt-5 font-monts leading-tight font-normal flex flex-row items-center text-left">
@@ -150,9 +150,9 @@ export const SmartHome = () => {
                       className="bg-blueOntu w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-blueOntu hover:border-2 hover:border-blueOntu hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
                     >
                       Iniciar compra
-                      <m className="px-2">
+                      <span className="px-2">
                         <FaArrowRight />
-                      </m>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -227,9 +227,9 @@ export const SmartHome = () => {
                       className="bg-blueOntu w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-blueOntu hover:border-2 hover:border-blueOntu hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
                     >
                       Iniciar compra
-                      <m className="px-2">
+                      <span className="px-2">
                         <FaArrowRight />
-                      </m>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -303,9 +303,9 @@ export const SmartHome = () => {
                       className="bg-blueOntu w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-blueOntu hover:border-2 hover:border-blueOntu hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
                     >
                       Iniciar compra
-                      <m className="px-2">
+                      <span className="px-2">
                         <FaArrowRight />
-                      </m>
+                      </span>
                     </button>
                   </div>
                 </div>

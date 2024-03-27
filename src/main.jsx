@@ -6,7 +6,6 @@ import "./index.css";
 import { Error } from "./components/Error";
 import { SolicitarCalculo } from "./components/SolicitarCalculo";
 import { InicioSesion } from "./components/InicioSesion/InicioSesion";
-import { Index } from "./components";
 import { PanelesSolares } from "./components/PanelesSolares/PanelesSolares";
 import { Estudio } from "./components/Estudio/Estudio";
 import { Plomeria } from "./components/HomeCare/Plomeria/Plomeria";
@@ -16,11 +15,12 @@ import { SmartHome } from "./components/HomeCare/SmartHome/SmartHome";
 import { UnderConstruction } from "./components/UnderConstruction";
 import { Contacto } from "./components/Formularios/Contacto";
 import { HomeCare } from "./components/HomeCare/HomeCare";
+import { Index } from "./components/Index/Index";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomeCare />,
+    element: <Index />,
     errorElement: <Error />,
   },
   {

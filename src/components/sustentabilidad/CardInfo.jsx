@@ -20,7 +20,7 @@ export const CardInfo = () => {
             ¡Tú decides cómo y cuándo comenzar a ahorrar!
           </h2>
           <p className=" text-[12px] md:text-[14px]  lg:text-[16px]  leading-tight tracking-normal   mb-16 font-monts text-center lg:mx-12   ">
-            De <m className="text-ontu font-medium">Ontu</m> recibirás una
+            De <span className="text-ontu font-medium">Ontu</span> recibirás una
             instalación llave en mano para tu hogar o negocio con los mejores
             paneles solares del mercado y facilidades de pago. Tú decides cuándo
             dar el primer paso.

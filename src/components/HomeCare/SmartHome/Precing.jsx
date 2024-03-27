@@ -95,9 +95,9 @@ export const Precing = () => {
                     className="bg-blueOntu w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-blueOntu hover:border-2 hover:border-blueOntu hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
                   >
                     Iniciar compra
-                    <m className="px-2">
+                    <span className="px-2">
                       <FaArrowRight />
-                    </m>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -172,9 +172,9 @@ export const Precing = () => {
                     className="bg-blueOntu w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-blueOntu hover:border-2 hover:border-blueOntu hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
                   >
                     Iniciar compra
-                    <m className="px-2">
+                    <span className="px-2">
                       <FaArrowRight />
-                    </m>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -248,9 +248,9 @@ export const Precing = () => {
                       className="bg-blueOntu w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-blueOntu hover:border-2 hover:border-blueOntu hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
                     >
                       Iniciar compra
-                      <m className="px-2">
+                      <span className="px-2">
                         <FaArrowRight />
-                      </m>
+                      </span>
                     </button>
                 </div>
               </div>

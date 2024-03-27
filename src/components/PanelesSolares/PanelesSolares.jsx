@@ -81,14 +81,14 @@ export const PanelesSolares = () => {
 
             <p className=" text-[14px] md:text-[16px]  lg:text-[18px]   mt-5 text-left leading-tight tracking-normal items-center  font-monts">
               Simula el ahorro que podrías obtener en tu recibo bimestral de{" "}
-              <m className="font-semibold text-ontu">CFE</m> si utilizaras
+              <span className="font-semibold text-ontu">CFE</span> si utilizaras
               Paneles Solares.
             </p>
 
             <div className="flex  items-end gap-2 mt-5">
               <div>
                 <p className="text-[14px] md:text-[16px] lg:text-[18px] font-monts text-black ">
-                  Tu ahorro a<m className="font-semibold "> 25 años</m> sería:
+                  Tu ahorro a<span className="font-semibold "> 25 años</span> sería:
                 </p>
               </div>
 
@@ -192,9 +192,9 @@ export const PanelesSolares = () => {
               className="bg-blueOntu w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-white hover:border-2 hover:bg-gray-600 hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
             >
               Conocer más{" "}
-              <m className="px-2">
+              <span className="px-2">
                 <FaArrowRight />
-              </m>
+              </span>
             </button>
           </div>
         </div>

@@ -73,9 +73,9 @@ export const NavBar = () => {
 
         {/* Nav Mobile */}
         <ul
-          className={`lg:hidden fixed top-0 h-full bottom-0 w-[70%] md:w-[50%] border-r border-ontu bg-white py-28 pl-4 duration-500 ${
-            open ? "left-0 " : "left-[-100%]"
-          } `}
+         className={`lg:hidden fixed top-0 h-full bottom-0 w-[70%] md:w-[50%] border-r border-ontu bg-white py-28 pl-4 duration-500 ${
+          open ? "left-0" : "-left-full "
+        }`}
         >
           <NavLinks />
           <NavLinks2 />

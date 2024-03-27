@@ -2,9 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import { FormContacto } from "../../Formularios/FormContacto";
+import { FormServicios } from "../Formularios/FormServicios";
 
-export const CallElec = () => {
+export const FormularioIndex = () => {
   //Navegacion
   const navigate = useNavigate();
   return (
@@ -13,8 +13,7 @@ export const CallElec = () => {
         <div className="flex flex-col justify-center font-monts py-8 md:w-1/3">
           <div className="ml-10  md:border-r md:border-gray-600">
             <h2 className="font-semibold  text-[28px] md:text-[32px]  lg:text-[36px] tracking-wide leading-none py-5 mr-3 ">
-              <span className="text-gray-600">Solicita tu servicio </span>de
-              Electricidad
+              Descubre como puedes generar un cambio
             </h2>
             <p className="text-[14px] md:text-[16px]  lg:text-[18px]  leading-tight tracking-normal text-left mt-5 mr-5">
               Evita el formulario y contáctanos ahora
@@ -31,7 +30,7 @@ export const CallElec = () => {
         </div>
         <div className="flex flex-col md:w-2/3">
           <div className="m-5 md:m-10 bg-white rounded-b-3xl md:rounded-l-none md:rounded-r-3xl px-4 ">
-            <FormContacto />
+            <FormServicios />
           </div>
         </div>
       </div>

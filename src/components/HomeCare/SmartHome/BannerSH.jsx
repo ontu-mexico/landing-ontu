@@ -12,7 +12,7 @@ export const BannerSH = () => {
           </h3>
           <hr className="border-[1.5px] border-[#F2C00C] mb-2 w-1/4 mt-1" /> 
           <h1 className="font-monts text-[38px] md:text-[42px] lg:text-[46px]  leading-none mb-5 lg:mb-0 font-semibold tracking-wide mt-2  ">
-            <m className="text-ontu">Gestionar tu hogar </m>nunca había sido tan
+            <span className="text-ontu">Gestionar tu hogar </span>nunca había sido tan
             fácil
           </h1>
 

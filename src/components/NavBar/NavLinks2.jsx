@@ -63,8 +63,8 @@ export const NavLinks2 = () => {
 
   return (
     <>
-      {links.map((link) => (
-        <div>
+      {links.map((link, index) => (
+        <div key={index}>
           {/** Nav Desktop */}
           <div className="px-3 text-left cursor-pointer group text-black hover:bg-slate-50 ">
             <h1
@@ -95,14 +95,17 @@ export const NavLinks2 = () => {
                 <span className="h-[2px] lg:block hidden lg:px-1 lg:bg-yellowOntu2  lg:animate-fade-right animate-duration-[3000ms] animate-delay-500" />
                 <div>
                   <div className="py-3 bg-white grid grid-cols-3 w-[650px]">
-                    {link.sublinks.map((mysublinks) => (
-                      <div>
+                    {link.sublinks.map((mysublinks, index2) => (
+                      <div key={index2}>
                         <h1 className="font-semibold flex ml-3 lg:text-[14px] xl:text-[14px] text-ontu ">
                           <Link to={mysublinks.link}>{mysublinks.Head} </Link>
                         </h1>
                         {/** Sublinks */}
-                        {mysublinks.sublink.map((slink) => (
-                          <li className="text-[12px] text-gray-900 my-3 mx-4 hover:text-ontu flex items-content-center items-center cursor-pointer">
+                        {mysublinks.sublink.map((slink, index3) => (
+                          <li
+                            key={index3}
+                            className="text-[12px] text-gray-900 my-3 mx-4 hover:text-ontu flex items-content-center items-center cursor-pointer"
+                          >
                             <Link to={slink.link}>{slink.name}</Link>
                           </li>
                         ))}
@@ -118,8 +121,8 @@ export const NavLinks2 = () => {
           </div>
           {/** Mobile menus */}
           <div className={`${heading === link.name ? "lg:hidden" : "hidden"}`}>
-            {link.sublinks.map((slinks) => (
-              <div>
+            {link.sublinks.map((slinks, index4) => (
+              <div key={index4}>
                 <div className="cursor-pointer ">
                   {/** Sublinks */}
                   <h1
@@ -146,8 +149,11 @@ export const NavLinks2 = () => {
                       subHeading === slinks.Head ? "lg:hidden" : "hidden"
                     }`}
                   >
-                    {slinks.sublink.map((slink) => (
-                      <li className="py-2 pl-14 hover:text-ontu text-[13px]">
+                    {slinks.sublink.map((slink, index5) => (
+                      <li
+                        key={index5}
+                        className="py-2 pl-14 hover:text-ontu text-[13px]"
+                      >
                         <Link to={slink.link}>{slink.name}</Link>
                       </li>
                     ))}

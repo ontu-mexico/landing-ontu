@@ -3,13 +3,9 @@ import electricidad from "/src/assets/electricidad/electrician.jpg";
 import electricidad2 from "/src/assets/electricidad/electrician2.jpg";
 //Animation
 import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 export const AnalyticsElec = () => {
-  //Animation on scroll
-  useEffect(() => {
-    AOS.init({ duration: 1500 });
-  });
+ 
   return (
     <div className="w-full px-5 bg-white mb-16 mt-16">
       <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center bg-white rounded-3xl ">
@@ -17,12 +13,12 @@ export const AnalyticsElec = () => {
           <picture>
             <source
               media="(max-width: 640px )"
-              srcset={electricidad}
+              srcSet={electricidad}
               sizes=""
             />
             <source
               media="(min-width: 641px )"
-              srcset={electricidad2}
+              srcSet={electricidad2}
               sizes=""
             />
             <img

@@ -29,6 +29,7 @@ export default {
         parallaxSH3: 'url("../src/assets/SmartHome/home2.jpg")',
         parallaxHC1: 'url("../src/assets/SmartHome/homeCare1.jpg")',
         parallaxHC2: 'url("../src/assets/SmartHome/homeCare2.jpg")',
+        parallaxI: 'url("../src/assets/image/solar-panel2.jpg")',
       },
       container: {
         center: true,

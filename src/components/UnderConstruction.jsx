@@ -70,7 +70,7 @@ export const UnderConstruction = () => {
         
         <div className="mb-4 ">
           <p className="font-semibold uppercase font-monts text-lg">
-            FECHA DE LANZAMIENTO <m className="text-[#F2C00C] ">1 DE ABRIL</m>
+            FECHA DE LANZAMIENTO <span className="text-[#F2C00C] ">1 DE ABRIL</span>
           </p>
         </div>
         <div className="px-2">

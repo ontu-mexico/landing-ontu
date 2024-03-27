@@ -13,3 +13,15 @@
 .animate-scroll {
   animation: scroll 70s linear infinite;
 }
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-200px * 6 - 0.5rem * 12));
+  }
+}
+.animate-scroll2 {
+  animation: scroll 70s linear infinite;
+}
