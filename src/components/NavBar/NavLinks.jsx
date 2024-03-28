@@ -10,16 +10,16 @@ export const NavLinks = ({ progressPercentage }) => {
 
   const links = [
     {
-      name: "Cuidado del Hogar",
+      name: "Home Care",
       submenu: true,
       sublinks: [
         {
           Head: "Servicios",
-          link: "/HomeCare",
+          link: "/home-care",
           sublink: [
-            { name: "Electricidad", link: "/Electricidad" },
-            { name: "Plomeria", link: "/Plomeria" },
-            { name: "Hogar Inteligente", link: "/SmartCare" },
+            { name: "Electricidad", link: "/electricidad" },
+            { name: "Plomeria", link: "/plomeria" },
+            { name: "Smart Home", link: "/smart-home" },
           ],
         },
       ],

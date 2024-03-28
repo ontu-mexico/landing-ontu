@@ -19,7 +19,7 @@ export const ServiciosHC = () => {
   });
   return (
     <main>
-      {/* Electricidad bg-[#F2C00C]/20*/}
+      {/* Electricidad */}
       <div className="w-full px-5 bg-white mb-16 mt-16">
         <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center rounded-3xl ">
           <div className="lg:w-1/2 object-cover ">
@@ -58,7 +58,7 @@ export const ServiciosHC = () => {
               </p>
               <p className=" text-[14px] md:text-[16px]  lg:text-[18px]  flex flex-row items-center leading-tight text-left mt-5  ">
                 <span className="font-semibold hover:text-blueOntu flex flex-row items-center">
-                  <Link to={"/Electricidad"}>Servicios de Electricidad</Link>
+                  <Link to={"/electricidad"}>Servicios de Electricidad</Link>
                   <span className="text-[16px] md:text-[18px] lg:text-[20px] px-2">
                     <FaArrowRight size={15} />
                   </span>
@@ -88,7 +88,7 @@ export const ServiciosHC = () => {
               </p>
               <p className=" text-[14px] md:text-[16px]  lg:text-[18px]  flex flex-row items-center leading-tight text-left mt-5  ">
                 <span className="font-semibold hover:text-blueOntu flex flex-row items-center">
-                  <Link to={"/Plomeria"}>Servicios de Plomería</Link>
+                  <Link to={"/plomeria"}>Servicios de Plomería</Link>
                   <span className="text-[16px] md:text-[18px] lg:text-[20px] px-2">
                     <FaArrowRight size={15} />
                   </span>
@@ -142,7 +142,7 @@ export const ServiciosHC = () => {
               </p>
               <p className=" text-[14px] md:text-[16px]  lg:text-[18px]  flex flex-row items-center leading-tight text-left mt-5  ">
                 <span className="font-semibold hover:text-blueOntu flex flex-row items-center">
-                  <Link to={"/SmartCare"}>Smart Home</Link>
+                  <Link to={"/smart-home"}>Smart Home</Link>
                   <span className="text-[16px] md:text-[18px] lg:text-[20px] px-2">
                     <FaArrowRight size={15} />
                   </span>

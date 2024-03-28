@@ -88,7 +88,8 @@ export const PanelesSolares = () => {
             <div className="flex  items-end gap-2 mt-5">
               <div>
                 <p className="text-[14px] md:text-[16px] lg:text-[18px] font-monts text-black ">
-                  Tu ahorro a<span className="font-semibold "> 25 años</span> sería:
+                  Tu ahorro a<span className="font-semibold "> 25 años</span>{" "}
+                  sería:
                 </p>
               </div>
 
@@ -188,7 +189,7 @@ export const PanelesSolares = () => {
           </h2>
           <div className="flex justify-between items-center mt-5 md:mt-0  ">
             <button
-              onClick={() => navigate("/Estudio")}
+              onClick={() => navigate("/estudio")}
               className="bg-blueOntu w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-white hover:border-2 hover:bg-gray-600 hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
             >
               Conocer más{" "}

@@ -1,5 +1,5 @@
 import calderaI from "/src/assets/image/calderaIndustrial.jpg";
-import calderaI2 from "/src/assets/image/caldera.jpg";
+import calderaI2 from "/src/assets/image/calderaIndustrial.jpg";
 import panelI2 from "/src/assets/image/panelEstudio.jpg";
 import panelH from "/src/assets/image/calderaIndustrial.jpg";
 import panelH2 from "/src/assets/image/colocacionPanel.jpg";
@@ -19,6 +19,96 @@ export const ServiciosIndex = () => {
               Proyecto llave en mano acorde a tus necesidades
             </h2>
           </div>
+
+          {/* Paneles Solares*/}
+          <div className="w-full px-5 bg-white mb-16 mt-16">
+            <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center rounded-3xl ">
+              <div className="lg:w-1/2 object-cover ">
+                <picture>
+                  <source
+                    media="(max-width: 640px )"
+                    srcSet={panelH2}
+                    sizes=""
+                  />
+                  <source
+                    media="(min-width: 641px )"
+                    srcSet={panelH2}
+                    sizes=""
+                  />
+                  <img
+                    src={panelH2}
+                    alt="Panel solar"
+                    className="w-full h-full rounded-3xl"
+                  />
+                </picture>
+              </div>
+              <div className="flex flex-col mx-10 text-left lg:w-1/2 ">
+                <h2 className="font-monts lg:text-left text-left text-[28px] md:text-[32px]  lg:text-[36px] leading-none mb-10 lg:mb-5 font-semibold tracking-wide mt-10 text-black  ">
+                  Sistemas de paneles solares para su próximo{" "}
+                  <span className="text-ontu">Eco Hogar</span>
+                </h2>
+                <div className="mb-10 font-monts lg:mt-5  ">
+                  <p className="  text-[12px] md:text-[14px]  lg:text-[16px]  leading-tight tracking-normal text-left">
+                    Texto por definir
+                  </p>
+                  <p className="  text-[12px] md:text-[14px]  lg:text-[16px]  leading-tight tracking-normal text-left mt-5"></p>
+                  <p className=" text-[14px] md:text-[16px]  lg:text-[18px]  flex flex-row items-center leading-tight text-left mt-5  ">
+                    <span className="font-semibold hover:text-blueOntu flex flex-row items-center text-gray-600">
+                      <Link to={"/paneles-solares"}>Saber más</Link>
+                      <span className="text-[16px] md:text-[18px] lg:text-[20px] px-2">
+                        <FaArrowRight size={15} />
+                      </span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Paneles Solares Industriales */}
+          <div className="w-full px-5 bg-white mb-16 mt-16">
+            <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center  rounded-3xl ">
+              <div className="flex flex-col mx-10 text-left lg:w-1/2 ">
+                <h1 className="font-monts lg:text-left text-left text-[28px] md:text-[32px]  lg:text-[36px] leading-none mb-10 lg:mb-5 font-semibold tracking-wide mt-10 text-black  ">
+                  Sistemas de paneles solares para su próxima{" "}
+                  <span className="text-ontu">Eco Industria</span>
+                </h1>
+                <div className="mb-10 font-monts lg:mt-5  ">
+                  <p className="  text-[12px] md:text-[14px]  lg:text-[16px]  leading-tight tracking-normal text-left">
+                    Texto por definir
+                  </p>
+                  <p className="  text-[12px] md:text-[14px]  lg:text-[16px]  leading-tight tracking-normal text-left mt-5"></p>
+                  <p className=" text-[14px] md:text-[16px]  lg:text-[18px]  flex flex-row items-center leading-tight text-left mt-5  ">
+                    <span className="font-semibold hover:text-blueOntu flex flex-row items-center">
+                      <Link to={""}>Saber más</Link>
+                      <span className="text-[16px] md:text-[18px] lg:text-[20px] px-2">
+                        <FaArrowRight size={15} />
+                      </span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div className="lg:w-1/2 object-cover ">
+                <picture>
+                  <source
+                    media="(max-width: 640px )"
+                    srcSet={panelI2}
+                    sizes=""
+                  />
+                  <source
+                    media="(min-width: 641px )"
+                    srcSet={panelI2}
+                    sizes=""
+                  />
+                  <img
+                    src={panelI2}
+                    alt="Panel solar"
+                    className="w-full h-full rounded-3xl"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+
           {/* Calderas */}
           <div className="w-full px-5 bg-white mb-16 mt-16">
             <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center rounded-3xl ">
@@ -53,97 +143,7 @@ export const ServiciosIndex = () => {
                   <p className="  text-[12px] md:text-[14px]  lg:text-[16px]  leading-tight tracking-normal text-left mt-5"></p>
                   <p className=" text-[14px] md:text-[16px]  lg:text-[18px]  flex flex-row items-center leading-tight text-left mt-5  ">
                     <span className="font-semibold hover:text-blueOntu flex flex-row items-center text-gray-600">
-                      <Link to={"/"}>Saber más</Link>
-                      <span className="text-[16px] md:text-[18px] lg:text-[20px] px-2">
-                        <FaArrowRight size={15} />
-                      </span>
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Paneles Solares Industriales */}
-          <div className="w-full px-5 bg-white mb-16 mt-16">
-            <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center  rounded-3xl ">
-              <div className="flex flex-col mx-10 text-left lg:w-1/2 ">
-                <h1 className="font-monts lg:text-left text-left text-[28px] md:text-[32px]  lg:text-[36px] leading-none mb-10 lg:mb-5 font-semibold tracking-wide mt-10 text-black  ">
-                  Sistemas de Paneles Solares para su próxima{" "}
-                  <span className="text-ontu">Eco Industria</span>
-                </h1>
-                <div className="mb-10 font-monts lg:mt-5  ">
-                  <p className="  text-[12px] md:text-[14px]  lg:text-[16px]  leading-tight tracking-normal text-left">
-                    Texto por definir
-                  </p>
-                  <p className="  text-[12px] md:text-[14px]  lg:text-[16px]  leading-tight tracking-normal text-left mt-5"></p>
-                  <p className=" text-[14px] md:text-[16px]  lg:text-[18px]  flex flex-row items-center leading-tight text-left mt-5  ">
-                    <span className="font-semibold hover:text-blueOntu flex flex-row items-center">
-                      <Link to={"/"}>Saber más</Link>
-                      <span className="text-[16px] md:text-[18px] lg:text-[20px] px-2">
-                        <FaArrowRight size={15} />
-                      </span>
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <div className="lg:w-1/2 object-cover ">
-                <picture>
-                  <source
-                    media="(max-width: 640px )"
-                    srcSet={panelI2}
-                    sizes=""
-                  />
-                  <source
-                    media="(min-width: 641px )"
-                    srcSet={panelI2}
-                    sizes=""
-                  />
-                  <img
-                    src={panelI2}
-                    alt="Panel solar"
-                    className="w-full h-full rounded-3xl"
-                  />
-                </picture>
-              </div>
-            </div>
-          </div>
-
-          {/* Paneles Solares*/}
-          <div className="w-full px-5 bg-white mb-16 mt-16">
-            <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center rounded-3xl ">
-              <div className="lg:w-1/2 object-cover ">
-                <picture>
-                  <source
-                    media="(max-width: 640px )"
-                    srcSet={panelH2}
-                    sizes=""
-                  />
-                  <source
-                    media="(min-width: 641px )"
-                    srcSet={panelH2}
-                    sizes=""
-                  />
-                  <img
-                    src={panelH2}
-                    alt="Panel solar"
-                    className="w-full h-full rounded-3xl"
-                  />
-                </picture>
-              </div>
-              <div className="flex flex-col mx-10 text-left lg:w-1/2 ">
-                <h2 className="font-monts lg:text-left text-left text-[28px] md:text-[32px]  lg:text-[36px] leading-none mb-10 lg:mb-5 font-semibold tracking-wide mt-10 text-black  ">
-                  Sistemas de Paneles Solares para su próxima{" "}
-                  <span className="text-ontu">Eco Hogar</span>
-                </h2>
-                <div className="mb-10 font-monts lg:mt-5  ">
-                  <p className="  text-[12px] md:text-[14px]  lg:text-[16px]  leading-tight tracking-normal text-left">
-                    Texto por definir
-                  </p>
-                  <p className="  text-[12px] md:text-[14px]  lg:text-[16px]  leading-tight tracking-normal text-left mt-5"></p>
-                  <p className=" text-[14px] md:text-[16px]  lg:text-[18px]  flex flex-row items-center leading-tight text-left mt-5  ">
-                    <span className="font-semibold hover:text-blueOntu flex flex-row items-center text-gray-600">
-                      <Link to={"/"}>Saber más</Link>
+                      <Link to={""}>Saber más</Link>
                       <span className="text-[16px] md:text-[18px] lg:text-[20px] px-2">
                         <FaArrowRight size={15} />
                       </span>

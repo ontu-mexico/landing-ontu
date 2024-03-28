@@ -31,7 +31,7 @@ export const AnalyticsIndex = () => {
               </div>
               <div>
                 <h3 className="text-[12px] md:text-[13px] lg:text-[15px] leading-snug tracking-wide">
-                  Capacidad Instalada
+                  Capacidad Instalada KWp
                 </h3>
                 <h3 className=" text-[28px] md:text-[32px]  lg:text-[36px] text-ontu font-semibold">
                   1,000

@@ -52,7 +52,7 @@ export const CardSH = () => {
 
                   <div className="flex justify-center items-center mt-5  ">
                     <button
-                      onClick={() => navigate("/Estudio")}
+                      onClick={() => navigate("")}
                       className="bg-gray-600 w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
                     >
                       Solicitar Ontuman
@@ -77,7 +77,7 @@ export const CardSH = () => {
 
                   <div className="flex justify-center items-center mt-5  ">
                     <button
-                      onClick={() => navigate("/Estudio")}
+                      onClick={() => navigate("")}
                       className="bg-gray-600 w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full  "
                     >
                       Solicitar Ontuman
@@ -101,7 +101,7 @@ export const CardSH = () => {
                   <hr className="border-[1.5px] border-[#F2C00C] mb-2" />
                   <div className="flex justify-center items-center mt-5  ">
                     <button
-                      onClick={() => navigate("/Estudio")}
+                      onClick={() => navigate("")}
                       className="bg-gray-600 w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full  "
                     >
                       Solicitar Ontuman
@@ -125,7 +125,7 @@ export const CardSH = () => {
                   <hr className="border-[1.5px] border-[#F2C00C] mb-2" />
                   <div className="flex justify-center items-center mt-5  ">
                     <button
-                      onClick={() => navigate("/Estudio")}
+                      onClick={() => navigate("")}
                       className="bg-gray-600 w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
                     >
                       Solicitar Ontuman

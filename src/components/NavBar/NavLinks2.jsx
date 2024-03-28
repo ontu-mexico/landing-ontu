@@ -17,7 +17,7 @@ export const NavLinks2 = () => {
           Head: "Sustentabilidad",
           link: "/",
           sublink: [
-            { name: "Paneles Solares", link: "/PanelesSolares" },
+            { name: "Paneles Solares", link: "/paneles-solares" },
             { name: "Almacenamiento de Energía", link: "" },
             { name: "Calentamiento de Agua", link: "" },
             { name: "Ahorro de Agua", link: "" },
@@ -53,7 +53,7 @@ export const NavLinks2 = () => {
             { name: "FAQs", link: "/" },
             { name: "Estrategias de Impacto", link: "/" },
             { name: "Porque lo hacemos", link: "/" },
-            { name: "Registro de Personal", link: "/Personal" },
+            // { name: "Registro de Personal", link: "/personal" },
           ],
         },
       ],
