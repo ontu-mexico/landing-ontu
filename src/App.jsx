@@ -6,7 +6,6 @@ import {
   Routes,
 } from "react-router-dom";
 import { Error } from "./components/Error";
-import { SolicitarCalculo } from "./components/SolicitarCalculo";
 import { InicioSesion } from "./components/InicioSesion/InicioSesion";
 import { PanelesSolares } from "./components/PanelesSolares/PanelesSolares";
 import { Estudio } from "./components/Estudio/Estudio";
@@ -17,6 +16,7 @@ import { SmartHome } from "./components/HomeCare/SmartHome/SmartHome";
 import { Contacto } from "./components/Formularios/Contacto";
 import { HomeCare } from "./components/HomeCare/HomeCare";
 import { Index } from "./components/Index/Index";
+import { SolicitarEstudio } from "./components/PanelesSolares/SolicitarEstudio";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -36,13 +36,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/home-care" element={<HomeCare />} />
-          <Route path="/solicitar-estudio" element={<SolicitarCalculo />} />
           <Route path="/paneles-solares" element={<PanelesSolares />} />
-          <Route path="/estudio" element={<Estudio />} />
           <Route path="/plomeria" element={<Plomeria />} />
           <Route path="/electricidad" element={<Electricidad />} />
           <Route path="/personal" element={<Personal />} />
           <Route path="/smart-home" element={<SmartHome />} />
+          <Route path="/solicitar-estudio" element={<SolicitarEstudio />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>

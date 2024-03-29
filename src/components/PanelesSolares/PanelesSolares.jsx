@@ -189,7 +189,7 @@ export const PanelesSolares = () => {
           </h2>
           <div className="flex justify-between items-center mt-5 md:mt-0  ">
             <button
-              onClick={() => navigate("/estudio")}
+              onClick={() => navigate("/solicitar-estudio")}
               className="bg-blueOntu w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-white hover:border-2 hover:bg-gray-600 hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
             >
               Conocer más{" "}
