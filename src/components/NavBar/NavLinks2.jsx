@@ -52,7 +52,7 @@ export const NavLinks2 = () => {
           sublink: [
             { name: "FAQs", link: "/" },
             { name: "Estrategias de Impacto", link: "/" },
-            { name: "Porque lo hacemos", link: "/" },
+            { name: "Por qué lo hacemos", link: "/" },
             // { name: "Registro de Personal", link: "/personal" },
           ],
         },

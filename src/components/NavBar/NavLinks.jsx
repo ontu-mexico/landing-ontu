@@ -18,7 +18,7 @@ export const NavLinks = ({ progressPercentage }) => {
           link: "/home-care",
           sublink: [
             { name: "Electricidad", link: "/electricidad" },
-            { name: "Plomeria", link: "/plomeria" },
+            { name: "Plomería", link: "/plomeria" },
             { name: "Smart Home", link: "/smart-home" },
           ],
         },
