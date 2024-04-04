@@ -4,7 +4,6 @@ import { BannerElec } from "./BannerElec";
 import { AnalyticsElec } from "./AnalyticsElec";
 import { CardElec } from "./CardElec";
 import { CallElec } from "./CallElec";
-import { SectionCalculo } from "../../sustentabilidad/SectionCalculo";
 import { FooterCR } from "../../FooterCR";
 
 export const Electricidad = () => {

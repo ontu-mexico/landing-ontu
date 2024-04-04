@@ -13,14 +13,15 @@ export const CallPlomeria = () => {
         <div className="flex flex-col justify-center font-monts py-8 md:w-1/3">
           <div className="ml-10  md:border-r md:border-gray-600">
             <h2 className="font-semibold  text-[28px] md:text-[32px]  lg:text-[36px] tracking-wide leading-none py-5 mr-3 ">
-              <span className="text-gray-600">Solicita tu servicio </span>de Plomería
+              <span className="text-gray-600">Solicita tu servicio </span>de
+              Plomería
             </h2>
             <p className="text-[14px] md:text-[16px]  lg:text-[18px]  leading-tight tracking-normal text-left mt-5 mr-5">
               Evita el formulario y contáctanos ahora
             </p>
             <p className=" text-[14px] md:text-[16px]  lg:text-[18px]  flex flex-row items-center leading-tight text-left mt-5  ">
               <span className="font-semibold text-blueOntu hover:text-gray-600 flex flex-row items-center">
-                <Link to={"/"}>Contactar </Link>
+                <Link to={""}>Contactar </Link>
                 <span className="text-[16px] md:text-[18px] lg:text-[20px] px-2">
                   <FaArrowRight size={15} />
                 </span>

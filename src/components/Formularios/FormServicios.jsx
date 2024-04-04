@@ -120,15 +120,15 @@ export const FormServicios = () => {
                   {...formik.getFieldProps("servicio")}
                 >
                   <MenuItem value="CalderasCondensacion">
-                    Calderas de Condensación Eco Industria
+                    Calderas de Condensación
                   </MenuItem>
+                  <MenuItem value="Electricidad">Electricidad</MenuItem>
                   <MenuItem value="PanalesSolaresh">
                     Paneles Solares Eco Hogar
                   </MenuItem>
                   <MenuItem value="PanalesSolaresI">
                     Paneles Solares Eco Industria
                   </MenuItem>
-                  <MenuItem value="Electricidad">Electricidad</MenuItem>
                   <MenuItem value="Plomeria">Plomería</MenuItem>
                   <MenuItem value="SmartHome">Smart Home</MenuItem>
                   <MenuItem value="Otro">Otro</MenuItem>
@@ -167,7 +167,7 @@ export const FormServicios = () => {
           )}
         </FormControl>
 
-        <div className="flex justify-center items-center mt-8 mb-8 md:mb-3 md:mt-3 ">
+        <div className="flex justify-left items-left mt-8 mb-8 md:mb-3 md:mt-3 ">
           <button
             type="submit"
             disabled={!formik.isValid}

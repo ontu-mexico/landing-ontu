@@ -1,11 +1,10 @@
 import React from "react";
-import electricidad from "/src/assets/electricidad/electrician.jpg";
-import electricidad2 from "/src/assets/electricidad/electrician2.jpg";
+import electricidad from "/src/assets/electricidad/electricidad.png";
+import electricidad2 from "/src/assets/electricidad/electricidad.png";
 //Animation
 import { useEffect } from "react";
 
 export const AnalyticsElec = () => {
- 
   return (
     <div className="w-full px-5 bg-white mb-16 mt-16">
       <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center bg-white rounded-3xl ">

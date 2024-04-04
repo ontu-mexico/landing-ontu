@@ -17,6 +17,8 @@ import { SmartHome } from "./components/HomeCare/SmartHome/SmartHome";
 import { Contacto } from "./components/Formularios/Contacto";
 import { HomeCare } from "./components/HomeCare/HomeCare";
 import { Index } from "./components/Index/Index";
+import { Almacenamiento } from "./components/Almacenamiento/Almacenamiento";
+import { Calentamiento } from "./components/Calentamiento/Calentamiento";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -43,6 +45,11 @@ function App() {
           <Route path="/electricidad" element={<Electricidad />} />
           <Route path="/personal" element={<Personal />} />
           <Route path="/smart-home" element={<SmartHome />} />
+          <Route
+            path="/almacenamiento-de-energia"
+            element={<Almacenamiento />}
+          />
+          <Route path="/calentamiento-de-agua" element={<Calentamiento />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>

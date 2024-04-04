@@ -1,12 +1,15 @@
-import calderaI from "/src/assets/image/calderaIndustrial.jpg";
-import calderaI2 from "/src/assets/image/calderaIndustrial.jpg";
-import panelI2 from "/src/assets/image/panelEstudio.jpg";
-import panelH from "/src/assets/image/calderaIndustrial.jpg";
-import panelH2 from "/src/assets/image/colocacionPanel.jpg";
+import calderaI from "/src/assets/index/calderas.png";
+import calderaI2 from "/src/assets/index/calderasM.png";
+import panelI2 from "/src/assets/index/panelesIndustrialM.png";
+import panelI from "/src/assets/index/panelesIndustrial.png";
+import panelH from "/src/assets/index/panelesHogar.png";
+import panelH2 from "/src/assets/index/panelesHogarM.png";
+import { useNavigate } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 export const ServiciosIndex = () => {
+  //Navegacion
+  const navigate = useNavigate();
   return (
     <section className="w-full px-5 bg-white  ">
       <div
@@ -16,27 +19,27 @@ export const ServiciosIndex = () => {
         <div className=" px-5 py-5 mx-auto">
           <div className="text-center mb-12 font-monts flex flex-col justify-center items-center">
             <h2 className="text-[28px] md:text-[32px] mb-6 lg:text-[36px] tracking-wide leading-none py-0 font-semibold lg:mt-15 text-center mt-5">
-              Proyecto llave en mano acorde a tus necesidades
+              Proyectos llave en mano acorde a tus necesidades
             </h2>
           </div>
 
-          {/* Paneles Solares*/}
+          {/* Paneles Solares Industriales*/}
           <div className="w-full px-5 bg-white mb-16 mt-16">
             <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center rounded-3xl ">
               <div className="lg:w-1/2 object-cover ">
                 <picture>
                   <source
                     media="(max-width: 640px )"
-                    srcSet={panelH2}
+                    srcSet={panelI}
                     sizes=""
                   />
                   <source
                     media="(min-width: 641px )"
-                    srcSet={panelH2}
+                    srcSet={panelI2}
                     sizes=""
                   />
                   <img
-                    src={panelH2}
+                    src={panelI2}
                     alt="Panel solar"
                     className="w-full h-full rounded-3xl"
                   />
@@ -44,12 +47,13 @@ export const ServiciosIndex = () => {
               </div>
               <div className="flex flex-col mx-10 text-left lg:w-1/2 ">
                 <h2 className="font-monts lg:text-left text-left text-[28px] md:text-[32px]  lg:text-[36px] leading-none mb-10 lg:mb-5 font-semibold tracking-wide mt-10 text-black  ">
-                  Sistemas de paneles solares para su próximo{" "}
-                  <span className="text-ontu">Eco Hogar</span>
+                  Sistemas de paneles solares para su próxima{" "}
+                  <span className="text-ontu">Eco Industria</span>
                 </h2>
                 <div className="mb-10 font-monts lg:mt-5  ">
                   <p className="  text-[12px] md:text-[14px]  lg:text-[16px]  leading-tight tracking-normal text-left">
-                    Texto por definir
+                    Soluciones eficientes para desafíos energéticos en tu
+                    industria.
                   </p>
                   <p className="  text-[12px] md:text-[14px]  lg:text-[16px]  leading-tight tracking-normal text-left mt-5"></p>
                   <p className=" text-[14px] md:text-[16px]  lg:text-[18px]  flex flex-row items-center leading-tight text-left mt-5  ">
@@ -64,17 +68,18 @@ export const ServiciosIndex = () => {
               </div>
             </div>
           </div>
-          {/* Paneles Solares Industriales */}
+          {/* Paneles Solares  */}
           <div className="w-full px-5 bg-white mb-16 mt-16">
             <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center  rounded-3xl ">
               <div className="flex flex-col mx-10 text-left lg:w-1/2 ">
                 <h1 className="font-monts lg:text-left text-left text-[28px] md:text-[32px]  lg:text-[36px] leading-none mb-10 lg:mb-5 font-semibold tracking-wide mt-10 text-black  ">
-                  Sistemas de paneles solares para su próxima{" "}
-                  <span className="text-ontu">Eco Industria</span>
+                  Sistemas de paneles solares para su próximo{" "}
+                  <span className="text-ontu">Eco Hogar</span>
                 </h1>
                 <div className="mb-10 font-monts lg:mt-5  ">
                   <p className="  text-[12px] md:text-[14px]  lg:text-[16px]  leading-tight tracking-normal text-left">
-                    Texto por definir
+                    Genera y consume tu propia energía con soluciones
+                    energéticas eficientes.
                   </p>
                   <p className="  text-[12px] md:text-[14px]  lg:text-[16px]  leading-tight tracking-normal text-left mt-5"></p>
                   <p className=" text-[14px] md:text-[16px]  lg:text-[18px]  flex flex-row items-center leading-tight text-left mt-5  ">
@@ -91,16 +96,16 @@ export const ServiciosIndex = () => {
                 <picture>
                   <source
                     media="(max-width: 640px )"
-                    srcSet={panelI2}
+                    srcSet={panelH}
                     sizes=""
                   />
                   <source
                     media="(min-width: 641px )"
-                    srcSet={panelI2}
+                    srcSet={panelH2}
                     sizes=""
                   />
                   <img
-                    src={panelI2}
+                    src={panelH2}
                     alt="Panel solar"
                     className="w-full h-full rounded-3xl"
                   />
@@ -116,7 +121,7 @@ export const ServiciosIndex = () => {
                 <picture>
                   <source
                     media="(max-width: 640px )"
-                    srcSet={calderaI2}
+                    srcSet={calderaI}
                     sizes=""
                   />
                   <source
@@ -126,7 +131,7 @@ export const ServiciosIndex = () => {
                   />
                   <img
                     src={calderaI2}
-                    alt="Panel solar"
+                    alt="Calderas"
                     className="w-full h-full rounded-3xl"
                   />
                 </picture>
@@ -138,7 +143,8 @@ export const ServiciosIndex = () => {
                 </h2>
                 <div className="mb-10 font-monts lg:mt-5  ">
                   <p className="  text-[12px] md:text-[14px]  lg:text-[16px]  leading-tight tracking-normal text-left">
-                    Texto por definir
+                    Calentamos agua maximizando la eficiencia, minimizando
+                    impacto.
                   </p>
                   <p className="  text-[12px] md:text-[14px]  lg:text-[16px]  leading-tight tracking-normal text-left mt-5"></p>
                   <p className=" text-[14px] md:text-[16px]  lg:text-[18px]  flex flex-row items-center leading-tight text-left mt-5  ">
@@ -150,6 +156,24 @@ export const ServiciosIndex = () => {
                     </span>
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex w-full px-5 mb-5 justify-center items-center ">
+            <div className="md:flex max-w-[1240px] mx-auto  md:justify-around w-full p-5 px-5 font-monts bg-grayOntu/20 rounded-3xl  ">
+              <h2 className=" text-[28px] md:text-[32px]  lg:text-[36px] text-center md:text-left font-semibold tracking-wide">
+                Cuidado del hogar a tu medida
+              </h2>
+              <div className="flex justify-between items-center mt-5 md:mt-0  ">
+                <button
+                  onClick={() => navigate("/home-care")}
+                  className="bg-gray-600 w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:border-2 hover:border-gray-600 hover:bg-white hover:text-gray-600 hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
+                >
+                  Conocer más{" "}
+                  <span className="px-2">
+                    <FaArrowRight />
+                  </span>
+                </button>
               </div>
             </div>
           </div>

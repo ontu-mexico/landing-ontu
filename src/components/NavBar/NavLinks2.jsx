@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import empresa from "/src/assets/image/empresa.jpg";
-import sustentabilidad from "/src/assets/image/panelSolarTecho.jpg";
+import empresa from "/src/assets/nav/3.png";
+import sustentabilidad from "/src/assets/nav/2.png";
 export const NavLinks2 = () => {
   const [heading, setHeading] = useState("");
   const [subHeading, setSubHeading] = useState("");
@@ -15,20 +15,23 @@ export const NavLinks2 = () => {
       sublinks: [
         {
           Head: "Sustentabilidad",
-          link: "/",
+          link: "",
           sublink: [
+            {
+              name: "Almacenamiento de Energía",
+              link: "/almacenamiento-de-energia",
+            },
+            { name: "Calentamiento de Agua", link: "/calentamiento-de-agua" },
             { name: "Paneles Solares", link: "/paneles-solares" },
-            { name: "Almacenamiento de Energía", link: "" },
-            { name: "Calentamiento de Agua", link: "" },
-            { name: "Ahorro de Agua", link: "" },
           ],
         },
         {
           Head: "Ontu Empresas",
-          link: "/",
+          link: "",
           sublink: [
-            { name: "Energía Limpia", link: "/" },
-            { name: "Calentamiento del agua", link: "/" },
+            { name: "Ahorro de Agua", link: "" },
+            { name: "Calderas de Condensación", link: "/" },
+            { name: "Paneles Solares", link: "/" },
           ],
         },
       ],
@@ -40,20 +43,19 @@ export const NavLinks2 = () => {
       sublinks: [
         {
           Head: "Aprende",
-          link: "/",
+          link: "",
           sublink: [
-            { name: "Academia Solar", link: "/" },
             { name: "Academia del Agua", link: "/" },
             { name: "Academia para el Hogar", link: "/" },
+            { name: "Academia Solar", link: "/" },
           ],
         },
         {
           Head: "Ontu",
           sublink: [
-            { name: "FAQs", link: "/" },
             { name: "Estrategias de Impacto", link: "/" },
+            { name: "FAQs", link: "/" },
             { name: "Por qué lo hacemos", link: "/" },
-            // { name: "Registro de Personal", link: "/personal" },
           ],
         },
       ],

@@ -12,8 +12,8 @@ export const BannerHC = () => {
           </h3>
           <hr className="border-[1.5px] border-[#F2C00C] mb-2 w-1/4 mt-1" />
           <h1 className="font-monts text-[38px] md:text-[42px] lg:text-[46px]  leading-none mb-5 lg:mb-0 font-semibold tracking-wide mt-2  ">
-            <span className="text-ontu">Eficiencia</span> para los puntos clave de tu
-            hogar
+            <span className="text-ontu">Eficiencia</span> para los puntos clave
+            de tu hogar
           </h1>
 
           <p className="text-[14px] md:text-[16px]  lg:text-[18px]  mt-5 mb-10 font-monts leading-tight font-normal flex flex-row items-center text-left">

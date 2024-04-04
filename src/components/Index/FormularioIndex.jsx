@@ -20,7 +20,7 @@ export const FormularioIndex = () => {
             </p>
             <p className=" text-[14px] md:text-[16px]  lg:text-[18px]  flex flex-row items-center leading-tight text-left mt-5  ">
               <span className="font-semibold text-blueOntu hover:text-gray-600 flex flex-row items-center">
-                <Link to={"/"}>Contactar </Link>
+                <Link to={""}>Contactar </Link>
                 <span className="text-[16px] md:text-[18px] lg:text-[20px] px-2">
                   <FaArrowRight size={15} />
                 </span>

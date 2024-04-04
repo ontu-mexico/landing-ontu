@@ -34,22 +34,35 @@ export const SectionPanel = () => {
                 <span className="text-[#F2C00C]" data-aos="fade-right">
                   <FaCheck size={15} />
                 </span>
-                Información por definir.
+                Gastar hasta un 95% menos en luz.
               </li>
               <li className="flex items-center gap-3     leading-tight ">
                 <span className="text-[#F2C00C]" data-aos="fade-right">
                   <FaCheck size={15} />
                 </span>
-                Información por definir.
+                Aumentar la plusvalía de tu inmueble.
               </li>
               <li className="flex items-center gap-3  leading-tight ">
                 <span className="text-[#F2C00C]" data-aos="fade-right">
                   <FaCheck size={15} />
                 </span>
-                Información por definir.
+                Oportunidad de contribuir a un mejor planeta.
+              </li>
+              <li className="flex items-center gap-3  leading-tight ">
+                <span className="text-[#F2C00C]" data-aos="fade-right">
+                  <FaCheck size={15} />
+                </span>
+                Independencia energética.
+              </li>
+              <li className="flex items-center gap-3  leading-tight ">
+                <span className="text-[#F2C00C]" data-aos="fade-right">
+                  <FaCheck size={15} />
+                </span>
+                Incentivos fiscales.
               </li>
             </ul>
           </div>
+          <p className="font-monts text-[12px] md:text-[14px] lg:text-[16px]">Y más...</p>
         </div>
       </div>
     </div>

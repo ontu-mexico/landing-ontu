@@ -17,7 +17,7 @@ export const FormComplete = () => {
         <hr className="h-[3px] w-[350px] mt-5 md:w-[450px] lg:w-[550px] bg-[#F2C00C]" />
         <div className="mt-10 font-monts text-center flex flex-col justify-center items-center">
           <p className="text-xl text-black">
-            ¿Deseas agentar tu cita vía Calendly?
+            O si lo prefieres agenda una cita ahora.
           </p>
           <button
             onClick={() => navigate("")}

@@ -125,7 +125,7 @@ export const FormContacto = () => {
           )}
         </FormControl>
 
-        <div className="flex justify-center items-center mt-8 mb-8 md:mb-3 md:mt-3 ">
+        <div className="flex justify-left items-left mt-8 mb-8 md:mb-3 md:mt-3 ">
           <button
             type="submit"
             disabled={!formik.isValid}

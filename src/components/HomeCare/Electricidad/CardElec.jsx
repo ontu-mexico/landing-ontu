@@ -1,6 +1,6 @@
 import React from "react";
-import instalaciones from "/src/assets/electricidad/lamparaTecho.jpg";
-import calidad from "/src/assets/electricidad/lamparas2.jpg";
+import instalaciones from "/src/assets/electricidad/instalacionM.png";
+import calidad from "/src/assets/electricidad/calidadM.png";
 import reparaciones from "/src/assets/electricidad/cable3.jpg";
 
 //Animation
@@ -50,7 +50,7 @@ export const CardElec = () => {
                   <hr className="border-[1.5px] border-[#F2C00C] mb-4" />
                   <p className="text-[13px] md:text-[14px]  lg:text-[16px]   leading-tight tracking-normal text-center md:text-left">
                     Contamos con el servicio de instalaciones en electricas para
-                    el sector Residencial de baja y alta tensión.
+                    el sector residencial de baja y alta tensión.
                   </p>
 
                   <div className="flex justify-center items-center mt-8  ">
@@ -73,8 +73,8 @@ export const CardElec = () => {
                   alt="Calidad de la luz"
                 />
                 <div className="p-6 font-monts">
-                  <h2 className="text-[24px] md:text-[26px] lg:text-[28px] tracking-wide leading-none font-semibold text-center mb-4 mt-2 ">
-                    Calidad en la Iluminación
+                  <h2 className="text-[24px] md:text-[26px] lg:text-[28px] tracking-wide leading-none font-semibold text-center mb-4 mt-2">
+                    Calidad en la <br /> Luz
                   </h2>
                   <hr className="border-[1.5px] border-[#F2C00C] mb-4" />
 
