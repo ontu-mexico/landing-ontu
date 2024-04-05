@@ -22,7 +22,7 @@ export const ServiciosHC = () => {
       {/* Electricidad */}
       <div className="w-full px-5 bg-white mb-16 mt-16">
         <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center rounded-3xl ">
-          <div className="lg:w-1/2 object-cover ">
+          <div className="lg:w-1/2  ">
             <picture>
               <source
                 media="(max-width: 640px )"
@@ -36,8 +36,8 @@ export const ServiciosHC = () => {
               />
               <img
                 src={electricidad2}
-                alt="Panel solar"
-                className="w-full h-full rounded-3xl"
+                alt="Electricidad"
+                className="w-full h-[300px] rounded-3xl object-cover object-center"
               />
             </picture>
           </div>
@@ -96,14 +96,14 @@ export const ServiciosHC = () => {
               </p>
             </div>
           </div>
-          <div className="lg:w-1/2 object-cover ">
+          <div className="lg:w-1/2  ">
             <picture>
               <source media="(max-width: 640px )" srcSet={plomero} sizes="" />
               <source media="(min-width: 641px )" srcSet={plomero2} sizes="" />
               <img
                 src={plomero2}
-                alt="Panel solar"
-                className="w-full h-full rounded-3xl"
+                alt="Plomería"
+                className="w-full h-[300px] rounded-3xl object-cover object-center"
               />
             </picture>
           </div>
@@ -114,14 +114,14 @@ export const ServiciosHC = () => {
 
       <div className="w-full px-5 bg-white mb-16 mt-16">
         <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center   rounded-3xl ">
-          <div className="lg:w-1/2 object-cover ">
+          <div className="lg:w-1/2  ">
             <picture>
               <source media="(max-width: 640px )" srcSet={smart} sizes="" />
               <source media="(min-width: 641px )" srcSet={smart2} sizes="" />
               <img
                 src={smart2}
-                alt="Panel solar"
-                className="w-full h-full rounded-3xl"
+                alt="Smart Home"
+                className="w-full h-[300px] rounded-3xl object-cover object-center"
               />
             </picture>
           </div>

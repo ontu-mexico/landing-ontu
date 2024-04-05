@@ -29,9 +29,12 @@ export const NavLinks2 = () => {
           Head: "Ontu Empresas",
           link: "",
           sublink: [
-            { name: "Ahorro de Agua", link: "" },
-            { name: "Calderas de Condensación", link: "/" },
-            { name: "Paneles Solares", link: "/" },
+            { name: "Ahorro de Agua", link: "/ahorro-de-agua" },
+            {
+              name: "Calderas de Condensación",
+              link: "/calderas-de-condensacion",
+            },
+            { name: "Paneles Solares", link: "/paneles-solares-empresas" },
           ],
         },
       ],

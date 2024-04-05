@@ -45,7 +45,7 @@ export const NavBar = () => {
 
           <li>
             <Link
-              to="/"
+              to="/financiamiento"
               className="py-4 px-3 inline-block font-monts font-semibold lg:text-[12px] xl:text-[13px] text-[14px] hover:bg-slate-50 text-center leading-relaxed "
             >
               Financiamiento
@@ -81,7 +81,7 @@ export const NavBar = () => {
           <NavLinks2 />
           <li className="hover:bg-slate-50">
             <Link
-              to="/"
+              to="/financiamiento"
               className="py-3 px-3 inline-block font-monts font-semibold lg:text-[12px] xl:text-[13px] text-[14px] leading-relaxed  "
             >
               Financiamiento

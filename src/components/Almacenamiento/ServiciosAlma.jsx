@@ -43,7 +43,7 @@ export const ServiciosAlma = () => {
                   <img
                     src={panelI2}
                     alt="Panel solar"
-                    className="w-full h-full rounded-3xl"
+                    className="w-full h-[300px] rounded-3xl object-cover object-center"
                   />
                 </picture>
               </div>
@@ -94,7 +94,7 @@ export const ServiciosAlma = () => {
                   <img
                     src={panelH2}
                     alt="Panel solar"
-                    className="w-full h-full rounded-3xl"
+                    className="w-full h-[300px] rounded-3xl object-cover object-center"
                   />
                 </picture>
               </div>
@@ -119,7 +119,7 @@ export const ServiciosAlma = () => {
                   <img
                     src={calderaI2}
                     alt="Panel solar"
-                    className="w-full h-full rounded-3xl"
+                    className="w-full h-[300px] rounded-3xl object-cover object-top"
                   />
                 </picture>
               </div>

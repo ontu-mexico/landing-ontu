@@ -42,7 +42,7 @@ export const ServiciosCalen = () => {
                   <img
                     src={residencial2}
                     alt="Residencial"
-                    className="w-full h-full rounded-3xl"
+                    className="w-full h-[300px] rounded-3xl object-cover object-center"
                   />
                 </picture>
               </div>
@@ -85,7 +85,7 @@ export const ServiciosCalen = () => {
                   </p>
                 </div>
                 <p className=" text-[14px] md:text-[16px]  lg:text-[18px]  flex flex-row items-center leading-tight text-left mt-5  ">
-                  <span className="font-semibold hover:text-blueOntu flex flex-row items-center text-gray-600">
+                  <span className="font-semibold hover:text-blueOntu flex flex-row items-center text-gray-600 mb-10 md:mb-0">
                     <Link to={""}>Solicita más información</Link>
                     <span className="text-[16px] md:text-[18px] lg:text-[20px] px-2">
                       <FaArrowRight size={15} />
@@ -107,8 +107,8 @@ export const ServiciosCalen = () => {
                   />
                   <img
                     src={alberca2}
-                    alt="Panel solar"
-                    className="w-full h-full rounded-3xl"
+                    alt="Alberca"
+                    className="w-full h-[300px] rounded-3xl object-cover object-center"
                   />
                 </picture>
               </div>

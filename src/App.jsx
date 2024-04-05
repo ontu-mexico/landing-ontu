@@ -19,6 +19,10 @@ import { HomeCare } from "./components/HomeCare/HomeCare";
 import { Index } from "./components/Index/Index";
 import { Almacenamiento } from "./components/Almacenamiento/Almacenamiento";
 import { Calentamiento } from "./components/Calentamiento/Calentamiento";
+import { PanelesEmpresas } from "./components/PanelesEmpresas/PanelesEmpresas";
+import { Financiamiento } from "./components/Financiamiento/Financiamiento";
+import { Calderas } from "./components/Calderas/Calderas";
+import { Ahorro } from "./components/Ahorro/Ahorro";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -50,6 +54,13 @@ function App() {
             element={<Almacenamiento />}
           />
           <Route path="/calentamiento-de-agua" element={<Calentamiento />} />
+          <Route path="/ahorro-de-agua" element={<Ahorro />} />
+          <Route path="/calderas-de-condensacion" element={<Calderas />} />
+          <Route path="/financiamiento" element={<Financiamiento />} />
+          <Route
+            path="/paneles-solares-empresas"
+            element={<PanelesEmpresas />}
+          />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>

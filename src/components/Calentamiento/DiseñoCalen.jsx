@@ -19,17 +19,16 @@ export const DiseñoCalen = () => {
               </h1>
               <div className="w-full">
                 <p className="text-[14px] md:text-[16px]  lg:text-[18px]  mt-5 mb-5 font-monts leading-tight font-medium flex flex-row items-center text-left text-white">
-                  Con solo unas sencillas preguntas podremos comenzar
+                  Con solo unas sencillas preguntas podremos comenzar.
                 </p>
-              </div>
-
-              <div className="flex justify-left items-center  ">
-                <button
-                  onClick={() => navigate("")}
-                  className="bg-gray-600 w-[290px] h-[40px] md:w-[330px] md:h-[40px] font-monts flex items-center justify-center font-semibold uppercase   text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-gray-200 hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
-                >
-                  Comencemos con tu diseño
-                </button>
+                <div className="flex justify-left  ">
+                  <button
+                    onClick={() => navigate("")}
+                    className="bg-gray-600 w-[250px] h-[65px] md:w-[330px] md:h-[40px] font-monts flex items-center justify-center font-semibold uppercase   text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-gray-200 hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
+                  >
+                    Comencemos con tu diseño
+                  </button>
+                </div>
               </div>
             </div>
           </div>

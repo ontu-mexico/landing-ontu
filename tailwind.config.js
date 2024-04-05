@@ -30,6 +30,8 @@ export default {
         parallaxI: 'url("../src/assets/image/1.png")',
         parallaxIM: 'url("../src/assets/image/1M.png")',
         parallaxDCal: 'url("../src/assets/calentamiento/diseno.jpg")',
+        parallaxCal: 'url("../src/assets/calderas/sustentable.jpg")',
+        parallaxAA: 'url("../src/assets/calentamiento/agua.jpg")',
       },
       container: {
         center: true,

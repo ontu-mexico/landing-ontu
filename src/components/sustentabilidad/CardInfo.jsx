@@ -6,12 +6,16 @@ import { FaMoneyBills } from "react-icons/fa6";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 export const CardInfo = () => {
   //Animation on scroll
   useEffect(() => {
     AOS.init({ duration: 2000 });
   });
+  const navigate = useNavigate();
+
   return (
     <div className="w-full py-10 px-4 bg-white">
       <div className="max-w-[1240px] bg-gray-50 rounded-3xl mx-auto flex flex-col justify-center items-center px-10 text-center mb-5  ">
@@ -32,11 +36,11 @@ export const CardInfo = () => {
             Soluciones Financieras
           </h2>
           {/* Card 1 */}
-          <div className="w-full flex flex-col  my-4 text-center bg-transparent  mt-12 hover:scale-[1.05] cursor-pointer ">
-            <h2 className="text-[20px] md:text-[22px] lg:text-[24px] font-monts text-white bg-slate-600 rounded-t-3xl font-bold text-center pt-5">
+          <div className="w-full flex flex-col  my-4 text-center bg-transparent  mt-12 hover:scale-[1.05] cursor-pointer items-center ">
+            <h2 className="text-[20px] md:text-[22px] lg:text-[24px] font-monts text-white bg-slate-600 rounded-t-3xl font-bold text-center pt-5  w-[220px] ">
               Arrendamiento
             </h2>
-            <div className="flex justify-center items-center  h-full w-full bg-slate-600 p-5 rounded-b-3xl ">
+            <div className="flex justify-center items-center  h-[155px] w-[220px]  bg-slate-600 p-5 rounded-b-3xl ">
               <div className=" mb-2">
                 <p className="text-white">
                   <FaFileSignature size={80} />
@@ -45,11 +49,11 @@ export const CardInfo = () => {
             </div>
           </div>
           {/* Card 2 */}
-          <div className="w-full flex flex-col  my-4 text-center bg-transparent  mt-12 hover:scale-[1.05] cursor-pointer ">
-            <h2 className="text-[20px] md:text-[22px] lg:text-[24px] font-monts text-white bg-slate-600 rounded-t-3xl font-bold text-center pt-5">
+          <div className="w-full flex flex-col  my-4 text-center bg-transparent  mt-12 hover:scale-[1.05] cursor-pointer items-center ">
+            <h2 className="text-[20px] md:text-[22px] lg:text-[24px] font-monts text-white bg-slate-600 rounded-t-3xl font-bold text-center pt-5 w-[220px]">
               Crédito
             </h2>
-            <div className="flex justify-center items-center  h-full w-full bg-slate-600 p-5 rounded-b-3xl ">
+            <div className="flex justify-center items-center  h-[155px] w-[220px] bg-slate-600 p-5 rounded-b-3xl ">
               <div className=" mb-2">
                 <p className="text-white">
                   <FaRegCreditCard size={80} />
@@ -58,11 +62,11 @@ export const CardInfo = () => {
             </div>
           </div>
           {/* Card 3 */}
-          <div className="w-full flex flex-col  my-4 text-center bg-transparent  mt-12 hover:scale-[1.05] cursor-pointer ">
-            <h2 className="text-[20px] md:text-[22px] lg:text-[24px] font-monts text-white bg-slate-600 rounded-t-3xl font-bold text-center pt-5">
+          <div className="w-full flex flex-col  my-4 text-center bg-transparent  mt-12 hover:scale-[1.05] cursor-pointer items-center ">
+            <h2 className="text-[20px] md:text-[22px] lg:text-[24px] font-monts text-white bg-slate-600 rounded-t-3xl font-bold text-center pt-5 ] w-[220px] ">
               Ontu 0
             </h2>
-            <div className="flex justify-center items-center  h-full w-full bg-slate-600 p-5 rounded-b-3xl ">
+            <div className="flex justify-center items-center  h-[155px] w-[220px]  bg-slate-600 p-5 rounded-b-3xl ">
               <div className=" mb-2">
                 <p className="text-white">
                   <FaCreativeCommonsZero size={80} />
@@ -71,11 +75,11 @@ export const CardInfo = () => {
             </div>
           </div>
           {/* Card 4 */}
-          <div className="w-full flex flex-col  my-4 text-center bg-transparent  mt-12 hover:scale-[1.05] cursor-pointer ">
-            <h2 className="text-[20px] md:text-[22px] lg:text-[24px] font-monts text-white bg-slate-600 rounded-t-3xl font-bold text-center pt-5">
+          <div className="w-full flex flex-col  my-4 text-center bg-transparent  mt-12 hover:scale-[1.05] cursor-pointer items-center ">
+            <h2 className="text-[20px] md:text-[22px] lg:text-[24px] font-monts text-white bg-slate-600 rounded-t-3xl font-bold text-center pt-5 w-[220px] ">
               Al contado
             </h2>
-            <div className="flex justify-center items-center  h-full w-full bg-slate-600 p-5 rounded-b-3xl ">
+            <div className="flex justify-center items-center h-[155px] w-[220px]  bg-slate-600 p-5 rounded-b-3xl ">
               <div className=" mb-2">
                 <p className="text-white">
                   <FaMoneyBills size={80} />
@@ -90,7 +94,7 @@ export const CardInfo = () => {
             ti.
           </p>
           <button
-            onClick={() => navigate("/Estudio")}
+            onClick={() => navigate("/financiamiento")}
             className="bg-blueOntu w-[330px] h-[48px] font-monts font-bold uppercase mx-auto  md:mx-0 text-white  hover:text-white hover:border-2 hover:bg-gray-600 hover:font-bold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-3xl "
           >
             Ver Soluciones Financieras

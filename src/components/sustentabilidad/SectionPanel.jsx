@@ -1,5 +1,5 @@
-import mobile from "/src/assets/image/panelSolarHome2.png";
-import desktop from "/src/assets/image/panelSolarHome4.png";
+import mobile from "/src/assets/image/panel2.png";
+import desktop from "/src/assets/image/panel2.png";
 import React, { useEffect } from "react";
 //AOS
 import AOS from "aos";
@@ -62,7 +62,9 @@ export const SectionPanel = () => {
               </li>
             </ul>
           </div>
-          <p className="font-monts text-[12px] md:text-[14px] lg:text-[16px]">Y más...</p>
+          <p className="font-monts text-[12px] md:text-[14px] lg:text-[16px]">
+            Y más...
+          </p>
         </div>
       </div>
     </div>
