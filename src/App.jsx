@@ -23,6 +23,8 @@ import { PanelesEmpresas } from "./components/PanelesEmpresas/PanelesEmpresas";
 import { Financiamiento } from "./components/Financiamiento/Financiamiento";
 import { Calderas } from "./components/Calderas/Calderas";
 import { Ahorro } from "./components/Ahorro/Ahorro";
+import { Faqs } from "./components/Faqs/Faqs";
+import { AvisoPrivacidad } from "./components/Legales/AvisoPrivacidad";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -61,6 +63,8 @@ function App() {
             path="/paneles-solares-empresas"
             element={<PanelesEmpresas />}
           />
+          <Route path="/preguntas-frecuentes" element={<Faqs />} />
+          <Route path="/aviso-de-privacidad" element={<AvisoPrivacidad />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>

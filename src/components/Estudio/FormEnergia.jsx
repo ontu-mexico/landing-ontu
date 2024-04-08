@@ -10,6 +10,7 @@ const espacio = [
 ];
 
 export const FormEnergia = () => {
+  //abrir modal
   const [isopen, setIsopen] = useState(false);
 
   const { userData, setUserData } = useContext(StepperContext);
@@ -25,7 +26,7 @@ export const FormEnergia = () => {
       <div>
         <div className="flex justify-end ">
           <button
-            className="text-marineOntu text-[32px] h-8 w-8 text-center font-bold cursor-pointer motion-safe:animate-bounce hover:text-gray-500  active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all"
+            className="text-blueOntu text-[32px] h-8 w-8 text-center font-bold cursor-pointer motion-safe:animate-bounce hover:text-gray-500  active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all"
             onClick={() => setIsopen(true)}
           >
             <ion-icon name="help-circle-outline"></ion-icon>

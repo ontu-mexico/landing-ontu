@@ -57,7 +57,7 @@ export const NavLinks2 = () => {
           Head: "Ontu",
           sublink: [
             { name: "Estrategias de Impacto", link: "/" },
-            { name: "FAQs", link: "/" },
+            { name: "FAQs", link: "/preguntas-frecuentes" },
             { name: "Por qué lo hacemos", link: "/" },
           ],
         },
@@ -81,7 +81,7 @@ export const NavLinks2 = () => {
             >
               {link.name}
               {/* Mobile Arrow  */}
-              <span className="inline lg:px-2 lg:ml:2 lg:hidden text-ontu ">
+              <span className="inline lg:px-2 lg:ml:2 lg:hidden text-ontu transform origin-center transition duration-200 ease-out">
                 <ion-icon
                   name={`${
                     heading === link.name

@@ -63,16 +63,16 @@ export const Footer = () => {
           </h6>
           <ul>
             <li className="py-2 text-sm hover:text-ontu">
-              <a href="">Aviso de Privacidad</a>
+              <Link to="/aviso-de-privacidad">Aviso de Privacidad</Link>
             </li>
             <li className="py-2 text-sm hover:text-ontu">
-              <a href="">Garantía de Felicidad</a>
+              <Link to="">Garantía de Felicidad</Link>
             </li>
             <li className="py-2 text-sm hover:text-ontu">
-              <a href="">Pólitica de Cancelación</a>
+              <Link to="">Pólitica de Cancelación</Link>
             </li>
             <li className="py-2 text-sm hover:text-ontu">
-              <a href="">Términos y Condiciones</a>
+              <Link to="">Términos y Condiciones</Link>
             </li>
           </ul>
         </div>
@@ -85,7 +85,7 @@ export const Footer = () => {
               <Link to="">Blog</Link>
             </li>
             <li className="py-2 text-sm hover:text-ontu">
-              <Link to="">FAQs</Link>
+              <Link to="/preguntas-frecuentes">FAQs</Link>
             </li>
 
             <li className="py-2 text-sm hover:text-ontu">

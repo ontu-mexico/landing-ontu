@@ -12,10 +12,13 @@ import React, { useState } from "react";
 import { Form, useFormik } from "formik";
 import { Link } from "react-router-dom";
 import * as Yup from "yup";
-
+import { ModalPrivacidad } from "../Legales/ModalPrivacidad";
 export const FormCalentamiento = () => {
   const [formSubmitted, setFormSubmitted] = useState(false); // Estado para controlar si el formulario ha sido enviado
   const [showMessage, setShowMessage] = useState(false); //Mensaje temporal
+  //abrir modal
+  const [isopen, setIsopen] = useState(false);
+
   ///Estado de Formik
   const formik = useFormik({
     initialValues: {
@@ -137,10 +140,31 @@ export const FormCalentamiento = () => {
               }
             />
             <span className="mr-1">Sí, he leído y acepto la de</span>
-            <span className="hover:text-blueOntu font-semibold">
-              <Link to="#">Aviso de Privacidad</Link>
+            <span
+              className="hover:text-blueOntu font-semibold cursor-pointer"
+              onClick={() => setIsopen(true)}
+            >
+              Aviso de Privacidad
             </span>
           </div>
+
+          {/* modal */}
+          {isopen && (
+            /* Modal Imagen */
+            <div className="fixed z-40 inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center px-5">
+              <div className="bg-white p-1 rounded flex flex-col justify-end gap-5  max-h-[85vh]">
+                <div className="flex justify-end">
+                  <button
+                    onClick={() => setIsopen(false)}
+                    className="bg-white text-[30px] rounded-full text-grayOntu  h-8 w-8 text-center cursor-pointer m-2 hover:text-red-600 active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all"
+                  >
+                    <ion-icon name="close-circle-outline"></ion-icon>
+                  </button>
+                </div>
+                <ModalPrivacidad />
+              </div>
+            </div>
+          )}
 
           {(formik.touched.nombre ||
             formik.touched.telefono ||
