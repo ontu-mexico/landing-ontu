@@ -12,6 +12,7 @@ import { useNavigate } from "react-router-dom";
 export const SmartHome = () => {
   const navigate = useNavigate();
 
+  //scroll
   const scrollToPackages = () => {
     const packagesSection = document.getElementById("paquetes");
     if (packagesSection) {
@@ -23,7 +24,10 @@ export const SmartHome = () => {
     <main>
       <NavBar />
       <div className="w-full">
-        <div className="flex items-end justify-starth-[485px] bg-fixed bg-parallaxSH bg-right-bottom bg-cover">
+        <div
+          className="flex items-end justify-starth-[485px] bg-fixed  bg-parallaxSH bg-right-top
+           lg:bg-center lg:bg-cover"
+        >
           <div className="max-w-[750px] lg:max-w-[880px] mt-[80px]  lg:mt-[80px]">
             <div className="flex flex-col bg-opacity-80 bg-clip-padding backdrop-blur-sm  px-10  bg-white rounded-3xl m-10 md:m-12 lg:m-12 ">
               <h3 className="uppercase text-[12px] md:text-[13px] lg:text-[15px] mt-10 font-medium tracking-widest ">
@@ -31,8 +35,8 @@ export const SmartHome = () => {
               </h3>
               <hr className="border-[1.5px] border-[#F2C00C] mb-2 w-1/3 mt-1" />
               <h1 className="font-monts text-[38px] md:text-[42px] lg:text-[46px]  leading-none mb-5 lg:mb-0 font-semibold tracking-wide mt-2  ">
-                <span className="text-ontu">Gestionar tu hogar </span>nunca había sido
-                tan fácil
+                <span className="text-ontu">Gestionar tu hogar </span>nunca
+                había sido tan fácil
               </h1>
               <p className="text-[14px] md:text-[16px]  lg:text-[18px] mb-5 lg:mt-5 font-monts leading-tight font-normal flex flex-row items-center text-left">
                 Personaliza tu sistema

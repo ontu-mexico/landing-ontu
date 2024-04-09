@@ -58,26 +58,26 @@ export const Footer = () => {
       </div>
       <div className="lg:col-span-2 flex justify-between font-monts lg:mx-8">
         <div>
-          <h6 className="font-bold uppercase font-monts mb-2 text-ontu">
+          <h6 className="font-semibold uppercase font-monts mb-2 text-ontu">
             Legales
           </h6>
           <ul>
             <li className="py-2 text-sm hover:text-ontu">
               <Link to="/aviso-de-privacidad">Aviso de Privacidad</Link>
             </li>
-            <li className="py-2 text-sm hover:text-ontu">
+            {/* <li className="py-2 text-sm hover:text-ontu">
               <Link to="">Garantía de Felicidad</Link>
-            </li>
-            <li className="py-2 text-sm hover:text-ontu">
+            </li> */}
+            {/* <li className="py-2 text-sm hover:text-ontu">
               <Link to="">Pólitica de Cancelación</Link>
-            </li>
+            </li> */}
             <li className="py-2 text-sm hover:text-ontu">
               <Link to="">Términos y Condiciones</Link>
             </li>
           </ul>
         </div>
-        <div>
-          <h6 className="font-bold uppercase font-monts mb-2 text-ontu">
+        <div className="mr-5">
+          <h6 className="font-semibold uppercase font-monts mb-2 text-ontu">
             Empresa
           </h6>
           <ul>
@@ -88,13 +88,13 @@ export const Footer = () => {
               <Link to="/preguntas-frecuentes">FAQs</Link>
             </li>
 
-            <li className="py-2 text-sm hover:text-ontu">
+            {/* <li className="py-2 text-sm hover:text-ontu">
               <Link to="">Estrategía de impacto</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div>
-          <h6 className="font-bold uppercase font-monts mb-2 text-ontu">
+          <h6 className="font-semibold uppercase font-monts mb-2 text-ontu">
             Equipo
           </h6>
           <ul>

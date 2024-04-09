@@ -7,14 +7,12 @@ const usoPaneles = [
   { label: "Comercial", value: "comercial" },
   { label: "Industrial", value: "industrial" },
   { label: "Rural", value: "rural" },
-
 ];
 const solucion = [
   { label: "Arrendamiento", value: "arrendamiento" },
   { label: "Crédito", value: "credito" },
   { label: "0% Enganche", value: "enganche" },
   { label: "De Contado", value: "contado" },
-
 ];
 
 export const FormDatos = () => {
@@ -23,7 +21,7 @@ export const FormDatos = () => {
     const { name, value } = e.target;
     setUserData({ ...userData, [name]: value });
   };
-//Selecionar Select
+  //Selecionar Select
   const handleSelectChange = (value) => {
     console.log(value);
   };
@@ -77,7 +75,7 @@ export const FormDatos = () => {
             maxLength="10"
           />
         </div>
-        
+
         <div className="mt-4">
           <label htmlFor="#">Ingresa tu código postal</label>
           <input
@@ -91,32 +89,32 @@ export const FormDatos = () => {
           />
         </div>
         <div className="mt-4">
-            <label htmlFor="">Uso de los panales</label>
-            <Select
+          <label htmlFor="">Uso de los panales</label>
+          <Select
             className="mt-2"
-              defaultValue={{
-                label: "Selecciona una opción",
-                value: "empty",
-              }}
-              options={usoPaneles}
-              onChange={handleSelectChange}
-            />
-          </div>
-          <div className="mt-4">
-            <label htmlFor="" >¿Qué solución te interesa?</label>
-            <Select
+            defaultValue={{
+              label: "Selecciona una opción",
+              value: "empty",
+            }}
+            options={usoPaneles}
+            onChange={handleSelectChange}
+          />
+        </div>
+        <div className="mt-4">
+          <label htmlFor="">¿Qué solución te interesa?</label>
+          <Select
             className="mt-2"
-              defaultValue={{
-                label: "Selecciona una opción",
-                value: "empty",
-              }}
-              options={solucion}
-              onChange={handleSelectChange}
-            />
-          </div>
-          <div className="mt-8 text-center text-xl font-monts text-black">
+            defaultValue={{
+              label: "Selecciona una opción",
+              value: "empty",
+            }}
+            options={solucion}
+            onChange={handleSelectChange}
+          />
+        </div>
+        <div className="mt-8 text-center text-xl font-monts text-black">
           <label>¿Tienes 5 minutos más?</label>
-          </div>
+        </div>
       </div>
     </div>
   );

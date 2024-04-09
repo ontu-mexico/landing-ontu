@@ -3,7 +3,7 @@ import { NavBar } from "../NavBar/NavBar";
 import { Footer } from "../Footer";
 import { BannerFinanciamiento } from "./BannerFinanciamiento";
 import { SolucionesFinancieras } from "./SolucionesFinancieras";
-import { CalculadoraFinanciera } from "./CalculadoraFinanciera";
+// import { CalculadoraFinanciera } from "./CalculadoraFinanciera";
 import { CallAlma } from "../Almacenamiento/CallAlma";
 
 export const Financiamiento = () => {
@@ -12,7 +12,7 @@ export const Financiamiento = () => {
       <NavBar />
       <BannerFinanciamiento />
       <SolucionesFinancieras />
-      <CalculadoraFinanciera />
+      {/* <CalculadoraFinanciera /> */}
       <CallAlma />
       <Footer />
     </main>

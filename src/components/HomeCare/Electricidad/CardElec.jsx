@@ -1,7 +1,7 @@
 import React from "react";
 import instalaciones from "/src/assets/electricidad/instalacionM.png";
 import calidad from "/src/assets/electricidad/calidadM.png";
-import reparaciones from "/src/assets/electricidad/cable3.jpg";
+import reparaciones from "/src/assets/electricidad/cable-3.jpg";
 
 //Animation
 import { useEffect } from "react";

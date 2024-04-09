@@ -56,9 +56,9 @@ export const NavLinks2 = () => {
         {
           Head: "Ontu",
           sublink: [
-            { name: "Estrategias de Impacto", link: "/" },
+            // { name: "Estrategias de Impacto", link: "/" },
             { name: "FAQs", link: "/preguntas-frecuentes" },
-            { name: "Por qué lo hacemos", link: "/" },
+            // { name: "Por qué lo hacemos", link: "/" },
           ],
         },
       ],

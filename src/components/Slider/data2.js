@@ -1,26 +1,30 @@
 export const logos = [
   {
     id: 1,
-    empresa: "ontu",
+    empresa: "Marquis",
   },
   {
     id: 2,
-    empresa: "ontu",
+    empresa: "moyo",
   },
   {
     id: 3,
-    empresa: "ontu",
+    empresa: "Homie",
   },
   {
     id: 4,
-    empresa: "ontu",
+    empresa: "Cinepolis",
   },
   {
     id: 5,
-    empresa: "ontu",
+    empresa: "Bosque Real",
   },
   {
     id: 6,
-    empresa: "ontu",
+    empresa: "Marquis Reforma",
+  },
+  {
+    id: 7,
+    empresa: "Exitus",
   },
 ];

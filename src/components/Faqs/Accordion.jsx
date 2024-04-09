@@ -28,7 +28,7 @@ export const Accordion = ({ question, answer, searchTerm }) => {
     <div className="font-monts px-4 border-b border-gray-200">
       <button
         onClick={toggleAccordion}
-        className="flex justify-between items-center w-full font-semibold "
+        className="flex justify-between items-center w-full font-semibold text-left "
       >
         <span>{question}</span>
         {accordionOpen ? (

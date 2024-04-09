@@ -6,7 +6,7 @@ export const CallSH = () => {
   const navigate = useNavigate();
   return (
     <div className="w-full mt-10 mb-16">
-      <div className="px-14 ">
+      <div className="px-5 md:px-14 ">
         <div className="flex items-center justify-start rounded-3xl w-full h-[480px] bg-fixed bg-parallaxSH2 bg-top bg-cover ">
           <div className="flex flex-col bg-opacity-40 bg-clip-padding backdrop-blur-sm bg-blueOntu rounded-3xl w-full h-full">
             <div className="px-10 h-full flex flex-col justify-center items-center md:items-start">
@@ -27,7 +27,7 @@ export const CallSH = () => {
                 <div className="flex justify-left items-center  ">
                   <button
                     onClick={() => navigate("")}
-                    className="bg-gray-600  w-[250px] h-[65px] md:w-[330px] md:h-[40px] font-monts flex items-center justify-center font-semibold uppercase   text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-gray-200 hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
+                    className="bg-gray-600  w-[255px] h-[65px] md:w-[330px] md:h-[40px] font-monts flex items-center justify-center font-semibold uppercase   text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-gray-200 hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
                   >
                     Comencemos con tu diseño
                   </button>

@@ -108,7 +108,7 @@ export const FormContacto = () => {
                 formik.touched.politicas && Boolean(formik.errors.politicas)
               }
             />
-            <span className="mr-1">Sí, he leído y acepto la de</span>
+            <span className="mr-1">Sí, he leído y acepto el </span>
             <span
               className="hover:text-blueOntu font-semibold cursor-pointer"
               onClick={() => setIsopen(true)}

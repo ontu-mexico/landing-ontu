@@ -85,7 +85,7 @@ export const PanelesSolares = () => {
               Paneles Solares.
             </p>
 
-            <div className="flex  items-end gap-2 mt-5">
+            <div className="flex flex-col items-start  gap-2 mt-5">
               <div>
                 <p className="text-[14px] md:text-[16px] lg:text-[18px] font-monts text-black ">
                   Tu ahorro a<span className="font-semibold "> 25 años</span>{" "}
@@ -185,7 +185,7 @@ export const PanelesSolares = () => {
       <div className="flex w-full px-5 mb-5 justify-center items-center ">
         <div className="md:flex max-w-[1240px] mx-auto  md:justify-around w-full p-5 px-5 font-monts bg-grayOntu/30 rounded-3xl  ">
           <h2 className=" text-[28px] md:text-[32px]  lg:text-[36px] text-center md:text-left font-semibold tracking-wide">
-           Solicita un estudio solar gratuito
+            Solicita un estudio solar gratuito
           </h2>
           <div className="flex justify-between items-center mt-5 md:mt-0  ">
             <button

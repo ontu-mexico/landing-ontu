@@ -17,7 +17,7 @@ export const SolucionesFinancieras = () => {
     <div className="w-full py-10 px-4 bg-white">
       <div className="max-w-[1240px] bg-gray-50 rounded-3xl mx-auto flex flex-col justify-center items-center px-10 text-center mb-10  ">
         <div className="w-full mx-auto grid md:grid-cols-2 lg:grid-cols-2 md:gap-5 border border-gray-400 rounded-3xl  px-5 md:px-10 relative mb-10 mt-10 ">
-          <h2 className="absolute  top-[-10px] left-8 bg-gray-50  px-2 py-1 text-gray-600 font-medium font-monts text-[20px] md:text-[22px] lg:text-[26px] leading-3 ">
+          <h2 className="absolute  top-[-10px] left-6 md:left-8 bg-gray-50  md:px-2 py-1 text-gray-600 font-medium font-monts text-[20px] md:text-[22px] lg:text-[26px] leading-4 ">
             Soluciones Financieras
           </h2>
           {/* Arrendamiento */}
@@ -40,25 +40,25 @@ export const SolucionesFinancieras = () => {
                     Plazos de hasta 60 meses
                   </h3>
                   <ul className=" space-y-2 text-[12px] md:text-[14px] ">
-                    <li className="flex items-center gap-3     leading-tight ">
+                    <li className="flex items-center gap-3  text-left  leading-tight ">
                       <span className="text-[#F2C00C]" data-aos="fade-right">
                         <FaCheck size={15} />
                       </span>
                       Adquiere tu sistema al finalizar tu plazo.
                     </li>
-                    <li className="flex items-center gap-3     leading-tight ">
+                    <li className="flex items-center gap-3  text-left   leading-tight ">
                       <span className="text-[#F2C00C]" data-aos="fade-right">
                         <FaCheck size={15} />
                       </span>
                       Deduce tus mensualidades.
                     </li>
-                    <li className="flex items-center gap-3  leading-tight ">
+                    <li className="flex items-center gap-3 text-left leading-tight ">
                       <span className="text-[#F2C00C]" data-aos="fade-right">
                         <FaCheck size={15} />
                       </span>
                       Paga una mensualidad fija.
                     </li>
-                    <li className="flex items-center gap-3  leading-tight ">
+                    <li className="flex items-center gap-3 text-left leading-tight ">
                       <span className="text-[#F2C00C]" data-aos="fade-right">
                         <FaCheck size={15} />
                       </span>
@@ -90,25 +90,25 @@ export const SolucionesFinancieras = () => {
                     Sin plazos
                   </h3>
                   <ul className=" space-y-2 text-[12px] md:text-[14px] ">
-                    <li className="flex items-center gap-3     leading-tight ">
+                    <li className="flex items-center gap-3  text-left   leading-tight ">
                       <span className="text-[#F2C00C]" data-aos="fade-right">
                         <FaCheck size={15} />
                       </span>
                       Comienza tu ahorro desde el día 1.
                     </li>
-                    <li className="flex items-center gap-3     leading-tight ">
+                    <li className="flex items-center gap-3  text-left   leading-tight ">
                       <span className="text-[#F2C00C]" data-aos="fade-right">
                         <FaCheck size={15} />
                       </span>
                       Recupera tu inversión de 2 a 4 años.
                     </li>
-                    <li className="flex items-center gap-3  leading-tight ">
+                    <li className="flex items-center gap-3 text-left leading-tight ">
                       <span className="text-[#F2C00C]" data-aos="fade-right">
                         <FaCheck size={15} />
                       </span>
                       Beneficios fiscales aplicables.
                     </li>
-                    <li className="flex items-center gap-3 text-transparent leading-tight ">
+                    <li className="flex items-center gap-3 text-left text-transparent leading-tight ">
                       <span className="text-transparent" data-aos="fade-right">
                         <FaCheck size={15} />
                       </span>
@@ -139,31 +139,31 @@ export const SolucionesFinancieras = () => {
                     Plazos de hasta 24 meses
                   </h3>
                   <ul className=" space-y-2 text-[12px] md:text-[14px] ">
-                    <li className="flex items-center gap-3     leading-tight ">
+                    <li className="flex items-center gap-3  text-left   leading-tight ">
                       <span className="text-[#F2C00C]" data-aos="fade-right">
                         <FaCheck size={15} />
                       </span>
                       Adquiere el sistema a crédito.
                     </li>
-                    <li className="flex items-center gap-3     leading-tight ">
+                    <li className="flex items-center gap-3  text-left   leading-tight ">
                       <span className="text-[#F2C00C]" data-aos="fade-right">
                         <FaCheck size={15} />
                       </span>
                       Mensualidades fijas.
                     </li>
-                    <li className="flex items-center gap-3  leading-tight ">
+                    <li className="flex items-center gap-3 text-left leading-tight ">
                       <span className="text-[#F2C00C]" data-aos="fade-right">
                         <FaCheck size={15} />
                       </span>
                       Sin penalización por terminación anticipada.
                     </li>
-                    <li className="flex items-center gap-3  leading-tight text-transparent">
+                    <li className="flex items-center gap-3 text-left leading-tight text-transparent">
                       <span className="text-transparent" data-aos="fade-right">
                         <FaCheck size={15} />
                       </span>
                       Olvídate del mantenimiento.
                     </li>
-                    <li className="flex items-center gap-3  leading-tight text-transparent">
+                    <li className="flex items-center gap-3 text-left leading-tight text-transparent">
                       <span className="text-transparent" data-aos="fade-right">
                         <FaCheck size={15} />
                       </span>
@@ -194,31 +194,31 @@ export const SolucionesFinancieras = () => {
                     Plazos de hasta 60 meses
                   </h3>
                   <ul className=" space-y-2 text-[12px] md:text-[14px] ">
-                    <li className="flex items-center gap-3     leading-tight ">
+                    <li className="flex items-center gap-3  text-left   leading-tight ">
                       <span className="text-[#F2C00C]" data-aos="fade-right">
                         <FaCheck size={15} />
                       </span>
                       Plan cero inversión.
                     </li>
-                    <li className="flex items-center gap-3     leading-tight ">
+                    <li className="flex items-center gap-3  text-left   leading-tight ">
                       <span className="text-[#F2C00C]" data-aos="fade-right">
                         <FaCheck size={15} />
                       </span>
                       Olvida el mantenimiento.
                     </li>
-                    <li className="flex items-center gap-3  leading-tight ">
+                    <li className="flex items-center gap-3 text-left  leading-tight ">
                       <span className="text-[#F2C00C]" data-aos="fade-right">
                         <FaCheck size={15} />
                       </span>
                       Paga menos que tu recibo de luz actual.
                     </li>
-                    <li className="flex items-center gap-3  leading-tight ">
+                    <li className="flex items-center gap-3 text-left leading-tight ">
                       <span className="text-[#F2C00C]" data-aos="fade-right">
                         <FaCheck size={15} />
                       </span>
                       Pagos mensuales fijos.
                     </li>
-                    <li className="flex items-center gap-3  leading-tight ">
+                    <li className="flex items-center gap-3 text-left leading-tight ">
                       <span className="text-[#F2C00C]" data-aos="fade-right">
                         <FaCheck size={15} />
                       </span>

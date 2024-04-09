@@ -27,7 +27,7 @@ export const ServiciosCalen = () => {
           {/* Residencial*/}
           <div className="w-full px-5 bg-white mb-16 mt-16">
             <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center rounded-3xl ">
-              <div className="lg:w-1/2 object-cover ">
+              <div className="lg:w-1/2 object-cover  hidden lg:flex  ">
                 <picture>
                   <source
                     media="(max-width: 640px )"
@@ -93,7 +93,7 @@ export const ServiciosCalen = () => {
                   </span>
                 </p>
               </div>
-              <div className="lg:w-1/2 object-cover ">
+              <div className="lg:w-1/2 object-cover  hidden lg:flex  ">
                 <picture>
                   <source
                     media="(max-width: 640px )"

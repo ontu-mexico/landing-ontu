@@ -25,11 +25,11 @@ export const SectionAcademia = () => {
               Si estas aquí, es porque tienes interés en los beneficios que vas
               a tener con la instalación de tu sistema solar.
             </p>
-            <p className=" text-[14px] md:text-[16px]  lg:text-[18px]  flex flex-row items-center leading-tight text-left mt-5  ">
+            <p className=" text-[14px] md:text-[16px]  lg:text-[18px]  flex flex-col md:flex-row items-left md:items-center leading-tight text-left mt-5  ">
               <span>Conoce más en nuestra</span>
-              <span className="font-semibold px-2 hover:text-gray-600 flex flex-row items-center">
+              <span className="font-semibold md:px-2  hover:text-gray-600 flex flex-row items-center mt-2 md:mt-0">
                 <Link to={""}>Academia Solar </Link>
-                <span className="text-[16px] md:text-[18px] lg:text-[20px] px-2">
+                <span className="text-[16px] md:text-[18px] lg:text-[20px] px-2 ">
                   <FaArrowRight size={15} />
                 </span>
               </span>

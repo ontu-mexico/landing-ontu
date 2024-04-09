@@ -4,7 +4,10 @@ import { FaArrowRight } from "react-icons/fa6";
 
 export const BannerPlomer = () => {
   return (
-    <div className="flex items-end justify-start h-[485px] bg-fixed bg-parallax bg-cover bg-botton">
+    <div
+      className="flex items-end justify-start  h-[540px] md:h-[485px] bg-fixed bg-parallax bg-cover bg-right-bottom
+    "
+    >
       <div className="max-w-[750px] lg:max-w-[880px] ">
         <div className="flex flex-col bg-opacity-85 bg-clip-padding backdrop-blur-sm  px-10  bg-white rounded-3xl m-10 md:m-14 lg:m-20">
           <h3 className="uppercase text-[12px] md:text-[13px] lg:text-[15px] mt-10 font-medium tracking-widest ">

@@ -19,7 +19,7 @@ export const SectionBeneficios = () => {
             <source media="(max-width: 640px )" srcSet={mobile} />
             <source media="(min-width: 641px rounded-3xl )" srcSet={desktop} />
             <img
-              className="lg:rounded-3xl h-[400px]"
+              className="rounded-3xl h-[400px]"
               src={mobile}
               alt="Panel solar"
             />

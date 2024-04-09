@@ -27,7 +27,7 @@ export const ServiciosIndex = () => {
           {/* Paneles Solares Industriales*/}
           <div className="w-full px-5 bg-white mb-16 mt-16">
             <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center rounded-3xl ">
-              <div className="lg:w-1/2   ">
+              <div className="lg:w-1/2 hidden lg:flex  ">
                 <picture>
                   <source
                     media="(max-width: 640px )"
@@ -95,7 +95,7 @@ export const ServiciosIndex = () => {
                   </p>
                 </div>
               </div>
-              <div className="lg:w-1/2 ">
+              <div className="lg:w-1/2 hidden lg:flex  ">
                 <picture>
                   <source
                     media="(max-width: 640px )"
@@ -119,7 +119,7 @@ export const ServiciosIndex = () => {
           {/* Paneles Solres */}
           <div className="w-full px-5 bg-white mb-16 mt-16">
             <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center rounded-3xl ">
-              <div className="lg:w-1/2  ">
+              <div className="lg:w-1/2 hidden lg:flex ">
                 <picture>
                   <source
                     media="(max-width: 640px )"
