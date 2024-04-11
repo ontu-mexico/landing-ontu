@@ -1,5 +1,5 @@
 import { NavBar } from "../NavBar/NavBar";
-import { Footer } from "../Footer";
+import { FooterCR } from "../FooterCR";
 import { BannerPE } from "./BannerPE";
 import { SectionPE } from "./SectionPE";
 import { CalculadoraPE } from "./CalculadoraPE";
@@ -242,7 +242,7 @@ export const PanelesEmpresas = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <FooterCR />
     </main>
   );
 };

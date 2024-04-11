@@ -1,6 +1,6 @@
 import React from "react";
 import { NavBar } from "../NavBar/NavBar";
-import { Footer } from "../Footer";
+import { FooterCR } from "../FooterCR";
 import { SectionCalculo } from "../sustentabilidad/SectionCalculo";
 import { BannerHC } from "./BannerHC";
 import { ServiciosHC } from "./ServiciosHC";
@@ -14,7 +14,7 @@ export const HomeCare = () => {
       </div>
       <ServiciosHC />
       <SectionCalculo />
-      <Footer />
+      <FooterCR />
     </main>
   );
 };

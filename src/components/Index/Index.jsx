@@ -1,6 +1,6 @@
 import React from "react";
 import { NavBar } from "../NavBar/NavBar";
-import { Footer } from "../Footer";
+import { FooterCR } from "../FooterCR";
 import { AnalyticsIndex } from "./AnalyticsIndex";
 import { BannerIndex } from "./BannerIndex";
 import { ServiciosIndex } from "./ServiciosIndex";
@@ -16,7 +16,7 @@ export const Index = () => {
       <ServiciosIndex />
       <LogosEmpresas />
       <FormularioIndex />
-      <Footer />
+      <FooterCR />
     </main>
   );
 };

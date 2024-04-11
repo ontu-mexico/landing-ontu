@@ -1,6 +1,6 @@
 import React from "react";
 import { NavBar } from "../NavBar/NavBar";
-import { Footer } from "../Footer";
+import { FooterCR } from "../FooterCR";
 import { BannerCalderas } from "./BannerCalderas";
 import { SectionCalderas } from "./SectionCalderas";
 import { CardBeneficios } from "./CardBeneficios";
@@ -17,7 +17,7 @@ export const Calderas = () => {
       <DiseñoCalderas />
       <AcademiaAgua />
       <CallCalderas />
-      <Footer />
+      <FooterCR />
     </main>
   );
 };

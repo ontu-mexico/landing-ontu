@@ -1,6 +1,6 @@
 import React from "react";
 import { NavBar } from "../NavBar/NavBar";
-import { Footer } from "../Footer";
+import { FooterCR } from "../FooterCR";
 import { BannerCalentamiento } from "./BannerCalentamiento";
 import { CallCalen } from "./CallCalen";
 import { ServiciosCalen } from "./ServiciosCalen";
@@ -14,7 +14,7 @@ export const Calentamiento = () => {
       <ServiciosCalen />
       <DiseñoCalen/>
       <CallCalen />
-      <Footer />
+      <FooterCR />
     </main>
   );
 };

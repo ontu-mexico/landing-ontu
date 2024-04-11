@@ -1,6 +1,6 @@
 import React from "react";
 import { NavBar } from "../NavBar/NavBar";
-import { Footer } from "../Footer";
+import { FooterCR } from "../FooterCR";
 import { TbPointFilled } from "react-icons/tb";
 
 export const AvisoPrivacidad = () => {
@@ -211,7 +211,7 @@ export const AvisoPrivacidad = () => {
                 material fiscal para realizar la facturación correspondiente.
               </p>
               <p className="text-[11px] md:text-[12px]  lg:text-[13px] leading-tight mt-5 font-monts text-justify lg:mt-5 lg:px-10  ">
-                <span className="font-semibold mr-1">b.</span>AAutoridades
+                <span className="font-semibold mr-1">b.</span>Autoridades
                 competentes. Atender a requerimientos de información emitidos
                 por autoridades competentes, siempre y cuando se encuentren
                 debidamente fundados y motivados y con apego a lalegislación
@@ -292,7 +292,7 @@ export const AvisoPrivacidad = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <FooterCR />
     </main>
   );
 };

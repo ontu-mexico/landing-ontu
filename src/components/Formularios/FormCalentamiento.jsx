@@ -13,11 +13,50 @@ import { Form, useFormik } from "formik";
 import { Link } from "react-router-dom";
 import * as Yup from "yup";
 import { ModalPrivacidad } from "../Legales/ModalPrivacidad";
+//emailJS
+import emailjs from "@emailjs/browser";
 export const FormCalentamiento = () => {
   const [formSubmitted, setFormSubmitted] = useState(false); // Estado para controlar si el formulario ha sido enviado
   const [showMessage, setShowMessage] = useState(false); //Mensaje temporal
   //abrir modal
   const [isopen, setIsopen] = useState(false);
+//enviar Correo
+const enviarCorreo = async (values) => {
+  try {
+    await emailjs.send(
+      "service_6n6xhgf",
+      "template_mdm2j1f",
+      values,
+      "jfakOoUEp_iz3hFc4"
+    );
+    console.log("Correo electrónico enviado con éxito");
+  } catch (error) {
+    console.error("Error al enviar el correo electrónico:", error);
+  }
+};
+
+//enviar un correo de respuesta
+const monitorIncomingEmails = async () => {
+  const { email } = formik.values.email;
+  if (!email) {
+    return;
+  }
+  console.log("Correo electrónico del usuario:", email);
+  const replyMessage =
+    "Gracias por tu correo electrónico. Nos pondremos en contacto contigo pronto."; // Mensaje de respuesta
+
+  try {
+    await emailjs.send(
+      "service_6n6xhgf",
+      "template_4rfcmsk",
+      { to: email, message: replyMessage },
+      "jfakOoUEp_iz3hFc4"
+    );
+    console.log("Respuesta enviada con éxito");
+  } catch (error) {
+    console.error("Error al enviar la respuesta:", error);
+  }
+};
 
   ///Estado de Formik
   const formik = useFormik({
@@ -42,7 +81,7 @@ export const FormCalentamiento = () => {
         .required("Debes aceptar las políticas de privacidad"),
       servicio: Yup.string().required("Selecciona el servicio deseado"),
     }),
-    onSubmit: (formValue, { resetForm }) => {
+    onSubmit: async(formValue, { resetForm }) => {
       console.log("Formulario enviado");
       console.log(formValue);
       setFormSubmitted(true); // Marcar el formulario como enviado cuando se envía correctamente
@@ -51,6 +90,12 @@ export const FormCalentamiento = () => {
       setTimeout(() => {
         setShowMessage(false); // Ocultar el mensaje temporal después de 3 segundos
       }, 6000);
+      enviarCorreo(formValue);
+      try {
+        await monitorIncomingEmails(formValue);
+      } catch (error) {
+        console.error("Error al enviar la respuesta:", error);
+      }
     },
   });
 
@@ -80,6 +125,7 @@ export const FormCalentamiento = () => {
             <div className="mt-4 md:w-1/2">
               <TextField
                 label="Nombre"
+                name="nombre"
                 {...formik.getFieldProps("nombre")}
                 error={formik.touched.nombre && Boolean(formik.errors.nombre)}
                 className="w-full "
@@ -88,6 +134,7 @@ export const FormCalentamiento = () => {
             <div className=" mt-4 md:w-1/2">
               <TextField
                 label="Teléfono"
+                name="telefono"
                 {...formik.getFieldProps("telefono")}
                 error={
                   formik.touched.telefono && Boolean(formik.errors.telefono)
@@ -102,6 +149,7 @@ export const FormCalentamiento = () => {
             <div className=" mt-4 md:w-1/2">
               <TextField
                 label="Email"
+                name="email"
                 {...formik.getFieldProps("email")}
                 error={formik.touched.email && Boolean(formik.errors.email)}
                 className="w-full"
@@ -120,11 +168,12 @@ export const FormCalentamiento = () => {
                 {/* Aquí se utiliza InputLabel */}
                 <Select
                   labelId="servicio-label" // Propiedad labelId para asociar el label con el Select
+                  name="servicio"
                   {...formik.getFieldProps("servicio")}
                 >
-                  <MenuItem value="Plomeria">Alberca</MenuItem>
-                  <MenuItem value="Otro">Residencial</MenuItem>
-                  <MenuItem value="SmartHome">Ambos</MenuItem>
+                  <MenuItem value="Alberca">Alberca</MenuItem>
+                  <MenuItem value="Residencial">Residencial</MenuItem>
+                  <MenuItem value="Ambos">Ambos</MenuItem>
                 </Select>
                 <FormHelperText>
                   {formik.touched.servicio && formik.errors.servicio}
@@ -136,7 +185,7 @@ export const FormCalentamiento = () => {
             <Checkbox
               {...formik.getFieldProps("politicas")}
               error={
-                formik.touched.politicas && Boolean(formik.errors.politicas)
+                formik.touched.politicas && formik.errors.politicas
               }
             />
             <span className="mr-1">Sí, he leído y acepto el </span>

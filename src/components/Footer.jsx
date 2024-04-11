@@ -72,7 +72,7 @@ export const Footer = () => {
               <Link to="">Pólitica de Cancelación</Link>
             </li> */}
             <li className="py-2 text-sm hover:text-ontu">
-              <Link to="">Términos y Condiciones</Link>
+              <Link to="/terminos-de-uso">Términos y Condiciones</Link>
             </li>
           </ul>
         </div>

@@ -17,7 +17,7 @@ export const NavBar = () => {
     setSubMenuOpen(!subMenuOpen);
   };
   const handleClick = () => {
-    window.open("https://ontu-panel.comsoft-mexico.com/login", "_blank");
+    window.open("https://portal.ontu.mx/login", "_blank");
   };
 
   return (

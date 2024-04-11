@@ -1,6 +1,6 @@
 import React from "react";
 import { NavBar } from "../NavBar/NavBar";
-import { Footer } from "../Footer";
+import { FooterCR } from "../FooterCR";
 import { BannerFinanciamiento } from "./BannerFinanciamiento";
 import { SolucionesFinancieras } from "./SolucionesFinancieras";
 // import { CalculadoraFinanciera } from "./CalculadoraFinanciera";
@@ -14,7 +14,7 @@ export const Financiamiento = () => {
       <SolucionesFinancieras />
       {/* <CalculadoraFinanciera /> */}
       <CallAlma />
-      <Footer />
+      <FooterCR />
     </main>
   );
 };

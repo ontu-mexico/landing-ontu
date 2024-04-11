@@ -25,6 +25,7 @@ import { Calderas } from "./components/Calderas/Calderas";
 import { Ahorro } from "./components/Ahorro/Ahorro";
 import { Faqs } from "./components/Faqs/Faqs";
 import { AvisoPrivacidad } from "./components/Legales/AvisoPrivacidad";
+import { Terminos } from "./components/Legales/Terminos";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -51,6 +52,7 @@ function App() {
           <Route path="/electricidad" element={<Electricidad />} />
           <Route path="/personal" element={<Personal />} />
           <Route path="/smart-home" element={<SmartHome />} />
+          <Route path="/terminos-de-uso" element={<Terminos />} />
           <Route
             path="/almacenamiento-de-energia"
             element={<Almacenamiento />}

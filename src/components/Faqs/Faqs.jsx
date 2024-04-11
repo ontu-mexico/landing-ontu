@@ -1,6 +1,6 @@
 import React from "react";
 import { NavBar } from "../NavBar/NavBar";
-import { Footer } from "../Footer";
+import { FooterCR } from "../FooterCR";
 import { BannerFaqs } from "./BannerFaqs";
 import { FAQ } from "./FAQ";
 
@@ -10,7 +10,7 @@ export const Faqs = () => {
       <NavBar />
       <BannerFaqs />
       <FAQ />
-      <Footer />
+      <FooterCR />
     </main>
   );
 };

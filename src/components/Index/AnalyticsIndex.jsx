@@ -15,6 +15,9 @@ export const AnalyticsIndex = () => {
             </h2>
           </div>
         </div>
+        <div>
+          <hr className="border border-[#F2C00C] mb-2 mx-7" />
+        </div>
         <div className="flex flex-col md:w-2/3">
           <div className="m-5 md:m-10 bg-white rounded-b-3xl md:rounded-l-none md:rounded-r-3xl px-4 flex flex-col font-monts ">
             <h4 className=" text-[24px] md:text-[26px] lg:text-[28px] mb-10 tracking-wide leading-none font-medium ">

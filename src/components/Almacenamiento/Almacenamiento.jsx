@@ -1,6 +1,6 @@
 import React from "react";
 import { NavBar } from "../NavBar/NavBar";
-import { Footer } from "../Footer";
+import { FooterCR } from "../FooterCR";
 import { BannerAlmacenamiento } from "./BannerAlmacenamiento";
 import { CallAlma } from "./CallAlma";
 import { SectionAlma } from "./SectionAlma";
@@ -16,7 +16,7 @@ export const Almacenamiento = () => {
       <ServiciosAlma />
       <BeneficiosAlma />
       <CallAlma />
-      <Footer />
+      <FooterCR />
     </main>
   );
 };

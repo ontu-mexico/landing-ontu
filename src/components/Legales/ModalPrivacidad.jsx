@@ -207,7 +207,7 @@ export const ModalPrivacidad = () => {
             </p>
             <p className="text-[11px] md:text-[12px]   leading-tight mt-5 font-monts text-justify lg:mt-5 lg:px-10  ">
               <span className="font-semibold mr-1">b.</span>
-              AAutoridades competentes. Atender a requerimientos de información
+              Autoridades competentes. Atender a requerimientos de información
               emitidos por autoridades competentes, siempre y cuando se
               encuentren debidamente fundados y motivados y con apego a
               lalegislación aplicable.

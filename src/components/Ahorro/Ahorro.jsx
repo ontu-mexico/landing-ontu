@@ -1,6 +1,6 @@
 import React from "react";
 import { NavBar } from "../NavBar/NavBar";
-import { Footer } from "../Footer";
+import { FooterCR } from "../FooterCR";
 import { BannerAhorro } from "./BannerAhorro";
 import { SectionSoluciones } from "./SectionSoluciones";
 import { SectionBeneficios } from "./SectionBeneficios";
@@ -15,7 +15,7 @@ export const Ahorro = () => {
       <SectionBeneficios />
       <AcademiaAhorro />
       <CallAlma />
-      <Footer />
+      <FooterCR />
     </main>
   );
 };
