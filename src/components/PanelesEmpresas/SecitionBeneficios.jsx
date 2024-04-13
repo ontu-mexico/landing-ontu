@@ -1,5 +1,3 @@
-import React from "react";
-
 export const SecitionBeneficios = () => {
   return (
     <div className="w-full  px-4 bg-white">

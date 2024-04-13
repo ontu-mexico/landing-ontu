@@ -1,5 +1,3 @@
-import React from "react";
-
 export const DiseñoCalen = () => {
   return (
     <div className="w-full mt-10 mb-16">
@@ -22,10 +20,7 @@ export const DiseñoCalen = () => {
                   Con solo unas sencillas preguntas podremos comenzar.
                 </p>
                 <div className="flex justify-left  ">
-                  <button
-                    onClick={() => navigate("")}
-                    className="bg-gray-600  w-[255px] h-[65px] md:w-[330px] md:h-[40px] font-monts flex items-center justify-center font-semibold uppercase   text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-gray-200 hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
-                  >
+                  <button className="bg-gray-600  w-[255px] h-[65px] md:w-[330px] md:h-[40px] font-monts flex items-center justify-center font-semibold uppercase   text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-gray-200 hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full ">
                     Comencemos con tu diseño
                   </button>
                 </div>

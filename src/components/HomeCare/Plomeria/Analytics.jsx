@@ -1,4 +1,3 @@
-import React from "react";
 import plomero from "/src/assets/plomeria/plomero2.jpg";
 import plomero2 from "/src/assets/plomeria/plomero3.jpg";
 //Animation

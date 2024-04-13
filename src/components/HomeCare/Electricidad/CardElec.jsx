@@ -1,4 +1,3 @@
-import React from "react";
 import instalaciones from "/src/assets/electricidad/instalacionM.png";
 import calidad from "/src/assets/electricidad/calidadM.png";
 import reparaciones from "/src/assets/electricidad/cable-3.jpg";
@@ -7,7 +6,6 @@ import reparaciones from "/src/assets/electricidad/cable-3.jpg";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FaCheck } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 
 export const CardElec = () => {

@@ -1,4 +1,3 @@
-import React from "react";
 import instalaciones from "/src/assets/SmartHome/controlLuces.jpg";
 import cerraduras from "/src/assets/SmartHome/cerraduras.jpg";
 import persianas from "/src/assets/SmartHome/persianas.jpg";
@@ -9,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FaCheck } from "react-icons/fa6";
 
 export const CardSH = () => {
   const navigate = useNavigate();

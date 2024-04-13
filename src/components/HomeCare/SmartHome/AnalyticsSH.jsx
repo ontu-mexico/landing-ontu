@@ -1,14 +1,11 @@
-import React from "react";
 import smart from "/src/assets/SmartHome/home3.jpg";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 //Animation
-import { useEffect } from "react";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 export const AnalyticsSH = () => {
   //Navegacion hacia el Stepper Estudio
-  const navigate = useNavigate();
+  /// const navigate = useNavigate();
   return (
     <div className="w-full bg-white  mb-16 mt-16">
       <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center bg-white  rounded-3xl ">

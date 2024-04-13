@@ -1,4 +1,3 @@
-import React from "react";
 import plomero from "/src/assets/plomeria/plomeria3.jpg";
 import plomero2 from "/src/assets/plomeria/plomeria4.jpg";
 import smart from "/src/assets/SmartHome/smart-home-5.jpg";

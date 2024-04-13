@@ -1,10 +1,6 @@
-import calderaI from "/src/assets/image/calderaIndustrial.jpg";
 import calderaI2 from "/src/assets/image/calderaIndustrial.jpg";
 import panelI2 from "/src/assets/image/panelEstudio.jpg";
-import panelH from "/src/assets/image/calderaIndustrial.jpg";
 import panelH2 from "/src/assets/image/colocacionPanel.jpg";
-import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
 
 export const ServiciosAlma = () => {
   return (

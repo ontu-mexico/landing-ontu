@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import React from "react";
 import mobile from "/src/assets/calderas/funcionCal.jpg";
 import desktop from "/src/assets/calderas/funcionCal.jpg";
 import { FaArrowRight } from "react-icons/fa6";

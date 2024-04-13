@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import Slider from "react-slider";
 import { useNavigate } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
 import "../PanelesSolares/slider.css";
 //AOS
-import AOS from "aos";
 import "aos/dist/aos.css";
 //Slider
 const MIN = 600;

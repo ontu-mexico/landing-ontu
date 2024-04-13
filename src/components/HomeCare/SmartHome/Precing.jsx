@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 //Animation
 import { useEffect } from "react";
@@ -242,16 +241,16 @@ export const Precing = () => {
                     Stored video clips
                   </li>
                 </ul>
-                  <div className="flex justify-center items-center mt-8 mb-8 ">
-                    <button
-                      onClick={() => navigate("/Estudio")}
-                      className="bg-blueOntu w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-blueOntu hover:border-2 hover:border-blueOntu hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
-                    >
-                      Iniciar compra
-                      <span className="px-2">
-                        <FaArrowRight />
-                      </span>
-                    </button>
+                <div className="flex justify-center items-center mt-8 mb-8 ">
+                  <button
+                    onClick={() => navigate("/Estudio")}
+                    className="bg-blueOntu w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-blueOntu hover:border-2 hover:border-blueOntu hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
+                  >
+                    Iniciar compra
+                    <span className="px-2">
+                      <FaArrowRight />
+                    </span>
+                  </button>
                 </div>
               </div>
             </div>

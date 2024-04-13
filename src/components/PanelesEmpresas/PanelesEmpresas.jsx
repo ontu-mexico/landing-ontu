@@ -1,21 +1,19 @@
+import { Helmet } from "react-helmet-async";
 import { NavBar } from "../NavBar/NavBar";
 import { FooterCR } from "../FooterCR";
 import { BannerPE } from "./BannerPE";
 import { SectionPE } from "./SectionPE";
-import { CalculadoraPE } from "./CalculadoraPE";
 import { SecitionBeneficios } from "./SecitionBeneficios";
 import { SectionShield } from "./SectionShield";
-import { CallFormPE } from "./CallFormPE";
 import { CardInfo } from "../sustentabilidad/CardInfo";
 import { SectionAcademia } from "./SectionAcademia";
 //calculadora
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Slider from "react-slider";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
 import "../PanelesSolares/slider.css";
 //AOS
-import AOS from "aos";
 import "aos/dist/aos.css";
 //formulario
 import { Link } from "react-router-dom";
@@ -70,7 +68,7 @@ export const PanelesEmpresas = () => {
   });
 
   console.log("values: ", values);
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   //scroll
   const scrollToPackages = () => {
@@ -81,6 +79,17 @@ export const PanelesEmpresas = () => {
   };
   return (
     <main>
+      <Helmet>
+        <title>Paneles Solares para Industrias | Ontu</title>
+        <meta
+          name="description"
+          content="Transforma tu hogar o industria con energía sostenible. Expertos en eficiencia y ahorro."
+        />
+        <meta
+          name="Keywords"
+          content="paneles solares, paneles solares industriales, empresas sustentables con paneles solares, paneles solares mexico"
+        />
+      </Helmet>
       <NavBar />
       <BannerPE />
       <SectionPE />

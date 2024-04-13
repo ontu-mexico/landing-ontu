@@ -1,5 +1,3 @@
-import React from "react";
-
 export const SectionSoluciones = () => {
   return (
     <div className="w-full py-10 px-4 bg-white">

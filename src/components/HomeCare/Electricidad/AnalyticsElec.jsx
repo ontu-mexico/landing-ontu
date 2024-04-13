@@ -1,8 +1,5 @@
-import React from "react";
 import electricidad from "/src/assets/electricidad/electricidad.png";
 import electricidad2 from "/src/assets/electricidad/electricidad.png";
-//Animation
-import { useEffect } from "react";
 
 export const AnalyticsElec = () => {
   return (

@@ -1,7 +1,6 @@
 import alberca2 from "/src/assets/calentamiento/alberca.jpg";
 import residencial2 from "/src/assets/calentamiento/residencial.png";
 
-import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
 

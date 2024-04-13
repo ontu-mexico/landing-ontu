@@ -1,6 +1,6 @@
 import mobile from "/src/assets/image/panelIndustria2.png";
 import desktop from "/src/assets/image/panelIndustria2.png";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 //AOS
 import AOS from "aos";
 import "aos/dist/aos.css";

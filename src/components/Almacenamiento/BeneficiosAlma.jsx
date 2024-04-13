@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import React, { useEffect } from "react";
 import mobile from "/src/assets/image/beneficios2.png";
 import desktop from "/src/assets/image/beneficios2.png";
 import { FaArrowRight } from "react-icons/fa6";

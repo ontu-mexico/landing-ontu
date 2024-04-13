@@ -1,4 +1,3 @@
-import React from "react";
 import instalaciones from "/src/assets/plomeria/water-plomeria.jpg";
 import inodoro from "/src/assets/plomeria/inodoro.jpg";
 import reparaciones from "/src/assets/plomeria/plumber.jpg";
@@ -7,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FaCheck } from "react-icons/fa6";
 // import { useNavigate } from "react-router-dom";
 
 export const CardPlomeria = () => {

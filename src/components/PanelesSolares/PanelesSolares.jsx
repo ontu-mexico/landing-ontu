@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
+import { useEffect, useState } from "react";
 import Slider from "react-slider";
 import { FooterCR } from "../FooterCR";
 import { NavBar } from "../NavBar/NavBar";
 import { PagSustentabilidad } from "../sustentabilidad/PagSustentabilidad";
 import { CardInfo } from "../sustentabilidad/CardInfo";
 import { useNavigate } from "react-router-dom";
-import { Residencial } from "./Residencial";
 import { SectionPanel } from "../sustentabilidad/SectionPanel";
 import { SectionBeneficios } from "../sustentabilidad/SectionBeneficios";
 import { FaArrowRight } from "react-icons/fa6";
 import "./slider.css";
 //AOS
-import AOS from "aos";
 import "aos/dist/aos.css";
+
 //Slider
 const MIN = 600;
 const MAX = 35000;
@@ -65,6 +65,17 @@ export const PanelesSolares = () => {
   const navigate = useNavigate();
   return (
     <main>
+      <Helmet>
+        <title>Paneles Solares Hogar | Ontu</title>
+        <meta
+          name="description"
+          content="Paneles solares para tu hogar. Energía limpia."
+        />
+        <meta
+          name="Keywords"
+          content="paneles solares,  paneles solares para casa, casas sustentables con paneles solares, paneles solares mexico"
+        />
+      </Helmet>
       <NavBar />
       <PagSustentabilidad />
       <SectionPanel />

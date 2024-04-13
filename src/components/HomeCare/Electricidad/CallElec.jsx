@@ -1,12 +1,11 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { FormContacto } from "../../Formularios/FormContacto";
 
 export const CallElec = () => {
   //Navegacion
-  const navigate = useNavigate();
+  //  const navigate = useNavigate();
   return (
     <div className="w-full bg-white mt-10 px-4 mb-5">
       <div className="max-w-[1240px] mx-auto rounded-3xl flex flex-col md:flex-row  bg-blueOntu/10">

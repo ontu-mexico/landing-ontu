@@ -2,7 +2,7 @@ import { FaCheck } from "react-icons/fa6";
 import "aos/dist/aos.css";
 import mobile from "/src/assets/calderas/agua.jpg";
 import desktop from "/src/assets/calderas/agua.jpg";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 //AOS
 import AOS from "aos";
 

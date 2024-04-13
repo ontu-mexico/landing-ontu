@@ -1,4 +1,3 @@
-import React from "react";
 import { NavBar } from "../../NavBar/NavBar";
 import { FooterCR } from "../../FooterCR";
 import { AnalyticsSH } from "./AnalyticsSH";
@@ -8,6 +7,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { FaCheck } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 export const SmartHome = () => {
   const navigate = useNavigate();
@@ -22,6 +22,17 @@ export const SmartHome = () => {
 
   return (
     <main>
+      <Helmet>
+        <title>Smart Home | Ontu</title>
+        <meta
+          name="description"
+          content="Transforma tu hogar en un hogar inteligente."
+        />
+        <meta
+          name="Keywords"
+          content="hogar inteligente, dispositivos inteligentes para el hogar, interruptores inteligentes para hogar, dispositivos de hogar inteligente, smart home"
+        />
+      </Helmet>
       <NavBar />
       <div className="w-full">
         <div
