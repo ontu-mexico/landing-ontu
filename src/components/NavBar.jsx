@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import logo from "../assets/logo/logo_transparent_background.png";
 import { Link } from "react-router-dom";
@@ -61,8 +61,8 @@ export const NavBar = () => {
         }
       >
         <div className="item-center mt-6 ml-4 w-full">
-        <Link to={"/"}>
-          <img className="w-[150px] md:w-[100px]" src={logo} alt="Logo" />
+          <Link to={"/"}>
+            <img className="w-[150px] md:w-[100px]" src={logo} alt="Logo" />
           </Link>
         </div>
         <ul className="pt-12  p-4">

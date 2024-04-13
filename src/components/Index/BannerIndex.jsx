@@ -1,6 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { FaArrowRight } from "react-icons/fa6";
 export const BannerIndex = () => {
   return (
     <div className="flex items-end justify-start h-[485px] bg-fixed bg-parallaxI bg-botton lg:bg-cover bg-button">

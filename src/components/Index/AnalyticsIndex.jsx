@@ -1,5 +1,3 @@
-import React from "react";
-
 export const AnalyticsIndex = () => {
   return (
     <div className="w-full bg-white mt-10 px-4 mb-5">
@@ -29,15 +27,15 @@ export const AnalyticsIndex = () => {
                   Reducción total de CO2
                 </h3>
                 <h3 className=" text-[28px] md:text-[32px]  lg:text-[36px] text-ontu font-semibold">
-                  1,000
+                  242.8 <span className="text-[18px]">Ton</span>
                 </h3>
               </div>
               <div>
                 <h3 className="text-[12px] md:text-[13px] lg:text-[15px] leading-snug tracking-wide">
-                  Capacidad Instalada KWp
+                  Capacidad Instalada 2024
                 </h3>
-                <h3 className=" text-[28px] md:text-[32px]  lg:text-[36px] text-ontu font-semibold">
-                  1,000
+                <h3 className=" text-[28px] md:text-[32px] lg:text-[36px] text-ontu font-semibold">
+                  390 <span className="text-[18px]">KWp</span>
                 </h3>
               </div>
               <div>
@@ -45,7 +43,7 @@ export const AnalyticsIndex = () => {
                   Equivalente en árboles
                 </h3>
                 <h3 className=" text-[28px] md:text-[32px]  lg:text-[36px] text-ontu font-semibold">
-                  1,000
+                  8,305
                 </h3>
               </div>
             </div>

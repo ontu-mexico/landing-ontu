@@ -7,12 +7,10 @@ import {
 } from "react-router-dom";
 import { Error } from "./components/Error";
 import { SolicitarCalculo } from "./components/SolicitarCalculo";
-import { InicioSesion } from "./components/InicioSesion/InicioSesion";
 import { PanelesSolares } from "./components/PanelesSolares/PanelesSolares";
 import { Estudio } from "./components/Estudio/Estudio";
 import { Plomeria } from "./components/HomeCare/Plomeria/Plomeria";
 import { Electricidad } from "./components/HomeCare/Electricidad/Electricidad";
-import { Personal } from "./components/Formularios/personal";
 import { SmartHome } from "./components/HomeCare/SmartHome/SmartHome";
 import { Contacto } from "./components/Formularios/Contacto";
 import { HomeCare } from "./components/HomeCare/HomeCare";
@@ -50,7 +48,6 @@ function App() {
           <Route path="/estudio" element={<Estudio />} />
           <Route path="/plomeria" element={<Plomeria />} />
           <Route path="/electricidad" element={<Electricidad />} />
-          <Route path="/personal" element={<Personal />} />
           <Route path="/smart-home" element={<SmartHome />} />
           <Route path="/terminos-de-uso" element={<Terminos />} />
           <Route

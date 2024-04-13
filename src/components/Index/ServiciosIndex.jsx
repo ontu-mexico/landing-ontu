@@ -4,7 +4,7 @@ import panelI2 from "/src/assets/index/panelesIndustrialM.png";
 import panelI from "/src/assets/index/panelesIndustrial.png";
 import panelH from "/src/assets/index/panelesHogar.png";
 import panelH2 from "/src/assets/index/panelesHogarM.png";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
 import { IoHome } from "react-icons/io5";
 import { Link } from "react-router-dom";
@@ -13,7 +13,7 @@ import { CgSmartHomeBoiler } from "react-icons/cg";
 import { TbSolarPanel2 } from "react-icons/tb";
 export const ServiciosIndex = () => {
   //Navegacion
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
   return (
     <section className="w-full px-5 bg-white  ">
       <div

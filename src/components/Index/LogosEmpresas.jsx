@@ -1,4 +1,3 @@
-import React from "react";
 import CardLogos from "../Slider/CardLogos";
 import { logos } from "../Slider/data2";
 
