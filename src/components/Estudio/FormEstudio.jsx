@@ -9,15 +9,18 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import { Form, useFormik } from "formik";
+// import { Link } from "react-router-dom";
 import * as Yup from "yup";
 import { ModalPrivacidad } from "../Legales/ModalPrivacidad";
 //emailJS
 import emailjs from "@emailjs/browser";
-export const FormCalentamiento = () => {
+
+export const FormEstudio = () => {
   const [formSubmitted, setFormSubmitted] = useState(false); // Estado para controlar si el formulario ha sido enviado
   const [showMessage, setShowMessage] = useState(false); //Mensaje temporal
   //abrir modal
   const [isopen, setIsopen] = useState(false);
+
   //enviar Correo
   const enviarCorreo = async (values) => {
     try {
@@ -169,9 +172,19 @@ export const FormCalentamiento = () => {
                   name="servicio"
                   {...formik.getFieldProps("servicio")}
                 >
-                  <MenuItem value="Alberca">Alberca</MenuItem>
-                  <MenuItem value="Residencial">Residencial</MenuItem>
-                  <MenuItem value="Ambos">Ambos</MenuItem>
+                  <MenuItem value="CalderasCondensacion">
+                    Calderas de Condensación
+                  </MenuItem>
+                  <MenuItem value="Electricidad">Electricidad</MenuItem>
+                  <MenuItem value="PanalesSolaresHogar">
+                    Paneles Solares Eco Hogar
+                  </MenuItem>
+                  <MenuItem value="PanalesSolaresIndustria">
+                    Paneles Solares Eco Industria
+                  </MenuItem>
+                  <MenuItem value="Plomeria">Plomería</MenuItem>
+                  <MenuItem value="SmartHome">Smart Home</MenuItem>
+                  <MenuItem value="Otro">Otro</MenuItem>
                 </Select>
                 <FormHelperText>
                   {formik.touched.servicio && formik.errors.servicio}

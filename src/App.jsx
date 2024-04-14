@@ -8,7 +8,6 @@ import {
 import { Error } from "./components/Error";
 import { SolicitarCalculo } from "./components/SolicitarCalculo";
 import { PanelesSolares } from "./components/PanelesSolares/PanelesSolares";
-import { Estudio } from "./components/Estudio/Estudio";
 import { Plomeria } from "./components/HomeCare/Plomeria/Plomeria";
 import { Electricidad } from "./components/HomeCare/Electricidad/Electricidad";
 import { SmartHome } from "./components/HomeCare/SmartHome/SmartHome";
@@ -24,6 +23,8 @@ import { Ahorro } from "./components/Ahorro/Ahorro";
 import { Faqs } from "./components/Faqs/Faqs";
 import { AvisoPrivacidad } from "./components/Legales/AvisoPrivacidad";
 import { Terminos } from "./components/Legales/Terminos";
+import { EstudioSolar } from "./components/Estudio/EstudioSolar";
+// import { Estudio } from "./components/Estudio/Estudio";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -45,7 +46,6 @@ function App() {
           <Route path="/home-care" element={<HomeCare />} />
           <Route path="/solicitar-estudio" element={<SolicitarCalculo />} />
           <Route path="/paneles-solares" element={<PanelesSolares />} />
-          <Route path="/estudio" element={<Estudio />} />
           <Route path="/plomeria" element={<Plomeria />} />
           <Route path="/electricidad" element={<Electricidad />} />
           <Route path="/smart-home" element={<SmartHome />} />
@@ -64,6 +64,9 @@ function App() {
           />
           <Route path="/preguntas-frecuentes" element={<Faqs />} />
           <Route path="/aviso-de-privacidad" element={<AvisoPrivacidad />} />
+          <Route path="/estudio-solar" element={<EstudioSolar />} />
+          {/* <Route path="/estudio" element={<Estudio />} /> */}
+
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>

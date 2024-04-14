@@ -1,6 +1,5 @@
 import {
   TextField,
-  Button,
   Checkbox,
   FormControl,
   FormHelperText,
@@ -8,7 +7,7 @@ import {
   MenuItem, // Importa el componente MenuItem
   InputLabel,
 } from "@mui/material";
-import React, { useState, useRef } from "react";
+import { useState } from "react";
 import { Form, useFormik } from "formik";
 // import { Link } from "react-router-dom";
 import * as Yup from "yup";

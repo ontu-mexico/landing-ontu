@@ -1,16 +1,11 @@
 import {
   TextField,
-  Button,
   Checkbox,
   FormControl,
   FormHelperText,
-  Select, // Importa el componente Select
-  MenuItem, // Importa el componente MenuItem
-  InputLabel,
 } from "@mui/material";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Form, useFormik } from "formik";
-import { Link } from "react-router-dom";
 import * as Yup from "yup";
 import { ModalPrivacidad } from "../Legales/ModalPrivacidad";
 //emailJS
