@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 export const FormComplete = () => {
@@ -9,7 +8,6 @@ export const FormComplete = () => {
         <div className="text-ontu text-[45px] lg:text-[65px] ">
           <ion-icon name="checkmark-circle-outline"></ion-icon>
         </div>
-
         <div className="text-xl  tracking-normal  font-normal text-gray-500 text-center font-monts">
           Tus datos han sido registrados con éxito, te enviamos un correo para
           darle seguimiento a tu solicitud.
