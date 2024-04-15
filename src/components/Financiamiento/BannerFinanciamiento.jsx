@@ -1,5 +1,3 @@
-import React from "react";
-
 export const BannerFinanciamiento = () => {
   return (
     <div className="w-full pt-32 px-2 pb-10 ">
