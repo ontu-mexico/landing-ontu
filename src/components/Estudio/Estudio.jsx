@@ -13,6 +13,7 @@ export const Estudio = () => {
   const [userData, setUserData] = useState("");
   const [finalData, setFinalData] = useState([]);
   const steps = ["Datos Personales", "Energía Actual", "Completado"];
+
   const displayStep = (step) => {
     switch (step) {
       case 1:

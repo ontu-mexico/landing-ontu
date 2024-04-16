@@ -24,7 +24,8 @@ import { Faqs } from "./components/Faqs/Faqs";
 import { AvisoPrivacidad } from "./components/Legales/AvisoPrivacidad";
 import { Terminos } from "./components/Legales/Terminos";
 import { EstudioSolar } from "./components/Estudio/EstudioSolar";
-// import { Estudio } from "./components/Estudio/Estudio";
+import { Estudio } from "./components/Estudio/Estudio";
+
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -65,7 +66,8 @@ function App() {
           <Route path="/preguntas-frecuentes" element={<Faqs />} />
           <Route path="/aviso-de-privacidad" element={<AvisoPrivacidad />} />
           <Route path="/estudio-solar" element={<EstudioSolar />} />
-          {/* <Route path="/estudio" element={<Estudio />} /> */}
+          <Route path="/estudio" element={<Estudio />} />
+       
 
           <Route path="*" element={<Error />} />
         </Routes>

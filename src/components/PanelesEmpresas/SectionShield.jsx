@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import mobile from "/src/assets/image/shield.png";
 import desktop from "/src/assets/image/shield.png";
 import { FaArrowRight } from "react-icons/fa6";
@@ -34,7 +33,9 @@ export const SectionShield = () => {
             </p>
             <p className=" text-[14px] md:text-[16px]  lg:text-[18px]  flex flex-row items-center leading-tight text-left mt-5  ">
               <span className="font-semibold hover:text-blueOntu flex flex-row items-center">
-                <Link to={""}>Solicita más información</Link>
+                <a href="https://wa.me/message/U4TRG3Z6J2GBO1">
+                  Solicitar más información
+                </a>
                 <span className="text-[16px] md:text-[18px] lg:text-[20px] px-2">
                   <FaArrowRight size={15} />
                 </span>

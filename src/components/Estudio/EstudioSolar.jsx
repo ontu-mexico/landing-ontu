@@ -1,6 +1,6 @@
 import { NavBar } from "../NavBar/NavBar";
 import { FooterCR } from "../FooterCR";
-import { FormEstudio } from "./FormEstudio";
+import { FormDatosPer } from "./FormDatosPer";
 
 export const EstudioSolar = () => {
   return (
@@ -15,9 +15,9 @@ export const EstudioSolar = () => {
           Completa la siguiente información para comenzar con tu estudio
           personalizado.
         </p>
-        <div className="lg:w-1/2 lg:mx-auto m-5 shadow-xl rounded-2xl  bg-white ">
+        <div className="lg:w-1/2 lg:mx-auto m-5 px-5 shadow-xl rounded-2xl  bg-white ">
           <div className="container horizontal mt-5 py-1">
-            <FormEstudio />
+            <FormDatosPer />
           </div>
         </div>
       </div>

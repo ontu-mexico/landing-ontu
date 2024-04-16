@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
 
 export const BannerAhorro = () => {
@@ -17,7 +16,9 @@ export const BannerAhorro = () => {
 
           <p className="text-[14px] md:text-[16px]  lg:text-[18px]  mt-5 mb-10 font-monts leading-tight font-normal flex flex-row items-center text-left">
             <span className="hover:text-gray-600 font-semibold flex flex-row items-center">
-              <Link to={""}>Solicitar más información </Link>{" "}
+              <a href="https://wa.me/message/U4TRG3Z6J2GBO1">
+                Solicitar más información
+              </a>
               <span className="text-[14px] md:text-[16px]  lg:text-[18px]  px-2">
                 <FaArrowRight />
               </span>

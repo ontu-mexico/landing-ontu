@@ -1,7 +1,5 @@
 import alberca2 from "/src/assets/calentamiento/alberca.jpg";
 import residencial2 from "/src/assets/calentamiento/residencial.png";
-
-import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
 
 export const ServiciosCalen = () => {
@@ -57,7 +55,9 @@ export const ServiciosCalen = () => {
                 </div>
                 <p className=" text-[14px] md:text-[16px]  lg:text-[18px]  flex flex-row items-center leading-tight text-left mt-5  ">
                   <span className="font-semibold hover:text-blueOntu flex flex-row items-center text-gray-600">
-                    <Link to={""}>Solicita más información</Link>
+                    <a href="https://wa.me/message/U4TRG3Z6J2GBO1">
+                      Solicita más información{" "}
+                    </a>
                     <span className="text-[16px] md:text-[18px] lg:text-[20px] px-2">
                       <FaArrowRight size={15} />
                     </span>
@@ -85,7 +85,9 @@ export const ServiciosCalen = () => {
                 </div>
                 <p className=" text-[14px] md:text-[16px]  lg:text-[18px]  flex flex-row items-center leading-tight text-left mt-5  ">
                   <span className="font-semibold hover:text-blueOntu flex flex-row items-center text-gray-600 mb-10 md:mb-0">
-                    <Link to={""}>Solicita más información</Link>
+                    <a href="https://wa.me/message/U4TRG3Z6J2GBO1">
+                      Solicitar más información
+                    </a>
                     <span className="text-[16px] md:text-[18px] lg:text-[20px] px-2">
                       <FaArrowRight size={15} />
                     </span>

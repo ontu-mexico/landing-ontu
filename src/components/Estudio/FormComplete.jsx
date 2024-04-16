@@ -4,7 +4,7 @@ export const FormComplete = () => {
   const navigate = useNavigate();
   return (
     <div className="container">
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center PX-5">
         <div className="text-ontu text-[45px] lg:text-[65px] ">
           <ion-icon name="checkmark-circle-outline"></ion-icon>
         </div>
@@ -12,7 +12,7 @@ export const FormComplete = () => {
           Tus datos han sido registrados con éxito, te enviamos un correo para
           darle seguimiento a tu solicitud.
         </div>
-        <hr className="h-[3px] w-[350px] mt-5 md:w-[450px] lg:w-[550px] bg-[#F2C00C]" />
+        <hr className="h-[3px] w-[150px] mt-5 md:w-[250px] lg:w-[350px] bg-[#F2C00C]" />
         <div className="mt-10 font-monts text-center flex flex-col justify-center items-center">
           <p className="text-xl text-black">
             O si lo prefieres agenda una cita ahora.

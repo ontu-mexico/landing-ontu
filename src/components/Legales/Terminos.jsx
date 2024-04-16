@@ -1,4 +1,3 @@
-import React from "react";
 import { NavBar } from "../NavBar/NavBar";
 import { FooterCR } from "../FooterCR";
 import { TbPointFilled } from "react-icons/tb";
@@ -6,6 +5,7 @@ import { TbPointFilled } from "react-icons/tb";
 export const Terminos = () => {
   return (
     <main>
+      {/* <iframe width="650" height="900" src="https://portal.ontu.mx/webform/embed/66181d9bed1485.24298395" ></iframe> */}
       <NavBar />
       <div className="w-full pt-32 px-2 pb-10 ">
         <div className="max-w-[1240px]  mx-auto ">
