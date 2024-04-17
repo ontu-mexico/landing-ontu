@@ -1,0 +1,26 @@
+.slider {
+  display: flex; /* Usamos flexbox para centrar el .thumb */
+  justify-content: center; /* Centramos horizontalmente */
+  align-items: center; /* Centramos verticalmente */
+  width: 100%;
+  height: 2px;
+  background: hsl(47, 90%, 50%);
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 40px;
+  z-index: 10;
+  position: relative; /* Necesario para posicionar el .thumb */
+}
+.slider .thumb {
+  width: 25px;
+  height: 25px;
+  cursor: grab;
+  background: hsl(47, 90%, 50%);
+  border-radius: 50%;
+  border-color: hsl(47, 90%, 50%);
+  z-index: 10;
+  position: absolute; /* Posicionamos el .thumb dentro del .slider */
+}
+.track-1 {
+  border-color: hsl(41, 68%, 68%);
+}
