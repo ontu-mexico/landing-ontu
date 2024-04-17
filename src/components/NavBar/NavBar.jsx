@@ -40,7 +40,6 @@ export const NavBar = () => {
         </div>
         {/* Nav Desktop */}
         <ul className="lg:flex hidden items-center font-monts text-[14px] text-black  ">
-          <NavLinks />
           <NavLinks2 />
 
           <li>
@@ -51,6 +50,7 @@ export const NavBar = () => {
               Financiamiento
             </Link>
           </li>
+          <NavLinks />
         </ul>
         <div className="lg:flex hidden items-center  ">
           <div className="text-ontu ">
@@ -77,7 +77,6 @@ export const NavBar = () => {
             open ? "left-0" : "-left-full "
           }`}
         >
-          <NavLinks />
           <NavLinks2 />
           <li className="hover:bg-slate-50">
             <Link
@@ -87,7 +86,7 @@ export const NavBar = () => {
               Financiamiento
             </Link>
           </li>
-
+          <NavLinks />
           <li className="hover:bg-slate-50 ">
             <p
               onClick={handleClick}

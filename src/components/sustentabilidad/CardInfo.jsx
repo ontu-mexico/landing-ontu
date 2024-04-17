@@ -5,9 +5,8 @@ import { FaMoneyBills } from "react-icons/fa6";
 //AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
 
 export const CardInfo = () => {
   //Animation on scroll

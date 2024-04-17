@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import empresa from "/src/assets/nav/3.png";
 import sustentabilidad from "/src/assets/nav/2.png";
@@ -10,7 +10,7 @@ export const NavLinks2 = () => {
 
   const links = [
     {
-      name: "Qué hacemos",
+      name: "Soluciones",
       submenu: true,
       sublinks: [
         {
