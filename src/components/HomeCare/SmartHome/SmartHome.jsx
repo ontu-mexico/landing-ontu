@@ -27,6 +27,14 @@ export const SmartHome = () => {
           name="Keywords"
           content="hogar inteligente, dispositivos inteligentes para el hogar, interruptores inteligentes para hogar, dispositivos de hogar inteligente, smart home"
         />
+        <meta property="og:title" content="Smart Home | Ontu" />
+        <meta
+          property="og:description"
+          content="Transforma tu hogar en un hogar inteligente."
+        />
+        <meta property="og:url" content="https://www.ontu.mx/smart-home" />
+        <meta property="og:image" content="https://www.ontu.mx/logo_ontu-DO4XE2sa.png" />
+        <link rel="canonical" href="https://www.ontu.mx/smart-home" />
       </Helmet>
       <NavBar />
       <div className="w-full">

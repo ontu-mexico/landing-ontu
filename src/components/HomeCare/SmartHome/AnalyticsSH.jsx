@@ -1,4 +1,4 @@
-import smart from "/src/assets/SmartHome/home3.jpg";
+import smart from "/src/assets/SmartHome/ontu_home_smart.jpg";
 //import { useNavigate } from "react-router-dom";
 //Animation
 import "aos/dist/aos.css";
@@ -13,7 +13,7 @@ export const AnalyticsSH = () => {
           <img
             className="w-full h-full rounded-3xl"
             src={smart}
-            alt="Smart Home"
+            alt="Ontu Smart Home"
           />
         </div>
         <div className="flex flex-col px-10 text-left lg:w-1/2 ">

@@ -1,5 +1,4 @@
 import { Form } from "./Form";
-import panelSolar from "/src/assets/image/panelesSolares.jpg";
 export const FormCalculo = () => {
   return (
     <div className="w-full  px-4 bg-ontu2 lg:border-gray-100">

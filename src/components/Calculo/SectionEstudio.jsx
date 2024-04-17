@@ -1,4 +1,4 @@
-import panel from '/src/assets/image/panelEstudio.jpg'
+import panel from '/src/assets/image/ontu_comercial.jpg'
 
 
 export const SectionEstudio = () => {
@@ -17,7 +17,7 @@ export const SectionEstudio = () => {
         </p>
       </div>
       <div className=" lg:w-auto invisible lg:visible  ">
-      <img className="lg:w-[480px] lg:h-[320px] lg:mx-auto " src={panel} alt="Panel Solar" />
+      <img className="lg:w-[480px] lg:h-[320px] lg:mx-auto " src={panel} alt="Ontu Panel Solar" />
       </div>
     </div>
   </div>

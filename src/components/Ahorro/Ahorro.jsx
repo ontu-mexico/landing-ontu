@@ -20,6 +20,14 @@ export const Ahorro = () => {
           content="ahorro de agua, formas de ahorrar agua
           "
         />
+        <meta property="og:title" content="Ahorro de Agua | Ontu" />
+        <meta
+          property="og:description"
+          content="Soluciones sostenibles para la gestión del agua."
+        />
+        <meta property="og:url" content="https://www.ontu.mx/ahorro-de-agua" />
+        <meta property="og:image" content="https://www.ontu.mx/logo_ontu-DO4XE2sa.png" />
+        <link rel="canonical" href="https://www.ontu.mx/ahorro-de-agua"/>
       </Helmet>
       <NavBar />
       <BannerAhorro />

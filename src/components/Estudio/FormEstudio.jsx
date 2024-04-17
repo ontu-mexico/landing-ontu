@@ -14,7 +14,7 @@ import * as Yup from "yup";
 import { ModalPrivacidad } from "../Legales/ModalPrivacidad";
 //emailJS
 import emailjs from "@emailjs/browser";
-import recibo from "/src/assets/image/recibo-luz.jpg";
+import recibo from "/src/assets/image/ontu_recibo_luz.jpg";
 import { FormComplete } from "./FormComplete";
 
 export const FormEstudio = () => {

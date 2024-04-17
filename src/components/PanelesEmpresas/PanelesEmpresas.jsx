@@ -83,12 +83,20 @@ export const PanelesEmpresas = () => {
         <title>Paneles Solares para Industrias | Ontu</title>
         <meta
           name="description"
-          content="Transforma tu hogar o industria con energía sostenible. Expertos en eficiencia y ahorro."
+          content="Transforma tu industria con energía sostenible. Expertos en eficiencia y ahorro."
         />
         <meta
           name="Keywords"
           content="paneles solares, paneles solares industriales, empresas sustentables con paneles solares, paneles solares mexico"
         />
+         <meta property="og:title" content="Paneles Solares para Industrias | Ontu" />
+        <meta
+          property="og:description"
+          content="Transforma tu industria con energía sostenible con el uso paneles solares. Expertos en eficiencia y ahorro."
+        />
+        <meta property="og:url" content="https://www.ontu.mx/paneles-solares-empresas" />
+        <meta property="og:image" content="https://www.ontu.mx/logo_ontu-DO4XE2sa.png" />
+        <link rel="canonical" href="https://www.ontu.mx/paneles-solares-empresas"/>
       </Helmet>
       <NavBar />
       <BannerPE />

@@ -1,7 +1,7 @@
 import { FaCheck } from "react-icons/fa6";
 import "aos/dist/aos.css";
-import mobile from "/src/assets/calderas/agua.jpg";
-import desktop from "/src/assets/calderas/agua.jpg";
+import mobile from "/src/assets/calderas/ontu_beneficios_del_agua.jpg";
+import desktop from "/src/assets/calderas/ontu_beneficios_del_agua.jpg";
 import { useEffect } from "react";
 //AOS
 import AOS from "aos";
@@ -19,9 +19,9 @@ export const SectionBeneficios = () => {
             <source media="(max-width: 640px )" srcSet={mobile} />
             <source media="(min-width: 641px rounded-3xl )" srcSet={desktop} />
             <img
-              className="rounded-3xl h-[400px]"
+              className="rounded-3xl lg:h-[400px]"
               src={mobile}
-              alt="Panel solar"
+              alt="Ontu Beneficios del Agua"
             />
           </picture>
         </div>

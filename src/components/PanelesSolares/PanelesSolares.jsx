@@ -75,6 +75,14 @@ export const PanelesSolares = () => {
           name="Keywords"
           content="paneles solares,  paneles solares para casa, casas sustentables con paneles solares, paneles solares mexico"
         />
+        <meta property="og:title" content="Paneles Solares Hogar | Ontu" />
+        <meta
+          property="og:description"
+          content="Transforma tu hogar con energía sostenible con el uso paneles solares. Expertos en eficiencia y ahorro."
+        />
+        <meta property="og:url" content="https://www.ontu.mx/paneles-solares" />
+        <meta property="og:image" content="https://www.ontu.mx/logo_ontu.png" />
+        <link rel="canonical" href="https://www.ontu.mx/paneles-solares" />
       </Helmet>
       <NavBar />
       <PagSustentabilidad />

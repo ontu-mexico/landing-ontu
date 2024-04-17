@@ -1,5 +1,5 @@
-import plomero from "/src/assets/plomeria/plomero2.jpg";
-import plomero2 from "/src/assets/plomeria/plomero3.jpg";
+import plomero from "/src/assets/plomeria/ontu_plomero_.jpg";
+import plomero2 from "/src/assets/plomeria/ontu_plomero.jpg";
 //Animation
 import { useEffect } from "react";
 import AOS from "aos";
@@ -18,7 +18,7 @@ export const Analytics = () => {
             <source media="(min-width: 641px )" srcSet={plomero2} sizes="" />
             <img
               src={plomero2}
-              alt="Plomero"
+              alt="Ontu Plomero"
               className="w-full h-full rounded-3xl"
             />
           </picture>

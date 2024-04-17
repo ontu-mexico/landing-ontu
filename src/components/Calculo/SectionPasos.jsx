@@ -1,4 +1,4 @@
-import panelSolar from "/src/assets/image/colocacionPanel.jpg";
+import panelSolar from "/src/assets/image/ontu_colocar_panel.jpg";
 
 export const SectionPasos = () => {
   return (

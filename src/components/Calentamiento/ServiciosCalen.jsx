@@ -1,5 +1,5 @@
-import alberca2 from "/src/assets/calentamiento/alberca.jpg";
-import residencial2 from "/src/assets/calentamiento/residencial.png";
+import alberca2 from "/src/assets/calentamiento/ontu_calentamiento_del_agua_alberca.jpg";
+import residencial2 from "/src/assets/calentamiento/ontu_calentamiento_del_agua_residencial.png";
 import { FaArrowRight } from "react-icons/fa6";
 
 export const ServiciosCalen = () => {
@@ -38,7 +38,7 @@ export const ServiciosCalen = () => {
                   />
                   <img
                     src={residencial2}
-                    alt="Residencial"
+                    alt="Ontu Calentamiento del agua Residencial"
                     className="w-full h-[300px] rounded-3xl object-cover object-center"
                   />
                 </picture>
@@ -108,7 +108,7 @@ export const ServiciosCalen = () => {
                   />
                   <img
                     src={alberca2}
-                    alt="Alberca"
+                    alt="Ontu Calentamiento del agua Alberca"
                     className="w-full h-[300px] rounded-3xl object-cover object-center"
                   />
                 </picture>

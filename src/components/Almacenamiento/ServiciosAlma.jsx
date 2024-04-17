@@ -1,6 +1,6 @@
-import calderaI2 from "/src/assets/image/calderaIndustrial.jpg";
-import panelI2 from "/src/assets/image/panelEstudio.jpg";
-import panelH2 from "/src/assets/image/colocacionPanel.jpg";
+import calderaI2 from "/src/assets/image/ontu_caldera_industrial.jpg";
+import panelI2 from "/src/assets/image/ontu_comercial.jpg";
+import panelH2 from "/src/assets/image/ontu_colocar_panel.jpg";
 
 export const ServiciosAlma = () => {
   return (
@@ -38,7 +38,7 @@ export const ServiciosAlma = () => {
                   />
                   <img
                     src={panelI2}
-                    alt="Panel solar"
+                    alt="Ontu Comercial"
                     className="w-full h-[300px] rounded-3xl object-cover object-center"
                   />
                 </picture>
@@ -89,7 +89,7 @@ export const ServiciosAlma = () => {
                   />
                   <img
                     src={panelH2}
-                    alt="Panel solar"
+                    alt="Ontu Industrial"
                     className="w-full h-[300px] rounded-3xl object-cover object-center"
                   />
                 </picture>
@@ -114,7 +114,7 @@ export const ServiciosAlma = () => {
                   />
                   <img
                     src={calderaI2}
-                    alt="Panel solar"
+                    alt="Ontu Residencial"
                     className="w-full h-[300px] rounded-3xl object-cover object-top"
                   />
                 </picture>

@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import Select from "react-select";
 import { StepperContext } from "./context/StepperContext";
-import recibo from "/src/assets/image/recibo-luz.jpg";
+import recibo from "/src/assets/image/ontu_recibo_luz.jpg";
 
 const espacio = [
   { label: "Si", value: "si" },

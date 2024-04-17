@@ -1,17 +1,14 @@
-import instalaciones from "/src/assets/SmartHome/controlLuces.jpg";
-import cerraduras from "/src/assets/SmartHome/cerraduras.jpg";
-import persianas from "/src/assets/SmartHome/persianas.jpg";
-import camaras from "/src/assets/SmartHome/camaras.jpg";
-
-import { useNavigate } from "react-router-dom";
+import instalaciones from "/src/assets/SmartHome/ontu_smart-luces.jpg";
+import cerraduras from "/src/assets/SmartHome/ontu_smart-cerraduras.jpg";
+import persianas from "/src/assets/SmartHome/ontu_smart-cortinas.jpg";
+import camaras from "/src/assets/SmartHome/ontu_smart-camaras.jpg";
 //Animation
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export const CardSH = () => {
-  const navigate = useNavigate();
-  //Animation on scroll
+
   useEffect(() => {
     AOS.init({ duration: 2000 });
   });
@@ -40,7 +37,7 @@ export const CardSH = () => {
                 <img
                   className="lg:h-72 md:h-48 w-full object-cover object-center rounded-t-3xl"
                   src={cerraduras}
-                  alt="Cerraduras"
+                  alt="Ontu Smart Home Cerraduras"
                 />
                 <div className="p-6 font-monts">
                   <h1 className="text-[24px] md:text-[24px] lg:text-[24px] tracking-wide leading-none font-semibold text-center mb-4 mt-2 ">
@@ -49,12 +46,12 @@ export const CardSH = () => {
                   <hr className="border-[1.5px] border-[#F2C00C] mb-4" />
 
                   <div className="flex justify-center items-center mt-5  ">
-                    <button
-                      onClick={() => navigate("")}
-                      className="bg-gray-600 w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
-                    >
-                      Solicitar Ontuman
-                    </button>
+                    <p className="bg-gray-600 w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full mb-2 ">
+                      <a href="https://wa.me/message/U4TRG3Z6J2GBO1">
+                        {" "}
+                        Solicitar Ontuman
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -65,7 +62,7 @@ export const CardSH = () => {
                 <img
                   className="lg:h-72 md:h-48 w-full object-cover object-center rounded-t-3xl"
                   src={persianas}
-                  alt="Instalación de llave"
+                  alt="Ontu Smart Home Cortinas"
                 />
                 <div className="p-6 font-monts">
                   <h1 className="text-[24px] md:text-[24px] lg:text-[24px] tracking-wide leading-none font-semibold text-center mb-4 mt-2 ">
@@ -74,12 +71,12 @@ export const CardSH = () => {
                   <hr className="border-[1.5px] border-[#F2C00C] mb-2" />
 
                   <div className="flex justify-center items-center mt-5  ">
-                    <button
-                      onClick={() => navigate("")}
-                      className="bg-gray-600 w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full  "
-                    >
-                      Solicitar Ontuman
-                    </button>
+                    <p className="bg-gray-600 w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full mb-2 ">
+                      <a href="https://wa.me/message/U4TRG3Z6J2GBO1">
+                        {" "}
+                        Solicitar Ontuman
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -90,7 +87,7 @@ export const CardSH = () => {
                 <img
                   className="lg:h-72 md:h-48 w-full object-cover object-center rounded-t-3xl"
                   src={camaras}
-                  alt="Camaras"
+                  alt="Ontu Smart Home Camaras"
                 />
                 <div className="p-6 font-monts">
                   <h1 className="text-[24px] md:text-[24px] lg:text-[24px] tracking-wide leading-none font-semibold text-center mb-4 mt-2 ">
@@ -98,12 +95,12 @@ export const CardSH = () => {
                   </h1>
                   <hr className="border-[1.5px] border-[#F2C00C] mb-2" />
                   <div className="flex justify-center items-center mt-5  ">
-                    <button
-                      onClick={() => navigate("")}
-                      className="bg-gray-600 w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full  "
-                    >
-                      Solicitar Ontuman
-                    </button>
+                    <p className="bg-gray-600 w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full mb-2 ">
+                      <a href="https://wa.me/message/U4TRG3Z6J2GBO1">
+                        {" "}
+                        Solicitar Ontuman
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -114,7 +111,7 @@ export const CardSH = () => {
                 <img
                   className="lg:h-72 md:h-48 w-full object-cover object-center rounded-t-3xl"
                   src={instalaciones}
-                  alt="Instalación de llave"
+                  alt="Ontu Smart Home Luces"
                 />
                 <div className="p-6 font-monts ">
                   <h1 className="text-[24px] md:text-[24px] lg:text-[24px] tracking-wide leading-none font-semibold text-center mb-4 mt-2 ">
@@ -122,12 +119,12 @@ export const CardSH = () => {
                   </h1>
                   <hr className="border-[1.5px] border-[#F2C00C] mb-2" />
                   <div className="flex justify-center items-center mt-5  ">
-                    <button
-                      onClick={() => navigate("")}
-                      className="bg-gray-600 w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full "
-                    >
-                      Solicitar Ontuman
-                    </button>
+                    <p className="bg-gray-600 w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full mb-2 ">
+                      <a href="https://wa.me/message/U4TRG3Z6J2GBO1">
+                        {" "}
+                        Solicitar Ontuman
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>

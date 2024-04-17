@@ -1,7 +1,7 @@
 import { FaCheck } from "react-icons/fa6";
 import "aos/dist/aos.css";
-import mobile from "/src/assets/almacenamiento/almacenamiento2.jpeg";
-import desktop from "/src/assets/almacenamiento/almacenamiento2.jpeg";
+import mobile from "/src/assets/almacenamiento/ontu_almacenamiento.jpeg";
+import desktop from "/src/assets/almacenamiento/ontu_almacenamiento.jpeg";
 import { useEffect } from "react";
 //AOS
 import AOS from "aos";
@@ -18,7 +18,7 @@ export const SectionAlma = () => {
           <picture>
             <source media="(max-width: 640px )" srcSet={mobile} />
             <source media="(min-width: 641px rounded-3xl )" srcSet={desktop} />
-            <img className="lg:rounded-3xl" src={mobile} alt="Panel solar" />
+            <img className="lg:rounded-3xl" src={mobile} alt="Ontu Almacenamiento" />
           </picture>
         </div>
         <div className=" flex flex-col  px-10  lg:w-1/2 mt-5 ">

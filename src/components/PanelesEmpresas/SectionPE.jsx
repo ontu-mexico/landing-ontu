@@ -1,5 +1,5 @@
-import mobile from "/src/assets/image/panelIndustria2.png";
-import desktop from "/src/assets/image/panelIndustria2.png";
+import mobile from "/src/assets/image/ontu_paneles_solares_empresas.png";
+import desktop from "/src/assets/image/ontu_paneles_solares_empresas.png";
 import { useEffect } from "react";
 //AOS
 import AOS from "aos";
@@ -24,7 +24,7 @@ export const SectionPE = () => {
             <img
               className="lg:rounded-3xl h-[350px]"
               src={mobile}
-              alt="Panel solar"
+              alt="Ontu Paneles solares para empresas"
             />
           </picture>
         </div>

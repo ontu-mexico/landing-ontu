@@ -18,6 +18,17 @@ export const Calentamiento = () => {
           name="Keywords"
           content="calentador de agua, calentador de agua solar, calentador de agua con panel solar, calentador de agua solar precio"
         />
+         <meta property="og:title" content="Calentamiento de agua | Ontu" />
+        <meta
+          property="og:description"
+          content="Calentamiento de agua. Aprovecha el sol y ahorra con cada gota ques calientes para bañarte y tu alberca."
+        />
+        <meta property="og:url" content="https://www.ontu.mx/calentamiento-de-agua" />
+        <meta property="og:image" content="https://www.ontu.mx/logo_ontu-DO4XE2sa.png" />
+        <link
+          rel="canonical"
+          href="https://www.ontu.mx/calentamiento-de-agua"
+        />
       </Helmet>
       <NavBar />
       <BannerCalentamiento />

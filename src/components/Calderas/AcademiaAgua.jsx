@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import mobile from "/src/assets/calderas/funcionCal.jpg";
-import desktop from "/src/assets/calderas/funcionCal.jpg";
+import mobile from "/src/assets/calderas/ontu_funcionamiento_caldera.jpg";
+import desktop from "/src/assets/calderas/ontu_funcionamiento_caldera.jpg";
 import { FaArrowRight } from "react-icons/fa6";
 
 export const AcademiaAgua = () => {
@@ -14,7 +14,7 @@ export const AcademiaAgua = () => {
             <img
               className="rounded-3xl md:h-[350px]"
               src={mobile}
-              alt="Beneficios"
+              alt="Ontu funcionamiento de caldera"
             />
           </picture>
         </div>

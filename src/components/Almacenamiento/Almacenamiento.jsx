@@ -17,6 +17,17 @@ export const Almacenamiento = () => {
           name="Keywords"
           content="almacenamiento de energia. almacenamiento de energia solar, almacenamiento de energia electrica, almacenador de energia"
         />
+        <meta property="og:title" content="Almacenamiento de Energía | Ontu" />
+        <meta
+          property="og:description"
+          content="Optimiza y Almacena tu Energía."
+        />
+        <meta property="og:url" content="https://www.ontu.mx/" />
+        <meta property="og:image" content="https://www.ontu.mx/logo_ontu-DO4XE2sa.png" />
+        <link
+          rel="canonical"
+          href="https://www.ontu.mx/almacenamiento-de-energia"
+        />
       </Helmet>
       <NavBar />
       <BannerAlmacenamiento />

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "/src/assets/logo/logo_transparent_background.png";
+import logo from "/src/assets/logo/ontu_logo.png";
 import { Link } from "react-router-dom";
 import { NavLinks } from "./NavLinks";
 import { NavLinks2 } from "./NavLinks2";

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import empresa from "/src/assets/nav/3.png";
-import sustentabilidad from "/src/assets/nav/2.png";
+import empresa from "/src/assets/nav/ontu_empresa.png";
+import sustentabilidad from "/src/assets/nav/ontu_soluciones.png";
 export const NavLinks2 = () => {
   const [heading, setHeading] = useState("");
   const [subHeading, setSubHeading] = useState("");

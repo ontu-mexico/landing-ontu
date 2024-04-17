@@ -1,6 +1,6 @@
-import mobile from "/src/assets/image/panel2.png";
-import desktop from "/src/assets/image/panel2.png";
-import React, { useEffect } from "react";
+import mobile from "/src/assets/image/ontu_paneles_solares.png";
+import desktop from "/src/assets/image/ontu_paneles_solares.png";
+import { useEffect } from "react";
 //AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -21,7 +21,7 @@ export const SectionPanel = () => {
           <picture>
             <source media="(max-width: 640px )" srcSet={mobile} />
             <source media="(min-width: 641px rounded-3xl )" srcSet={desktop} />
-            <img className="lg:rounded-3xl" src={mobile} alt="Panel solar" />
+            <img className="lg:rounded-3xl" src={mobile} alt="Ontu Paneles solares" />
           </picture>
         </div>
         <div className=" flex flex-col  px-10  lg:w-1/2 ">

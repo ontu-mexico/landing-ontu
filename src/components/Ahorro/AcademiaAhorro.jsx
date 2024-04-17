@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import mobile from "/src/assets/image/beneficios2.png";
-import desktop from "/src/assets/image/beneficios2.png";
+import mobile from "/src/assets/image/ontu_beneficios.png";
+import desktop from "/src/assets/image/ontu_beneficios.png";
 import { FaArrowRight } from "react-icons/fa6";
 
 export const AcademiaAhorro = () => {
@@ -12,9 +12,9 @@ export const AcademiaAhorro = () => {
             <source media="(max-width: 640px )" srcSet={mobile} sizes="" />
             <source media="(min-width: 641px )" srcSet={desktop} sizes="" />
             <img
-              className="rounded-3xl h-[400px] "
+              className="rounded-3xl lg:h-[400px] "
               src={mobile}
-              alt="Beneficios"
+              alt="Ontu Beneficios"
             />
           </picture>
         </div>

@@ -1,17 +1,9 @@
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-import logo from "../assets/logo/logo_transparent_background.png";
+import logo from "../assets/logo/ontu_logo.png";
 import { FaFacebook, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 export const Footer = () => {
-  const navigate = useNavigate();
-  const handleNavigate = () => {
-    // Aquí especifica la URL a la que deseas navegar
-    const Instagram = "https://www.instagram.com/ontu.mx/";
-
-    // Utiliza la función navigate para navegar fuera de la página
-    navigate.push(Instagram);
-  };
+  
 
   return (
     <div className="py-16 px-6 grid lg:grid-cols-3 gap-8 bg-white ">
@@ -24,7 +16,6 @@ export const Footer = () => {
         <div className="flex justify-between my-6 mx-6 lg:mx-0 lg:w-[150px]">
           <a
             href="https://www.facebook.com/profile.php?id=100076323696101"
-            target="_blank"
             rel="Facebook"
           >
             <FaFacebook
@@ -34,7 +25,6 @@ export const Footer = () => {
           </a>
           <a
             href="https://www.instagram.com/ontu.mx/"
-            target="_blank"
             rel="Instagram"
           >
             <FaInstagram
@@ -45,7 +35,6 @@ export const Footer = () => {
 
           <a
             href="https://www.linkedin.com/company/ontu"
-            target="_blank"
             rel="Linkedin"
           >
             <FaLinkedinIn

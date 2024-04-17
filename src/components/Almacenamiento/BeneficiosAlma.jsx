@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import mobile from "/src/assets/image/beneficios2.png";
-import desktop from "/src/assets/image/beneficios2.png";
+import mobile from "/src/assets/image/ontu_beneficios.png";
+import desktop from "/src/assets/image/ontu_beneficios.png";
 import { FaArrowRight } from "react-icons/fa6";
 
 export const BeneficiosAlma = () => {
@@ -11,7 +11,7 @@ export const BeneficiosAlma = () => {
           <picture>
             <source media="(max-width: 640px )" srcSet={mobile} sizes="" />
             <source media="(min-width: 641px )" srcSet={desktop} sizes="" />
-            <img className="rounded-3xl " src={mobile} alt="Beneficios" />
+            <img className="rounded-3xl " src={mobile} alt="Ontu Beneficios" />
           </picture>
         </div>
         <div className=" flex flex-col px-10  text-left lg:w-1/2 ">

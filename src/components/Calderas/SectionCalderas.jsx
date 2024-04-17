@@ -1,5 +1,5 @@
-import mobile from "/src/assets/calderas/caldera2.png";
-import desktop from "/src/assets/calderas/caldera2.png";
+import mobile from "/src/assets/calderas/ontu_caldera_de_condencacion.png";
+import desktop from "/src/assets/calderas/ontu_caldera_de_condencacion.png";
 import { useEffect } from "react";
 //AOS
 import AOS from "aos";
@@ -20,7 +20,7 @@ export const SectionCalderas = () => {
             <source media="(min-width: 641px rounded-3xl )" srcSet={desktop} />
             <img
               src={mobile}
-              alt="Caldera"
+              alt="Ontu Caldera de condensación"
               className="w-full h-[350px] rounded-3xl object-cover object-center"
             />
           </picture>

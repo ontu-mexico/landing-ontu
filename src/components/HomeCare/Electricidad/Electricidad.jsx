@@ -19,6 +19,17 @@ export const Electricidad = () => {
           name="Keywords"
           content="electricista cerca de mi, electricista, electricista a domicilio "
         />
+         <meta property="og:title" content="Electricidad  | Ontu" />
+        <meta
+          property="og:description"
+          content="Gestionar tu hogar con los mejores electricista especializados a domicilio."
+        />
+        <meta property="og:url" content="https://www.ontu.mx/electricidad" />
+        <meta property="og:image" content="https://www.ontu.mx/logo_ontu-DO4XE2sa.png" />
+        <link
+          rel="canonical"
+          href="https://www.ontu.mx/electricidad"
+        />
       </Helmet>
       <NavBar />
       <div className="w-full">

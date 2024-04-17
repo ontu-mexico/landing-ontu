@@ -1,12 +1,10 @@
-import mobile from "/src/assets/image/panelSolarHome2.png";
-import desktop from "/src/assets/image/panelSolarHome4.png";
-import { useNavigate } from "react-router-dom";
-import React, { useEffect } from "react";
+
+import  { useEffect } from "react";
 //AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
 export const PagSustentabilidad = () => {
-  const navigate = useNavigate();
+
   //Animation on scroll
   useEffect(() => {
     AOS.init({ duration: 2000 });

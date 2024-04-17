@@ -1,15 +1,15 @@
-import instalaciones from "/src/assets/plomeria/water-plomeria.jpg";
-import inodoro from "/src/assets/plomeria/inodoro.jpg";
-import reparaciones from "/src/assets/plomeria/plumber.jpg";
-import { useNavigate } from "react-router-dom";
+import instalaciones from "/src/assets/plomeria/ontu_promeria_intalaciones.jpg";
+import inodoro from "/src/assets/plomeria/ontu_promeria_basica.jpg";
+import reparaciones from "/src/assets/plomeria/ontu_promeria_reparaciones.jpg";
+
 //Animation
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import { useNavigate } from "react-router-dom";
+
 
 export const CardPlomeria = () => {
-  const navigate = useNavigate();
+ 
   //Animation on scroll
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -39,7 +39,7 @@ export const CardPlomeria = () => {
                 <img
                   className="lg:h-72 md:h-48 w-full object-cover object-center rounded-t-3xl"
                   src={instalaciones}
-                  alt="Instalación de llave"
+                  alt="Ontu Instalación de llave"
                 />
                 <div className="p-6 font-monts">
                   <h2 className="text-[24px] md:text-[26px] lg:text-[28px] tracking-wide leading-none font-semibold text-center mb-4 mt-2 ">
@@ -53,12 +53,12 @@ export const CardPlomeria = () => {
                   </p>
 
                   <div className="flex justify-center items-center mt-8  ">
-                    <button
-                      onClick={() => navigate("")}
-                      className="bg-gray-600 w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full mb-2 "
-                    >
-                      Solicitar Ontuman
-                    </button>
+                    <p className="bg-gray-600 w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full mb-2 ">
+                      <a href="https://wa.me/message/U4TRG3Z6J2GBO1">
+                        {" "}
+                        Solicitar Ontuman
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -69,7 +69,7 @@ export const CardPlomeria = () => {
                 <img
                   className="lg:h-72 md:h-48 w-full object-cover object-center rounded-t-3xl"
                   src={inodoro}
-                  alt="Básicos del hogar"
+                  alt="Ontu Plomeria Básicos del hogar"
                 />
                 <div className="p-6 font-monts">
                   <h2 className="text-[24px] md:text-[26px] lg:text-[28px] tracking-wide leading-none font-semibold text-center mb-4 mt-2">
@@ -82,12 +82,12 @@ export const CardPlomeria = () => {
                   </p>
 
                   <div className="flex justify-center items-center mt-8  ">
-                    <button
-                      onClick={() => navigate("")}
-                      className="bg-gray-600 w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full mb-2"
-                    >
-                      Solicitar Ontuman
-                    </button>
+                    <p className="bg-gray-600 w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full mb-2 ">
+                      <a href="https://wa.me/message/U4TRG3Z6J2GBO1">
+                        {" "}
+                        Solicitar Ontuman
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -98,7 +98,7 @@ export const CardPlomeria = () => {
                 <img
                   className="lg:h-72 md:h-48 w-full object-cover object-center  rounded-t-3xl"
                   src={reparaciones}
-                  alt="Instalación de llave"
+                  alt="Ontu Plomeria Instalación de llave"
                 />
                 <div className="p-6 font-monts">
                   <h2 className="text-[24px] md:text-[26px] lg:text-[28px] tracking-wide leading-none font-semibold text-center mb-4 mt-2 ">
@@ -111,12 +111,12 @@ export const CardPlomeria = () => {
                   </p>
 
                   <div className="flex justify-center items-center mt-8  ">
-                    <button
-                      onClick={() => navigate("")}
-                      className="bg-gray-600 w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full mb-2 "
-                    >
-                      Solicitar Ontuman
-                    </button>
+                    <p className="bg-gray-600 w-[230px] h-[40px] font-monts flex items-center justify-center font-semibold uppercase mx-auto  md:mx-0 text-white  hover:text-gray-600 hover:border-2 hover:border-gray-600 hover:bg-white hover:font-semibold active:scale-y-[1] active:duration-75 ease-in-out transition-all rounded-full mb-2 ">
+                      <a href="https://wa.me/message/U4TRG3Z6J2GBO1">
+                        {" "}
+                        Solicitar Ontuman
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>

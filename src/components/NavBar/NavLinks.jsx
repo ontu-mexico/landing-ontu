@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import homeCare from "/src/assets/nav/1.png";
+import homeCare from "/src/assets/nav/ontu_home-care.png";
 
 export const NavLinks = ({ progressPercentage }) => {
   const [heading, setHeading] = useState("");

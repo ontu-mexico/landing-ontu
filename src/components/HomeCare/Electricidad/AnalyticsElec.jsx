@@ -1,5 +1,5 @@
-import electricidad from "/src/assets/electricidad/electricidad.png";
-import electricidad2 from "/src/assets/electricidad/electricidad.png";
+import electricidad from "/src/assets/electricidad/ontu_electricidad.png";
+import electricidad2 from "/src/assets/electricidad/ontu_electricidad.png";
 
 export const AnalyticsElec = () => {
   return (
@@ -19,7 +19,7 @@ export const AnalyticsElec = () => {
             />
             <img
               src={electricidad2}
-              alt="Electricidad"
+              alt="Ontu Electricidad"
               className="w-full h-full rounded-3xl"
             />
           </picture>

@@ -20,6 +20,14 @@ export const Calderas = () => {
           name="Keywords"
           content="caldera de condensacion, caldera de condensacion o estanca, calderas de gas condensacion, caldera de condensacion gas natural"
         />
+        <meta property="og:title" content="Calderas de Condensación | Ontu" />
+        <meta
+          property="og:description"
+          content="Eficiencia para calentar agua con calderas de condensación."
+        />
+        <meta property="og:url" content="https://www.ontu.mx/calderas-de-condensacion" />
+        <meta property="og:image" content="https://www.ontu.mx/logo_ontu-DO4XE2sa.png" />
+        <link rel="canonical" href="https://www.ontu.mx/calderas-de-condensacion"/>
       </Helmet>
       <NavBar />
       <BannerCalderas />

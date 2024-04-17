@@ -1,5 +1,5 @@
-import mobile from "/src/assets/image/shield.png";
-import desktop from "/src/assets/image/shield.png";
+import mobile from "/src/assets/image/ontu_shield.png";
+import desktop from "/src/assets/image/ontu_shield.png";
 import { FaArrowRight } from "react-icons/fa6";
 
 export const SectionShield = () => {
@@ -13,7 +13,7 @@ export const SectionShield = () => {
             <img
               className="rounded-3xl h-[350px] "
               src={mobile}
-              alt="Beneficios"
+              alt="Ontu Shield"
             />
           </picture>
         </div>

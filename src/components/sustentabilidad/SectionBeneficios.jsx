@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import React, { useEffect } from "react";
-import mobile from "/src/assets/image/beneficios2.png";
-import desktop from "/src/assets/image/beneficios2.png";
+import { useEffect } from "react";
+import mobile from "/src/assets/image/ontu_beneficios.png";
+import desktop from "/src/assets/image/ontu_beneficios.png";
 import { FaArrowRight } from "react-icons/fa6";
 //AOS
 import AOS from "aos";
@@ -19,7 +19,7 @@ export const SectionBeneficios = () => {
           <picture>
             <source media="(max-width: 640px )" srcSet={mobile} sizes="" />
             <source media="(min-width: 641px )" srcSet={desktop} sizes="" />
-            <img className="rounded-3xl " src={mobile} alt="Beneficios" />
+            <img className="rounded-3xl " src={mobile} alt="Ontu Beneficios" />
           </picture>
         </div>
         <div className=" flex flex-col px-10  text-left lg:w-1/2 ">

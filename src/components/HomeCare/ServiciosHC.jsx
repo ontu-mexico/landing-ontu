@@ -1,9 +1,9 @@
-import plomero from "/src/assets/plomeria/plomeria3.jpg";
-import plomero2 from "/src/assets/plomeria/plomeria4.jpg";
-import smart from "/src/assets/SmartHome/smart-home-5.jpg";
-import smart2 from "/src/assets/SmartHome/smart-home-4.jpg";
-import electricidad from "/src/assets/electricidad/electricidad.jpg";
-import electricidad2 from "/src/assets/electricidad/electricidad2.jpg";
+import plomero from "/src/assets/plomeria/ontu_promeria.jpg";
+import plomero2 from "/src/assets/plomeria/ontu_promeria_.jpg";
+import smart from "/src/assets/SmartHome/ontu_smart-home_.jpg";
+import smart2 from "/src/assets/SmartHome/ontu_smart-home.jpg";
+import electricidad from "/src/assets/electricidad/ontu_electricidad_lamparas.jpg";
+import electricidad2 from "/src/assets/electricidad/ontu_electricidad_lamparas_.jpg";
 //Animation
 import { useEffect } from "react";
 import AOS from "aos";
@@ -38,7 +38,7 @@ export const ServiciosHC = () => {
               />
               <img
                 src={electricidad2}
-                alt="Electricidad"
+                alt="Ontu Electricidad"
                 className="w-full h-[300px] rounded-3xl object-cover object-center"
               />
             </picture>
@@ -130,7 +130,7 @@ export const ServiciosHC = () => {
               <source media="(min-width: 641px )" srcSet={plomero2} sizes="" />
               <img
                 src={plomero2}
-                alt="Plomería"
+                alt="Ontu Plomería"
                 className="w-full h-[300px] rounded-3xl object-cover object-center"
               />
             </picture>
@@ -148,7 +148,7 @@ export const ServiciosHC = () => {
               <source media="(min-width: 641px )" srcSet={smart2} sizes="" />
               <img
                 src={smart2}
-                alt="Smart Home"
+                alt="Ontu Smart Home"
                 className="w-full h-[300px] rounded-3xl object-cover object-center"
               />
             </picture>

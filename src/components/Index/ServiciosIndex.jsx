@@ -1,9 +1,9 @@
-import calderaI from "/src/assets/index/calderas.png";
-import calderaI2 from "/src/assets/index/calderasM.png";
-import panelI2 from "/src/assets/index/panelesIndustrialM.png";
-import panelI from "/src/assets/index/panelesIndustrial.png";
-import panelH from "/src/assets/index/panelesHogar.png";
-import panelH2 from "/src/assets/index/panelesHogarM.png";
+import calderaI from "/src/assets/index/ontu_calderas_de_condensacion.png";
+import calderaI2 from "/src/assets/index/ontu_calderas_de_condensacion_.png";
+import panelI2 from "/src/assets/index/ontu_paneles_solares_industriales_.png";
+import panelI from "/src/assets/index/ontu_paneles_solares_industriales.png";
+import panelH from "/src/assets/index/ontu_paneles_solares_hogar.png";
+import panelH2 from "/src/assets/index/ontu_paneles_solares_hogar_.png";
 //import { useNavigate } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
 import { IoHome } from "react-icons/io5";
@@ -44,7 +44,7 @@ export const ServiciosIndex = () => {
                   />
                   <img
                     src={panelI2}
-                    alt="Panel solar"
+                    alt="Ontu Paneles solares Industriales"
                     className="w-full h-[300px]  rounded-3xl object-cover object-top"
                   />
                 </picture>
@@ -133,7 +133,7 @@ export const ServiciosIndex = () => {
                   />
                   <img
                     src={calderaI2}
-                    alt="Calderas"
+                    alt="Ontu Calderas de Condensación"
                     className="w-full h-[300px] rounded-3xl object-cover object-top"
                   />
                 </picture>
@@ -157,7 +157,7 @@ export const ServiciosIndex = () => {
                   />
                   <img
                     src={panelH2}
-                    alt="Panel solar"
+                    alt="Ontu Paneles solares Hogar"
                     className="w-full h-[300px] rounded-3xl object-cover object-center"
                   />
                 </picture>
