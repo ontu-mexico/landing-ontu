@@ -33,7 +33,7 @@ export const SmartHome = () => {
           content="Transforma tu hogar en un hogar inteligente."
         />
         <meta property="og:url" content="https://www.ontu.mx/smart-home" />
-        <meta property="og:image" content="https://www.ontu.mx/logo_ontu-DO4XE2sa.png" />
+        <meta property="og:image" content="https://www.ontu.mx/ontu_logo.png" />
         <link rel="canonical" href="https://www.ontu.mx/smart-home" />
       </Helmet>
       <NavBar />

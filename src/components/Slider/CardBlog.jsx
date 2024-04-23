@@ -1,5 +1,3 @@
-import React from "react";
-
 export const CardBlog = ({ blog, animationPaused }) => {
   return (
     <div
@@ -9,7 +7,7 @@ export const CardBlog = ({ blog, animationPaused }) => {
     >
       <div className="h-[20px] w-[110px] bg-cover m-5 mb-1">
         <img
-          src={`/assets/cali${blog.id}.jpg`}
+          src={blog.img}
           alt={`Calificación de ${blog.name}`}
           className="object-cover"
         />

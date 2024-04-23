@@ -27,7 +27,7 @@ export const Index = () => {
           content="Transforma tu hogar o industria con energía sostenible con el uso paneles solares y calderas de condensación. Energía renovada, futuro descarbonizado. Expertos en eficiencia y ahorro."
         />
         <meta property="og:url" content="https://www.ontu.mx" />
-        <meta property="og:image" content="https://www.ontu.mx/logo_ontu-DO4XE2sa.png" />
+        <meta property="og:image" content="https://www.ontu.mx/ontu_logo.png" />
         <link rel="canonical" href="https://www.ontu.mx" />
       </Helmet>
       <NavBar />

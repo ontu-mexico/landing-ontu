@@ -23,7 +23,7 @@ export const Almacenamiento = () => {
           content="Optimiza y Almacena tu Energía."
         />
         <meta property="og:url" content="https://www.ontu.mx/" />
-        <meta property="og:image" content="https://www.ontu.mx/logo_ontu-DO4XE2sa.png" />
+        <meta property="og:image" content="https://www.ontu.mx/ontu_logo.png" />
         <link
           rel="canonical"
           href="https://www.ontu.mx/almacenamiento-de-energia"

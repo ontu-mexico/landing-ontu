@@ -1,11 +1,32 @@
 import { NavBar } from "../NavBar/NavBar";
 import { FooterCR } from "../FooterCR";
 import { TbPointFilled } from "react-icons/tb";
+import { Helmet } from "react-helmet-async";
 
 export const Terminos = () => {
   return (
     <main>
       {/* <iframe width="650" height="900" src="https://portal.ontu.mx/webform/embed/66181d9bed1485.24298395" ></iframe> */}
+      <Helmet>
+        <title>Términos y Condiciones | Ontu</title>
+        <meta
+          name="description"
+          content="Términos y Condiciones. ​Términos de Uso / Acuerdo Usuario"
+        />
+        <meta
+          name="Keywords"
+          content="cuidado del hogar, plomeria cerca de mi, electricidad, electricista cerca de mi, plomería, hogar inteligente, dispositivos inteligentes para el hogar"
+        />
+        <meta property="og:title" content="Términos y Condiciones | Ontu" />
+        <meta
+          property="og:description"
+          content="Términos y Condiciones, ​Términos de Uso / Acuerdo Usuario"
+        />
+        <meta property="og:url" content="https://www.ontu.mx/terminos-de-uso" />
+        <meta property="og:image" content="https://www.ontu.mx/ontu_logo.png" />
+        <link rel="canonical" href="https://www.ontu.mx/terminos-de-uso" />
+      </Helmet>
+      <NavBar />
       <NavBar />
       <div className="w-full pt-32 px-2 pb-10 ">
         <div className="max-w-[1240px]  mx-auto ">

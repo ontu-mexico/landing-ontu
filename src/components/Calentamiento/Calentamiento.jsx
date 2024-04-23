@@ -24,7 +24,7 @@ export const Calentamiento = () => {
           content="Calentamiento de agua. Aprovecha el sol y ahorra con cada gota ques calientes para bañarte y tu alberca."
         />
         <meta property="og:url" content="https://www.ontu.mx/calentamiento-de-agua" />
-        <meta property="og:image" content="https://www.ontu.mx/logo_ontu-DO4XE2sa.png" />
+        <meta property="og:image" content="https://www.ontu.mx/ontu_logo.png" />
         <link
           rel="canonical"
           href="https://www.ontu.mx/calentamiento-de-agua"

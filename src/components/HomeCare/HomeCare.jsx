@@ -24,7 +24,10 @@ export const HomeCare = () => {
           content="Transforma tu hogar con los mejores servicios de Electricidad, Plomería y Smart Home."
         />
         <meta property="og:url" content="https://www.ontu.mx/home-care" />
-        <meta property="og:image" content="https://www.ontu.mx/logo_ontu-DO4XE2sa.png" />
+        <meta
+          property="og:image"
+          content="https://www.ontu.mx/ontu_logo.png"
+        />
         <link rel="canonical" href="https://www.ontu.mx/home-care" />
       </Helmet>
       <NavBar />
