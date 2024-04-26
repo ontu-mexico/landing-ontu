@@ -1,11 +1,30 @@
-import React from "react";
 import { NavBar } from "../NavBar/NavBar";
 import { FooterCR } from "../FooterCR";
 import { TbPointFilled } from "react-icons/tb";
+import { Helmet } from "react-helmet-async";
 
 export const AvisoPrivacidad = () => {
   return (
     <main>
+       <Helmet>
+        <title>Aviso de Privacidad | Ontu</title>
+        <meta
+          name="description"
+          content="Aviso de Privacidad"
+        />
+        <meta
+          name="Keywords"
+          content="cuidado del hogar, plomeria cerca de mi, electricidad, electricista cerca de mi, plomería, hogar inteligente, dispositivos inteligentes para el hogar"
+        />
+        <meta property="og:title" content="Aviso de Privacidad | Ontu" />
+        <meta
+          property="og:description"
+          content="Aviso de Privacidad"
+        />
+        <meta property="og:url" content="https://www.ontu.mx/aviso-de-privacidad" />
+        <meta property="og:image" content="https://www.ontu.mx/ontu_logo.png" />
+        <link rel="canonical" href="https://www.ontu.mx/aviso-de-privacidad" />
+      </Helmet>
       <NavBar />
       <div className="w-full pt-32 px-2 pb-10 ">
         <div className="max-w-[1240px]  mx-auto ">

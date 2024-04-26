@@ -10,7 +10,7 @@ export const Ahorro = () => {
   return (
     <main>
       <Helmet>
-        <title>Ahorro de Agua| Ontu</title>
+        <title>Ahorro de Agua | Ontu</title>
         <meta
           name="description"
           content="Soluciones sostenibles para la gestión del agua."
@@ -26,7 +26,7 @@ export const Ahorro = () => {
           content="Soluciones sostenibles para la gestión del agua."
         />
         <meta property="og:url" content="https://www.ontu.mx/ahorro-de-agua" />
-        <meta property="og:image" content="https://www.ontu.mx/logo_ontu-DO4XE2sa.png" />
+        <meta property="og:image" content="https://www.ontu.mx/ontu_logo.png" />
         <link rel="canonical" href="https://www.ontu.mx/ahorro-de-agua"/>
       </Helmet>
       <NavBar />

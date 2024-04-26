@@ -81,7 +81,7 @@ export const PanelesSolares = () => {
           content="Transforma tu hogar con energía sostenible con el uso paneles solares. Expertos en eficiencia y ahorro."
         />
         <meta property="og:url" content="https://www.ontu.mx/paneles-solares" />
-        <meta property="og:image" content="https://www.ontu.mx/logo_ontu.png" />
+        <meta property="og:image" content="https://www.ontu.mx/ontu_logo.png" />
         <link rel="canonical" href="https://www.ontu.mx/paneles-solares" />
       </Helmet>
       <NavBar />

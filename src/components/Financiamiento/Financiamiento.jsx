@@ -25,7 +25,7 @@ export const Financiamiento = () => {
           content="El mejor financiamiento para transforma tu hogar o industria con energía sostenible. Expertos en eficiencia y ahorro."
         />{" "}
         <meta property="og:url" content="https://www.ontu.mx/financiamiento" />
-        <meta property="og:image" content="https://www.ontu.mx/logo_ontu-DO4XE2sa.png" />
+        <meta property="og:image" content="https://www.ontu.mx/ontu_logo.png" />
         <link rel="canonical" href="https://www.ontu.mx/financiamiento" />
       </Helmet>
       <NavBar />

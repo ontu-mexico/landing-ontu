@@ -25,9 +25,18 @@ export const Calderas = () => {
           property="og:description"
           content="Eficiencia para calentar agua con calderas de condensación."
         />
-        <meta property="og:url" content="https://www.ontu.mx/calderas-de-condensacion" />
-        <meta property="og:image" content="https://www.ontu.mx/logo_ontu-DO4XE2sa.png" />
-        <link rel="canonical" href="https://www.ontu.mx/calderas-de-condensacion"/>
+        <meta
+          property="og:url"
+          content="https://www.ontu.mx/calderas-de-condensacion"
+        />
+        <meta
+          property="og:image"
+          content="https://www.ontu.mx/ontu_logo.png"
+        />
+        <link
+          rel="canonical"
+          href="https://www.ontu.mx/calderas-de-condensacion"
+        />
       </Helmet>
       <NavBar />
       <BannerCalderas />

@@ -24,7 +24,7 @@ export const Plomeria = () => {
           content="Gestionar tu hogar con los mejores plomeros especializados a domicilio."
         />
         <meta property="og:url" content="https://www.ontu.mx/plomeria" />
-        <meta property="og:image" content="https://www.ontu.mx/logo_ontu-DO4XE2sa.png" />
+        <meta property="og:image" content="https://www.ontu.mx/ontu_logo.png" />
         <link rel="canonical" href="https://www.ontu.mx/plomeria" />
       </Helmet>
       <NavBar />
