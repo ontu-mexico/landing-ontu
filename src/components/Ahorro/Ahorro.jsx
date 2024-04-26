@@ -10,7 +10,7 @@ export const Ahorro = () => {
   return (
     <main>
       <Helmet>
-        <title>Ahorro de Agua| Ontu</title>
+        <title>Ahorro de Agua | Ontu</title>
         <meta
           name="description"
           content="Soluciones sostenibles para la gestión del agua."

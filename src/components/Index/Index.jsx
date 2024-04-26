@@ -11,6 +11,7 @@ export const Index = () => {
   return (
     <main>
       <Helmet>
+
         <title>Home | Ontu</title>
         <meta
           name="description"
@@ -26,9 +27,20 @@ export const Index = () => {
           property="og:description"
           content="Transforma tu hogar o industria con energía sostenible con el uso paneles solares y calderas de condensación. Energía renovada, futuro descarbonizado. Expertos en eficiencia y ahorro."
         />
-        <meta property="og:url" content="https://www.ontu.mx" />
-        <meta property="og:image" content="https://www.ontu.mx/ontu_logo.png" />
-        <link rel="canonical" href="https://www.ontu.mx" />
+        <meta property="og:url" content="https://www.ontu.mx/" />
+        <meta property="og:image" content="https://www.ontu.mx/ontu.jpg" />
+        <meta
+          property="og:image:url"
+          content="https://www.ontu.mx/ontu.jpg"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://www.ontu.mx/ontu.jpg"
+        />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="300" />
+        <meta name="robots" content="index, follow"></meta>
       </Helmet>
       <NavBar />
       <BannerIndex />
